@@ -1,4 +1,4 @@
-name: setup_repo
+name: below-zero
 on:
   pull_request:
     branches: [prod, dev]
