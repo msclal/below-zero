@@ -7,10 +7,48 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        outfit: ["var(--font-outfit)"],
+        montserrat: ["var(--font-montserrat)"],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      colors: {
+        "below-zero": {
+          blue: {
+            100: "#CCEAFF",
+            200: "#47A5E7",
+          },
+          red: {
+            100: "#FFD9E1",
+            200: "#FF4E73",
+          },
+          yellow: {
+            100: "#F5E8CC",
+            200: "#F5BF57",
+          },
+          purple: {
+            100: "#F5EAFF",
+            200: "#693CB8",
+          },
+          green: {
+            100: "#DCEBBD",
+            200: "#8CB537",
+          },
+        },
+        primary: {
+          DEFAULT: "#1C56A6",
+          background: "#FCFEFF",
+        },
+        secondary: { background: "#F3F6FA" },
+        text: {
+          DEFAULT: "hsl(var(--secondary))",
+          subtext: "#F3F6FA",
+        },
+        border: "#CFCFCF",
       },
     },
   },
