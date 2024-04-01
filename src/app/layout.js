@@ -1,8 +1,19 @@
-import { Inter } from "next/font/google";
+import { Outfit, Montserrat } from "next/font/google";
 import "./globals.css";
 
 // eslint-disable-next-line new-cap
-const inter = Inter({ subsets: ["latin"] });
+const outfit = Outfit({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-outfit",
+});
+
+// eslint-disable-next-line new-cap
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-montserrat",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -12,7 +23,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`${outfit.variable} ${montserrat.variable} font-outfit bg-primary-background text-text`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
