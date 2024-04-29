@@ -7,6 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: "430px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+      },
       fontFamily: {
         outfit: ["var(--font-outfit)"],
         montserrat: ["var(--font-montserrat)"],
@@ -45,7 +52,6 @@ module.exports = {
         },
         secondary: { background: "#F3F6FA" },
         text: {
-          DEFAULT: "hsl(var(--secondary))",
           subtext: "#F3F6FA",
         },
         border: "#CFCFCF",
