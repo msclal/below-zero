@@ -7,7 +7,7 @@ import BelowZeroLogo from "/public/BelowZeroLogo.svg";
 const Footer = () => {
   return (
     <>
-      <div className="flex flex-col sm:items-center sm:justify-center bg-[#F3F6FA] py-[4%] max-sm:pl-[8%]">
+      <div className="flex flex-col sm:items-center sm:justify-center bg-secondary-background py-[4%] max-sm:pl-[8%]">
         <div className="max-sm:w-[40%] sm:w-[20%] lg:w-[13%] max-sm:py-[5%]">
           <Image
             src={BelowZeroLogo}
@@ -51,7 +51,7 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="flex text-[#1C56A6] text-xs justify-center max-sm:pt-[10%] max-sm:pb-[5%]">
+        <div className="flex text-primary text-xs justify-center max-sm:pt-[10%] max-sm:pb-[5%]">
           <p className="flex items-center">MADE BY</p>
           <div className="w-[40px] mx-2">
             <Image
@@ -63,7 +63,7 @@ const Footer = () => {
               height="1"
             />
           </div>
-          <div className="border-l-[1px] border-[#1C56A6]">
+          <div className="border-l-[1px] border-primary">
             <div className="ml-2">
               <p>A</p>
               <p>FREELANCE</p>
