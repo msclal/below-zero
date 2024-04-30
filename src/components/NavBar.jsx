@@ -31,7 +31,7 @@ const NavBar = () => {
 
   return (
     <div>
-      <div className="flex fixed justify-center bg-primary-background">
+      <div className="z-10 flex fixed justify-center bg-primary-background">
         <div className="max-sm:hidden flex justify-between items-center w-11/12 py-6 ">
           <div className="max-sm:w-[40%] sm:w-[20%] lg:w-[13%] max-sm:py-[5%]">
             <Image
@@ -75,7 +75,7 @@ const NavBar = () => {
         </div>
         {toggle && (
           <>
-            <div className="sm:hidden w-full absolute top-[80%] ">
+            <div className="sm:hidden w-full absolute z-10 top-[80%] ">
               <div>
                 <div className="bg-primary text-white flex font-outfit flex-col justify-left items-left space-y-[7%] w-full px-[10%] py-[5%]">
                   <p>HOME</p>
