@@ -10,15 +10,19 @@ const Steps = () => {
           <div class="absolute font-medium border-8 border-primary border-xl text-primary text-lg rounded-full bg-white flex h-[55px] w-[55px] items-center justify-center">
             3
           </div>
-          <div className="text-white ml-5 bg-primary rounded-tr pl-12 w-full font-montserrat py-3 flex justify-start">
+          <div className="max-sm:hidden text-white ml-5 bg-primary rounded-tr pl-12 w-full font-montserrat py-3 flex justify-start">
             CHOOSE UP TO THREE SHAVED ICE FLAVORS
           </div>
+          <div className="sm:hidden text-white ml-5 bg-primary rounded-tr pl-12 w-full font-montserrat py-3 flex justify-start">
+            CHOOSE UP TO 3 FLAVORS
+          </div>
         </div>{" "}
-        <div className="border ml-5 rounded-b flex max-sm:flex-col max-sm:p-8 pr-8 sm:py-8">
-          <div className="ml-[5%] w-8/12 ">
+        <div className="border ml-5 max-lg:space-y-[8%] rounded-b flex max-lg:flex-col max-lg:items-center max-lg:p-8 pr-8 sm:py-8">
+          <div className="lg:ml-[5%] max-lg:w-full w-6/12 ">
             <p className="font-medium text-lg pb-3">Non-Dairy</p>
-            <div className="flex max-sm:flex-col space-x-[1%]">
-              <div className="w-full">
+            <div className="flex max-sm:flex-wrap sm:space-x-[8%]">
+              {/* <div> */}
+              <div className="w-fit max-sm:mr-[7%]">
                 <li>Bahama Mama</li>
                 <li>Banana</li>
                 <li>Blueberry</li>
@@ -28,7 +32,7 @@ const Steps = () => {
                 <li>Cola</li>
                 <li>Coconut</li>
               </div>
-              <div className="w-full">
+              <div className="w-fit">
                 <li>Guava</li>
                 <li>Grape</li>
                 <li>Hawaiian</li>
@@ -38,7 +42,8 @@ const Steps = () => {
                 <li>Orange</li>
                 <li>Pineapple</li>
               </div>
-              <div className="w-full">
+              {/* </div> */}
+              <div className="w-fit max-sm:mt-[7%]">
                 <li>Pomegrante</li>
                 <li>Praline</li>
                 <li>Raspberry</li>
@@ -49,29 +54,31 @@ const Steps = () => {
               </div>
             </div>
           </div>
-          <div className="w-3/12">
-            <p className="font-medium text-lg pb-3">With Dairy</p>
-            <div className="flex">
-              <div className="w-full">
-                <li>Cake Batter</li>
-                <li>Cookie Dough</li>
-                <li>Cotton Candy</li>
-                <li>Dulce de Leche</li>
-                <li>Pink Gum</li>
+          <div className="flex max-lg:w-full w-6/12">
+            <div className="max-lg:w-full w-full ">
+              <p className="font-medium text-lg pb-3">With Dairy</p>
+              <div className="flex">
+                <div className="w-full">
+                  <li>Cake Batter</li>
+                  <li>Cookie Dough</li>
+                  <li>Cotton Candy</li>
+                  <li>Dulce de Leche</li>
+                  <li>Pink Gum</li>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="w-3/12">
-            <p className="font-medium text-lg pb-3">Sugar Free</p>
-            <div className="flex">
-              <div className="w-full">
-                <li>Blue Raspberry</li>
-                <li>Mango</li>
-                <li>Pina Colada</li>
-                <li>Strawberry</li>
-                <li>Tiger&#39;s Blood</li>
-                <li>Vanilla</li>
-                <li>Watermelon</li>
+            <div className="max-lg:w-full w-full">
+              <p className="font-medium text-lg pb-3 ">Sugar Free</p>
+              <div className="flex">
+                <div className="w-full">
+                  <li>Blue Raspberry</li>
+                  <li>Mango</li>
+                  <li>Pina Colada</li>
+                  <li>Strawberry</li>
+                  <li>Tiger&#39;s Blood</li>
+                  <li>Vanilla</li>
+                  <li>Watermelon</li>
+                </div>
               </div>
             </div>
           </div>
