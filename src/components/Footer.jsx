@@ -1,12 +1,31 @@
-import Image from "next/image";
 import React from "react";
-import KABOLogo from "/public/KABOLogo.svg";
+import Image from "next/image";
 import Link from "next/link";
-import BelowZeroLogo from "/public/BelowZeroLogo.svg";
+import Marquee from "react-fast-marquee";
+import KABOLogo from "/public/layout/KABOLogo.svg";
+import BelowZeroLogo from "/public/layout/BelowZeroLogo.svg";
+import CircleLogo from "/public/layout/Circle.svg";
 
 const Footer = () => {
   return (
     <>
+      <Marquee
+        autoFill
+        speed={75}
+        className="py-2.5 text-4xl font-semibold sm:p-5 bg-primary font-outfit sm:text-8xl absolute -z-[10]"
+      >
+        <p>BELOW ZERO SHAVED ICE</p>
+        <div className="w-3/4 px-4 mx-auto sm:px-10 sm:w-full">
+          <Image
+            src={CircleLogo}
+            alt="Landing"
+            layout="responsive"
+            className=""
+          />
+        </div>
+      </Marquee>
+
+      {/* FOOOTER */}
       <div className="flex flex-col sm:items-center sm:justify-center bg-secondary-background py-[4%] max-sm:pl-[8%]">
         <div className="max-sm:w-[40%] sm:w-[20%] lg:w-[13%] max-sm:py-[5%]">
           <Image
@@ -21,30 +40,30 @@ const Footer = () => {
 
         <div className="flex max-sm:flex-col max-sm:items-start max-sm:space-y-[6%] sm:space-x-[5%] sm:w-10/12 lg:w-8/12 text-black mt-[3%] mb-[7%] text-base">
           <div className="flex flex-col w-full">
-            <span className="font-semibold mb-2">LOCATION</span>
+            <span className="mb-2 font-semibold">LOCATION</span>
             <span className="">583 E. Foothill Blvd. Suite #6</span>
             Upland, CA 91786
           </div>
 
           <div className="flex flex-col w-full">
-            <span className="font-semibold mb-2">STORE HOURS</span>
+            <span className="mb-2 font-semibold">STORE HOURS</span>
             <span>Tuesday-Saturday: 12:00PM-6:30PM</span>
             Sunday: 12:00PM - 6:00PM
           </div>
 
           <div className="flex flex-col w-full">
-            <span className="font-semibold mb-2">CONTACT</span>
+            <span className="mb-2 font-semibold">CONTACT</span>
             <Link
               target="_blank"
               href={"tel:9099209230"}
-              className="no-underline text-black"
+              className="text-black no-underline"
             >
               (909) 920-9230
             </Link>
             <Link
               target="_blank"
               href="mailto:belowzeroshavedice@yahoo.com"
-              className="no-underline text-black"
+              className="text-black no-underline"
             >
               {" "}
               belowzeroshavedice@yahoo.com

@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 // import { Link as ScrollLink } from "react-scroll";
-import BelowZeroLogo from "/public/BelowZeroLogo.svg";
+import BelowZeroLogo from "/public/layout/BelowZeroLogo.svg";
 import Button from "./Button";
 import React, { useEffect, useRef, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -31,8 +31,8 @@ const NavBar = () => {
 
   return (
     <div>
-      <div className="flex fixed justify-center bg-primary-background">
-        <div className="max-sm:hidden flex justify-between items-center w-11/12 py-6 ">
+      <div className="fixed flex justify-center bg-primary-background">
+        <div className="flex items-center justify-between w-11/12 py-6 max-sm:hidden ">
           <div className="max-sm:w-[40%] sm:w-[20%] lg:w-[13%] max-sm:py-[5%]">
             <Image
               src={BelowZeroLogo}
@@ -43,7 +43,7 @@ const NavBar = () => {
               height="1"
             />
           </div>
-          <div className="flex items-center w-fit sm:space-x-6  lg:space-x-12">
+          <div className="flex items-center w-fit sm:space-x-6 lg:space-x-12">
             <p>HOME</p>
             <p>MENU</p>
             <p>ABOUT</p>
@@ -67,7 +67,7 @@ const NavBar = () => {
           </div>
           <div
             ref={componentRef}
-            className="text-xl text-primary font-bold"
+            className="text-xl font-bold text-primary"
             onClick={() => setToggle(!toggle)}
           >
             <RxHamburgerMenu />
@@ -75,7 +75,7 @@ const NavBar = () => {
         </div>
         {toggle && (
           <>
-            <div className="sm:hidden w-full absolute top-[80%] ">
+            <div className="sm:hidden w-full absolute top-[80%] z-[100]">
               <div>
                 <div className="bg-primary text-white flex font-outfit flex-col justify-left items-left space-y-[7%] w-full px-[10%] py-[5%]">
                   <p>HOME</p>
