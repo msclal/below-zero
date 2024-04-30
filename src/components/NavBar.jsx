@@ -75,14 +75,14 @@ const NavBar = () => {
         </div>
         {toggle && (
           <>
-            <div className="sm:hidden w-full  absolute top-[80%] ">
+            <div className="sm:hidden w-full absolute top-[80%] ">
               <div>
                 <div className="bg-primary text-white flex font-outfit flex-col justify-left items-left space-y-[7%] w-full px-[10%] py-[5%]">
                   <p>HOME</p>
                   <p>MENU</p>
                   <p>ABOUT</p>
                   <p>SERVICES</p>
-                  <Button>CONTACT</Button>
+                  <p>CONTACT</p>
                 </div>
               </div>
             </div>
