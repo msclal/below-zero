@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Sample from "@/about/sample.png";
+import Sample from "@/public/about/sample.png";
 import Link from "next/link";
 const Gallery = () => {
   return (
