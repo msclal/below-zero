@@ -1,27 +1,39 @@
+"use client";
+import React, { useState } from "react";
+
 import IceCream from "@/components/Menu/StepIceCream";
 import Syrups from "@/components/Menu/StepSyrup";
 import Sizes from "@/components/Menu/StepSizes";
 import Toppings from "@/components/Menu/StepToppings";
-import React from "react";
 import MenuItem from "@/components/Menu/MenuItem";
 import CandyLand from "/public/SnowConeCombos/CandyLand.webp";
+import Menubar from "../../components/Menu/Menubar";
 // import CandyLand from "/public/SizeLarge.webp";
 
 const Contact = () => {
+  const [isClicked, setIsClicked] = useState("SHAVED ICE");
+  const handleClick = (item) => {
+    setIsClicked(item);
+  };
   return (
-    <div className="flex flex-col items-center min-h-screen gap-y-10 lg:gap-y-20 pt-36">
-      <div className="flex justify-end flex-col max-sm:w-10/12 sm:w-10/12 lg:w-7/12 space-y-[3%]">
-        <Sizes />
-        <IceCream />
-        <Syrups />
-        <Toppings />
-        <MenuItem
-          name="Candy Land"
-          picture={CandyLand}
-          description="Blue Gum and Pink Gum Shaved Ice with Cotton Candy Ice Cream"
-        />
+    <>
+      <Menubar selectedMenuItem={isClicked} onMenuItemClick={handleClick} />
+      <div className="flex flex-col items-center min-h-screen gap-y-10 lg:gap-y-20 pt-36">
+        <div className="flex justify-end flex-col max-sm:w-10/12 sm:w-10/12 lg:w-7/12 space-y-[3%]">
+          {isClicked === "SHAVED ICE" && <Sizes />}
+          {isClicked === "SHAVED ICE COMBOS" && <IceCream />}
+          {isClicked === "ICE CREAM" && <Syrups />}
+          {isClicked === "SHAKES" && <Toppings />}
+          {isClicked === "HOUSE SPECIALTIES" && (
+            <MenuItem
+              name="Candy Land"
+              picture={CandyLand}
+              description="Blue Gum and Pink Gum Shaved Ice with Cotton Candy Ice Cream"
+            />
+          )}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
