@@ -45,8 +45,7 @@ module.exports = {
         },
         secondary: { background: "#F3F6FA" },
         text: {
-          DEFAULT: "hsl(var(--secondary))",
-          subtext: "#F3F6FA",
+          subtext: "#777777",
         },
         border: "#CFCFCF",
       },

@@ -1,5 +1,7 @@
 import { Outfit, Montserrat } from "next/font/google";
 import "./globals.css";
+import Footer from "../components/Footer";
+import NavBar from "../components/NavBar";
 
 // eslint-disable-next-line new-cap
 const outfit = Outfit({
@@ -26,7 +28,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${outfit.variable} ${montserrat.variable} font-outfit bg-primary-background text-text`}
       >
+        <NavBar />
         {children}
+
+        <Footer />
       </body>
     </html>
   );
