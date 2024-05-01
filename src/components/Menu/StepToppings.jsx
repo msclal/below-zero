@@ -9,7 +9,7 @@ const Steps = () => {
             2
           </div>
           <div className="text-white ml-5 bg-primary rounded-tr pl-12 w-full font-montserrat py-3 flex justify-start">
-            CHOOSE ONE ICE CREAM FLAVOR
+            CHOOSE TOPPINGS
           </div>
         </div>{" "}
         <div className="border ml-5 rounded-b flex flex-wrap max-sm:flex-col  max-sm:p-8 sm:py-8 ">
