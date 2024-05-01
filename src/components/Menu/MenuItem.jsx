@@ -5,7 +5,7 @@ const MenuItem = ({ key, name, picture, description }) => {
   return (
     <>
       <div className="flex w-full items-center flex-col">
-        <div className="w-full">
+        <div className="w-full pb-[10%]">
           <Image
             src={picture}
             alt="Produce Picture"

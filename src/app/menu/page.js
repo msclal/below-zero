@@ -7,6 +7,107 @@ import Head from "next/head";
 import MenuItems from "@/components/Menu/MenuItems";
 // import { combos } from "@/public/data/combos.js";
 
+const specialties = [
+  {
+    picture: "/Specialties/BananaSplit.webp",
+    name: "Banana Split",
+    description: "",
+  },
+  {
+    picture: "/Specialties/BrownieSundae.webp",
+    name: "Brownie Sundae",
+    description: "",
+  },
+  {
+    picture: "/Specialties/Chamango.webp",
+    name: "Chamango",
+    description: "",
+  },
+  {
+    picture: "/Specialties/ChurroSundae.webp",
+    name: "Churro Sundae",
+    description: "",
+  },
+  {
+    picture: "/Specialties/CookieSlammer.webp",
+    name: "Cookie Slammer",
+    description: "",
+  },
+  {
+    picture: "/Specialties/RootbeerFloat.webp",
+    name: "Rootbeer Float",
+    description: "",
+  },
+  {
+    picture: "/Specialties/WaffleBowl.webp",
+    name: "Waffle Bowl",
+    description: "",
+  },
+  {
+    picture: "/Specialties/WaffleCone.webp",
+    name: "Waffle Cone",
+    description: "",
+  },
+];
+
+const shakes = [
+  {
+    picture: "/Shakes/Chocolate.webp",
+    name: "Chocolate",
+    description: "",
+  },
+  {
+    picture: "/Shakes/Chocolate2.webp",
+    name: "Chocolate",
+    description: "",
+  },
+  {
+    picture: "/Shakes/CookiesNCream.webp",
+    name: "Cookies & Cream",
+    description: "",
+  },
+  {
+    picture: "/Shakes/CookiesNCream2.webp",
+    name: "Cookies & Cream",
+    description: "",
+  },
+  {
+    picture: "/Shakes/CookiesNCream3.webp",
+    name: "Cookies & Cream",
+    description: "",
+  },
+  {
+    picture: "/Shakes/SaltedCaramel.webp",
+    name: "Salted Caramel",
+    description: "",
+  },
+  {
+    picture: "/Shakes/Strawberry.webp",
+    name: "Strawberry",
+    description: "",
+  },
+  {
+    picture: "/Shakes/Strawberry2.webp",
+    name: "Strawberry",
+    description: "",
+  },
+  {
+    picture: "/Shakes/Strawberry3.webp",
+    name: "Strawberry",
+    description: "",
+  },
+  {
+    picture: "/Shakes/Vanilla.webp",
+    name: "Vanilla",
+    description: "",
+  },
+  {
+    picture: "/Shakes/Vanilla2.webp",
+    name: "Vanilla",
+    description: "",
+  },
+];
+
 const combos = [
   {
     picture: "/SnowConeCombos/BerryBerryGood.webp",
@@ -103,6 +204,8 @@ const Contact = () => {
           <Syrups />
           <Toppings />
           <MenuItems data={combos} />
+          <MenuItems data={shakes} />
+          <MenuItems data={specialties} />
         </div>
       </div>
     </>
