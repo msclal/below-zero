@@ -224,16 +224,89 @@ const Contact = () => {
                 width="1"
                 height="1"
               />
-              {isClicked === "SHAVED ICE" && <Sizes />}
-              {isClicked === "SHAVED ICE COMBOS" && <IceCream />}
-              {isClicked === "ICE CREAM" && <Syrups />}
-              {isClicked === "SHAKES" && <Toppings />}
+              {isClicked === "SHAVED ICE" && (
+                <div className="flex flex-col justify-center">
+                  <div className="pt-[2%]">
+                    <div className="font-semibold text-2xl">SHAVED ICE</div>
+                    <div className="text-text-subtext font-extralight w-6/12">
+                      provide not only the best product, but an excellent
+                      customer service. We stand for quality, values and the
+                      charm that only
+                    </div>
+                  </div>
+                  <div className="space-y-[5%] pb-[3%] pt-[5%]">
+                    <Sizes />
+                    <Syrups />
+                  </div>
+                </div>
+              )}
+              {isClicked === "SHAVED ICE COMBOS" && (
+                <div className="flex flex-col justify-center">
+                  <div className="pt-[2%]">
+                    <div className="font-semibold text-2xl">
+                      SHAVED ICE COMBOS
+                    </div>
+                    <div className="text-text-subtext font-extralight w-6/12">
+                      provide not only the best product, but an excellent
+                      customer service. We stand for quality, values and the
+                      charm that only
+                    </div>
+                  </div>
+                  <div className="space-y-[5%] pb-[3%] pt-[5%]">
+                    <Sizes />
+                    <IceCream />
+                    <Syrups />
+                    <MenuItems data={combos} />
+                  </div>
+                </div>
+              )}
+              {isClicked === "ICE CREAM" && (
+                <div className="flex flex-col justify-center">
+                  <div className="pt-[2%]">
+                    <div className="font-semibold text-2xl">ICE CREAM</div>
+                    <div className="text-text-subtext font-extralight w-6/12">
+                      provide not only the best product, but an excellent
+                      customer service. We stand for quality, values and the
+                      charm that only
+                    </div>
+                  </div>
+                  <div className="space-y-[5%] pb-[3%] pt-[5%]">
+                    <IceCream />
+                    <Toppings />
+                  </div>
+                </div>
+              )}
+              {isClicked === "SHAKES" && (
+                <div className="flex flex-col justify-center">
+                  <div className="pt-[2%]">
+                    <div className="font-semibold text-2xl">SHAKES</div>
+                    <div className="text-text-subtext font-extralight w-6/12">
+                      provide not only the best product, but an excellent
+                      customer service. We stand for quality, values and the
+                      charm that only
+                    </div>
+                  </div>
+                  <div className="space-y-[5%] pb-[3%] pt-[5%]">
+                    <Toppings />
+                    <MenuItems data={shakes} />
+                  </div>
+                </div>
+              )}
               {isClicked === "HOUSE SPECIALTIES" && (
                 <div className="flex flex-col justify-center">
-                  {/* <div */}
-                  <MenuItems data={combos} />
-                  <MenuItems data={shakes} />
-                  <MenuItems data={specialties} />
+                  <div className="pt-[2%]">
+                    <div className="font-semibold text-2xl">
+                      HOUSE SPECIALTIES
+                    </div>
+                    <div className="text-text-subtext font-extralight w-6/12">
+                      provide not only the best product, but an excellent
+                      customer service. We stand for quality, values and the
+                      charm that only
+                    </div>
+                  </div>
+                  <div className="space-y-[5%] pb-[3%] pt-[5%]">
+                    <MenuItems data={specialties} />
+                  </div>
                 </div>
               )}
             </div>
