@@ -5,6 +5,7 @@ import Syrups from "@/components/Menu/StepSyrup";
 import Sizes from "@/components/Menu/StepSizes";
 import Toppings from "@/components/Menu/StepToppings";
 import MenuItems from "@/components/Menu/MenuItems";
+import Banner from "/public/menu/banner.webp";
 
 const specialties = [
   {
@@ -192,6 +193,7 @@ const combos = [
 
 import Menubar from "../../components/Menu/Menubar";
 import Head from "next/head";
+import Image from "next/image";
 
 const Contact = () => {
   const [isClicked, setIsClicked] = useState("SHAVED ICE");
@@ -203,20 +205,40 @@ const Contact = () => {
       <Head>
         <title>Below Zero: Shaved Ice | Menu</title>
       </Head>
-      <Menubar selectedMenuItem={isClicked} onMenuItemClick={handleClick} />
-      <div className="flex flex-col items-center min-h-screen gap-y-10 lg:gap-y-20 pt-36">
-        <div className="flex justify-end flex-col max-sm:w-10/12 sm:w-10/12 lg:w-7/12 space-y-[3%]">
-          {isClicked === "SHAVED ICE" && <Sizes />}
-          {isClicked === "SHAVED ICE COMBOS" && <IceCream />}
-          {isClicked === "ICE CREAM" && <Syrups />}
-          {isClicked === "SHAKES" && <Toppings />}
-          {isClicked === "HOUSE SPECIALTIES" && (
-            <>
-              <MenuItems data={combos} />
-              <MenuItems data={shakes} />
-              <MenuItems data={specialties} />
-            </>
-          )}
+      <div className="flex justify-center">
+        <div className="flex pt-36 w-10/12 ">
+          <div className="w-4/12">
+            <Menubar
+              selectedMenuItem={isClicked}
+              onMenuItemClick={handleClick}
+            />
+          </div>
+
+          <div className="flex flex-col items-center min-h-screen gap-y-10 lg:gap-y-20 w-full">
+            <div className="flex justify-end flex-col w-full space-y-[3%] max-sm:w-10/12 sm:w-10/12 lg:w-10/12">
+              <Image
+                src={Banner}
+                alt="Landing"
+                layout="responsive"
+                className="rounded"
+                width="1"
+                height="1"
+              />
+              {isClicked === "SHAVED ICE" && <Sizes />}
+              {isClicked === "SHAVED ICE COMBOS" && <IceCream />}
+              {isClicked === "ICE CREAM" && <Syrups />}
+              {isClicked === "SHAKES" && <Toppings />}
+              {isClicked === "HOUSE SPECIALTIES" && (
+                <div className="flex flex-col justify-center">
+                  {/* <div */}
+                  <MenuItems data={combos} />
+                  <MenuItems data={shakes} />
+                  <MenuItems data={specialties} />
+                </div>
+              )}
+            </div>
+          </div>
+          {/* max-sm:w-10/12 sm:w-10/12 lg:w-7/12 */}
         </div>
       </div>
     </>

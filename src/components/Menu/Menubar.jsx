@@ -3,7 +3,7 @@ import React from "react";
 
 const Menubar = ({ selectedMenuItem, onMenuItemClick }) => {
   return (
-    <div className="relative flex flex-col w-1/6 font-medium gap-y-3.5">
+    <div className="relative flex flex-col w-full font-medium gap-y-3.5 ">
       <p
         className={`p-4 rounded-r-lg cursor-pointer transition-all duration-300 ease-in-out hover:bg-below-zero-blue-200/90 hover:text-white   ${selectedMenuItem === "SHAVED ICE" ? "bg-below-zero-blue-200 text-white" : "text-black bg-white border"}`}
         onClick={() => onMenuItemClick("SHAVED ICE")}
