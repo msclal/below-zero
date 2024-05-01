@@ -12,7 +12,7 @@ const Footer = () => {
       <Marquee
         autoFill
         speed={75}
-        className="py-2.5 text-5xl xl:text-8xl font-semibold sm:p-5 bg-primary font-outfit absolute -z-[10] text-white mt-10"
+        className="py-2.5 text-5xl xl:text-8xl font-semibold sm:p-5 bg-primary font-outfit absolute -z-[10] text-white"
       >
         BELOW ZERO SHAVED ICE
         <div className="w-3/4 px-4 mx-auto sm:px-10 sm:w-4/5 xl:w-full">

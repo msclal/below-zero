@@ -6,6 +6,10 @@ import Sizes from "@/components/Menu/StepSizes";
 import Toppings from "@/components/Menu/StepToppings";
 import MenuItems from "@/components/Menu/MenuItems";
 import Banner from "/public/menu/banner.webp";
+import IceCreamBanner from "/public/menu/IceCream.webp";
+import Menubar from "../../components/Menu/Menubar";
+import Head from "next/head";
+import Image from "next/image";
 
 const specialties = [
   {
@@ -191,10 +195,6 @@ const combos = [
   },
 ];
 
-import Menubar from "../../components/Menu/Menubar";
-import Head from "next/head";
-import Image from "next/image";
-
 const Contact = () => {
   const [isClicked, setIsClicked] = useState("SHAVED ICE");
   const handleClick = (item) => {
@@ -207,16 +207,16 @@ const Contact = () => {
         <title>Below Zero: Shaved Ice | Menu</title>
       </Head>
       <div className="flex justify-center">
-        <div className="flex pt-36  max-lg:space-x-12 ">
-          <div className="w-5/12 ">
+        <div className="flex pt-36 max-lg:space-x-12 ">
+          <div className="w-5/12">
             <Menubar
               selectedMenuItem={isClicked}
               onMenuItemClick={handleClick}
             />
           </div>
 
-          <div className="flex flex-col items-center min-h-screen gap-y-10 lg:gap-y-20 w-full  pr-[5%]">
-            <div className="flex justify-end flex-col w-full space-y-[3%] max-sm:w-10/12 sm:w-full lg:w-10/12 ">
+          <div className="flex flex-col items-center min-h-screen gap-y-10 lg:gap-y-20 w-full  pr-[5%] ">
+            <div className="flex justify-end flex-col w-full space-y-[3%] max-sm:w-10/12 sm:w-full lg:w-10/12">
               <Image
                 src={Banner}
                 alt="Landing"
@@ -229,7 +229,7 @@ const Contact = () => {
                 <div className="flex flex-col justify-center">
                   <div className="pt-[2%]">
                     <div className="font-semibold text-2xl">SHAVED ICE</div>
-                    <div className="text-text-subtext font-extralight w-6/12">
+                    <div className="text-text-subtext font-extralight sm:w-8/12 xl:w-6/12">
                       provide not only the best product, but an excellent
                       customer service. We stand for quality, values and the
                       charm that only
@@ -247,7 +247,7 @@ const Contact = () => {
                     <div className="font-semibold text-2xl">
                       SHAVED ICE COMBOS
                     </div>
-                    <div className="text-text-subtext font-extralight w-6/12">
+                    <div className="text-text-subtext font-extralight sm:w-8/12 xl:w-6/12">
                       provide not only the best product, but an excellent
                       customer service. We stand for quality, values and the
                       charm that only
@@ -265,7 +265,7 @@ const Contact = () => {
                 <div className="flex flex-col justify-center">
                   <div className="pt-[2%]">
                     <div className="font-semibold text-2xl">ICE CREAM</div>
-                    <div className="text-text-subtext font-extralight w-6/12">
+                    <div className="text-text-subtext font-extralight sm:w-8/12 xl:w-6/12">
                       provide not only the best product, but an excellent
                       customer service. We stand for quality, values and the
                       charm that only
@@ -277,13 +277,23 @@ const Contact = () => {
                       <Toppings step="2" />
                     </div>
                   </div>
+                  <div className="mt-[10%]">
+                    <Image
+                      src={IceCreamBanner}
+                      alt="Thrifty Logo"
+                      layout="responsive"
+                      className="rounded-xl"
+                      width="1"
+                      height="1"
+                    />
+                  </div>
                 </div>
               )}
               {isClicked === "SHAKES" && (
                 <div className="flex flex-col justify-center">
                   <div className="pt-[2%]">
                     <div className="font-semibold text-2xl">SHAKES</div>
-                    <div className="text-text-subtext font-extralight sm:w-8/12 lg:w-6/12">
+                    <div className="text-text-subtext font-extralight sm:w-8/12 xl:w-6/12">
                       provide not only the best product, but an excellent
                       customer service. We stand for quality, values and the
                       charm that only
@@ -303,7 +313,7 @@ const Contact = () => {
                     <div className="font-semibold text-2xl">
                       HOUSE SPECIALTIES
                     </div>
-                    <div className="text-text-subtext font-extralight w-6/12">
+                    <div className="text-text-subtext font-extralight sm:w-8/12 xl:w-6/12">
                       provide not only the best product, but an excellent
                       customer service. We stand for quality, values and the
                       charm that only
