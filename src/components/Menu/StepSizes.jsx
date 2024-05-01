@@ -5,14 +5,16 @@ import Large from "/public/menu/SizeLarge.webp";
 import XL from "/public/menu/SizeXL.webp";
 import React from "react";
 
-const Steps = () => {
+const Steps = ({ step }) => {
   return (
     <>
       <div className="flex flex-col w-full">
         <div className="flex items-center">
-          <div className="absolute font-medium border-8 border-primary border-xl text-primary text-lg rounded-full bg-white flex h-[55px] w-[55px] items-center justify-center">
-            1
-          </div>
+          {step !== "" && (
+            <div className="absolute font-medium border-8 border-primary border-xl text-primary text-lg rounded-full bg-white flex h-[55px] w-[55px] items-center justify-center">
+              {step}
+            </div>
+          )}
           <div className="flex justify-start w-full py-3 pl-12 ml-5 text-white rounded-tr bg-primary font-montserrat">
             CHOOSE CUP SIZE
           </div>
