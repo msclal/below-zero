@@ -14,8 +14,8 @@ const Steps = () => {
             CHOOSE ONE ICE CREAM FLAVOR
           </div>
         </div>{" "}
-        <div className="border ml-5 rounded-b flex max-sm:flex-col  max-sm:p-8 sm:py-8 ">
-          <div className="ml-[5%]">
+        <div className="border ml-5 rounded-b flex justify-between max-sm:flex-col  max-sm:p-8 sm:py-8 ">
+          <div className="ml-[5%] ">
             <li>Birthday Cake</li>
             <li>Black Cherry</li>
             <li>Butter Pecan</li>
@@ -27,7 +27,7 @@ const Steps = () => {
             <li>Cookies n Cream</li>
             <li>Cookie Dough</li>
           </div>
-          <div className="ml-[5%]">
+          <div className="ml-[5%] ">
             <li>Cotton Candy</li>
             <li>Green Tea</li>
             <li>Mint n Chip</li>
@@ -38,10 +38,10 @@ const Steps = () => {
             <li>Strawberry</li>
             <li>Vanilla</li>
           </div>
-          <div className="sm:w-5/12 ">
+          <div className="max-sm:mt-[15%] lg:w-3/12 mr-[9%]">
             <Image
               src={Thrifty}
-              alt="Landing"
+              alt="Thrifty Logo"
               layout="responsive"
               className="rounded-xl"
               width="1"

@@ -1,6 +1,7 @@
 import IceCream from "@/components/Menu/StepIceCream";
 import Syrups from "@/components/Menu/StepSyrup";
 import Sizes from "@/components/Menu/StepSizes";
+import Toppings from "@/components/Menu/StepToppings";
 import React from "react";
 
 const Contact = () => {
@@ -10,6 +11,7 @@ const Contact = () => {
         <Sizes />
         <IceCream />
         <Syrups />
+        <Toppings />
       </div>
     </div>
   );
