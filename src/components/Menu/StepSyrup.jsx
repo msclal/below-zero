@@ -1,0 +1,91 @@
+// import Image from "next/image";
+// import Thrifty from "/public/thrifty.webp";
+import React from "react";
+
+const Steps = () => {
+  return (
+    <>
+      <div className="flex flex-col w-full">
+        <div className="flex items-center">
+          <div className="absolute font-medium border-8 border-primary border-xl text-primary text-lg rounded-full bg-white flex h-[55px] w-[55px] items-center justify-center">
+            3
+          </div>
+          <div className="flex justify-start w-full py-3 pl-12 ml-5 text-white rounded-tr max-sm:hidden bg-primary font-montserrat">
+            CHOOSE UP TO THREE SHAVED ICE FLAVORS
+          </div>
+          <div className="flex justify-start w-full py-3 pl-12 ml-5 text-white rounded-tr sm:hidden bg-primary font-montserrat">
+            CHOOSE UP TO 3 FLAVORS
+          </div>
+        </div>{" "}
+        <div className="border ml-5 max-lg:space-y-[8%] rounded-b flex max-lg:flex-col max-lg:items-center max-lg:p-8 pr-8 sm:py-8">
+          <div className="lg:ml-[5%] max-lg:w-full w-6/12 ">
+            <p className="pb-3 text-lg font-medium">Non-Dairy</p>
+            <div className="flex max-sm:flex-wrap sm:space-x-[8%]">
+              {/* <div> */}
+              <div className="w-fit max-sm:mr-[7%]">
+                <li>Bahama Mama</li>
+                <li>Banana</li>
+                <li>Blueberry</li>
+                <li>Blue Gum</li>
+                <li>Caramel</li>
+                <li>Cherry</li>
+                <li>Cola</li>
+                <li>Coconut</li>
+              </div>
+              <div className="w-fit">
+                <li>Guava</li>
+                <li>Grape</li>
+                <li>Hawaiian</li>
+                <li>Lemon</li>
+                <li>Lime</li>
+                <li>Margarita</li>
+                <li>Orange</li>
+                <li>Pineapple</li>
+              </div>
+              {/* </div> */}
+              <div className="w-fit max-sm:mt-[7%]">
+                <li>Pomegrante</li>
+                <li>Praline</li>
+                <li>Raspberry</li>
+                <li>Rootbeer</li>
+                <li>S&#39;mores</li>
+                <li>Sour Apple</li>
+                <li>Tamarindo</li>
+              </div>
+            </div>
+          </div>
+          <div className="flex w-6/12 max-lg:w-full">
+            <div className="w-full max-lg:w-full ">
+              <p className="pb-3 text-lg font-medium">With Dairy</p>
+              <div className="flex">
+                <div className="w-full">
+                  <li>Cake Batter</li>
+                  <li>Cookie Dough</li>
+                  <li>Cotton Candy</li>
+                  <li>Dulce de Leche</li>
+                  <li>Pink Gum</li>
+                </div>
+              </div>
+            </div>
+            <div className="w-full max-lg:w-full">
+              <p className="pb-3 text-lg font-medium ">Sugar Free</p>
+              <div className="flex">
+                <div className="w-full">
+                  <li>Blue Raspberry</li>
+                  <li>Mango</li>
+                  <li>Pina Colada</li>
+                  <li>Strawberry</li>
+                  <li>Tiger&#39;s Blood</li>
+                  <li>Vanilla</li>
+                  <li>Watermelon</li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Steps;

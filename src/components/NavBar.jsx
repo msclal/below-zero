@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 // import { Link as ScrollLink } from "react-scroll";
-import BelowZeroLogo from "/public/layout/BelowZeroLogo.svg";
+import BelowZeroLogo from "/public/BelowZeroLogo.svg";
 import Button from "./Button";
 import React, { useEffect, useRef, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -31,7 +31,7 @@ const NavBar = () => {
 
   return (
     <div>
-      <div className="fixed flex justify-center bg-primary-background">
+      <div className="fixed z-10 flex justify-center bg-primary-background">
         <div className="flex items-center justify-between w-11/12 py-6 max-sm:hidden ">
           <div className="max-sm:w-[40%] sm:w-[20%] lg:w-[13%] max-sm:py-[5%]">
             <Image
@@ -75,7 +75,7 @@ const NavBar = () => {
         </div>
         {toggle && (
           <>
-            <div className="sm:hidden w-full absolute top-[80%] z-[100]">
+            <div className="sm:hidden w-full absolute z-10 top-[80%] ">
               <div>
                 <div className="bg-primary text-white flex font-outfit flex-col justify-left items-left space-y-[7%] w-full px-[10%] py-[5%]">
                   <p>HOME</p>

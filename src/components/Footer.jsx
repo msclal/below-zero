@@ -2,9 +2,9 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
-import KABOLogo from "/public/layout/KABOLogo.svg";
-import BelowZeroLogo from "/public/layout/BelowZeroLogo.svg";
-import CircleLogo from "/public/layout/Circle.svg";
+import KABOLogo from "/public/KABOLogo.svg";
+import BelowZeroLogo from "/public/BelowZeroLogo.svg";
+import BelowZeroIcon from "/public/BelowZeroIcon.svg";
 
 const Footer = () => {
   return (
@@ -12,12 +12,12 @@ const Footer = () => {
       <Marquee
         autoFill
         speed={75}
-        className="py-2.5 text-4xl font-semibold sm:p-5 bg-primary font-outfit sm:text-8xl absolute -z-[10]"
+        className="py-2.5 text-5xl xl:text-8xl font-semibold sm:p-5 bg-primary font-outfit absolute -z-[10] text-white mt-10"
       >
-        <p>BELOW ZERO SHAVED ICE</p>
-        <div className="w-3/4 px-4 mx-auto sm:px-10 sm:w-full">
+        BELOW ZERO SHAVED ICE
+        <div className="w-3/4 px-4 mx-auto sm:px-10 sm:w-4/5 xl:w-full">
           <Image
-            src={CircleLogo}
+            src={BelowZeroIcon}
             alt="Landing"
             layout="responsive"
             className=""
