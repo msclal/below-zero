@@ -3,6 +3,9 @@ import Syrups from "@/components/Menu/StepSyrup";
 import Sizes from "@/components/Menu/StepSizes";
 import Toppings from "@/components/Menu/StepToppings";
 import React from "react";
+import MenuItem from "@/components/Menu/MenuItem";
+import CandyLand from "/public/SnowConeCombos/CandyLand.webp";
+// import CandyLand from "/public/SizeLarge.webp";
 
 const Contact = () => {
   return (
@@ -12,6 +15,11 @@ const Contact = () => {
         <IceCream />
         <Syrups />
         <Toppings />
+        <MenuItem
+          name="Candy Land"
+          picture={CandyLand}
+          description="Blue Gum and Pink Gum Shaved Ice with Cotton Candy Ice Cream"
+        />
       </div>
     </div>
   );
