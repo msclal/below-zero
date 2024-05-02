@@ -205,16 +205,16 @@ const Contact = () => {
       <Head>
         <title>Below Zero: Shaved Ice | Menu</title>
       </Head>
-      <div className="flex justify-center flex-col bg-red-500">
-        <div className="flex max-lg:flex-col pt-36  bg-blue-400">
-          <div className="lg:w-5/12 bg-yellow-500">
+      <div className="flex justify-center flex-col ">
+        <div className="flex max-lg:flex-col ">
+          <div className="lg:w-5/12 ">
             <Menubar
               selectedMenuItem={isClicked}
               onMenuItemClick={handleClick}
             />
           </div>
-          <div className="flex flex-col items-center min-h-screen gap-y-10 lg:gap-y-20 w-fit lg:pr-[5%] bg-pink-400">
-            <div className="flex justify-end flex-col w-full space-y-[3%] max-sm:w-10/12 sm:w-full lg:w-10/12 bg-orange-300">
+          <div className="flex flex-col items-center min-h-screen gap-y-10 lg:gap-y-20 w-fit lg:pr-[5%] ">
+            <div className="flex flex-col space-y-[3%] lg:w-10/12 max-lg:w-11/12">
               <Image
                 src={Banner}
                 alt="Landing"
@@ -226,11 +226,13 @@ const Contact = () => {
               {isClicked === "SHAVED ICE" && (
                 <div className="flex flex-col justify-center">
                   <div className="pt-[2%]">
-                    <div className="font-semibold text-2xl">SHAVED ICE</div>
-                    <div className="text-text-subtext font-extralight sm:w-8/12 xl:w-6/12">
+                    <div className="font-semibold text-2xl max-lg:text-center max-lg:text-3xl max-lg:pb-5">
+                      SHAVED ICE
+                    </div>
+                    <div className="text-text-subtext font-extralight lg:w-8/12 xl:w-6/12">
                       provide not only the best product, but an excellent
                       customer service. We stand for quality, values and the
-                      charm that only
+                      charm that only a family business can provide for 12 years
                     </div>
                   </div>
                   <div className="space-y-[5%] pb-[3%] pt-[5%]">
@@ -242,13 +244,13 @@ const Contact = () => {
               {isClicked === "SHAVED ICE COMBOS" && (
                 <div className="flex flex-col justify-center">
                   <div className="pt-[2%]">
-                    <div className="font-semibold text-2xl">
+                    <div className="font-semibold text-2xl max-lg:text-center max-lg:text-3xl max-lg:pb-5">
                       SHAVED ICE COMBOS
                     </div>
-                    <div className="text-text-subtext font-extralight sm:w-8/12 xl:w-6/12">
+                    <div className="text-text-subtext font-extralight lg:w-8/12 xl:w-6/12">
                       provide not only the best product, but an excellent
                       customer service. We stand for quality, values and the
-                      charm that only
+                      charm that only a family business can provide for 12 years
                     </div>
                   </div>
                   <div className="space-y-[5%] pb-[3%] pt-[5%]">
@@ -262,11 +264,13 @@ const Contact = () => {
               {isClicked === "ICE CREAM" && (
                 <div className="flex flex-col justify-center">
                   <div className="pt-[2%]">
-                    <div className="font-semibold text-2xl">ICE CREAM</div>
-                    <div className="text-text-subtext font-extralight sm:w-8/12 xl:w-6/12">
+                    <div className="font-semibold text-2xl max-lg:text-center max-lg:text-3xl max-lg:pb-5">
+                      ICE CREAM
+                    </div>
+                    <div className="text-text-subtext font-extralight lg:w-8/12 xl:w-6/12">
                       provide not only the best product, but an excellent
                       customer service. We stand for quality, values and the
-                      charm that only
+                      charm that only a family business can provide for 12 years
                     </div>
                   </div>
                   <div className="space-y-[5%] pb-[3%] pt-[5%]">
@@ -290,11 +294,13 @@ const Contact = () => {
               {isClicked === "SHAKES" && (
                 <div className="flex flex-col justify-center">
                   <div className="pt-[2%]">
-                    <div className="font-semibold text-2xl">SHAKES</div>
-                    <div className="text-text-subtext font-extralight sm:w-8/12 xl:w-6/12">
+                    <div className="font-semibold text-2xl max-lg:text-center max-lg:text-3xl max-lg:pb-5">
+                      SHAKES
+                    </div>
+                    <div className="text-text-subtext font-extralight lg:w-8/12 xl:w-6/12">
                       provide not only the best product, but an excellent
                       customer service. We stand for quality, values and the
-                      charm that only
+                      charm that only a family business can provide for 12 years
                     </div>
                   </div>
                   <div className="space-y-[5%] pb-[3%] pt-[5%]">
@@ -308,13 +314,13 @@ const Contact = () => {
               {isClicked === "HOUSE SPECIALTIES" && (
                 <div className="flex flex-col justify-center">
                   <div className="pt-[2%]">
-                    <div className="font-semibold text-2xl">
+                    <div className="font-semibold text-2xl max-lg:text-center max-lg:text-3xl max-lg:pb-5">
                       HOUSE SPECIALTIES
                     </div>
-                    <div className="text-text-subtext font-extralight sm:w-8/12 xl:w-6/12">
+                    <div className="text-text-subtext font-extralight lg:w-8/12 xl:w-6/12">
                       provide not only the best product, but an excellent
                       customer service. We stand for quality, values and the
-                      charm that only
+                      charm that only a family business can provide for 12 years
                     </div>
                   </div>
                   <div className="space-y-[5%] pb-[3%] pt-[5%]">

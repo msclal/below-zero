@@ -31,7 +31,7 @@ const NavBar = () => {
 
   return (
     <div>
-      <div className="fixed z-10 flex justify-center bg-primary-background">
+      <div className="z-10 flex justify-center bg-primary-background">
         <div className="flex items-center justify-between w-11/12 py-6 max-sm:hidden ">
           <div className="max-sm:w-[40%] sm:w-[20%] lg:w-[13%] max-sm:py-[5%]">
             <Image
