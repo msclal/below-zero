@@ -3,7 +3,7 @@ import React from "react";
 
 const Menubar = ({ selectedMenuItem, onMenuItemClick }) => {
   return (
-    <div className="w-full max-sm:hidden">
+    <div className="w-full">
       <div className="text-5xl font-semibold text-white bg-primary p-6  pl-[35%] mb-[14pt] rounded-r-2xl">
         MENU
       </div>

@@ -201,22 +201,20 @@ const Contact = () => {
     setIsClicked(item);
   };
   return (
-    // lg:w-10/12 sm:w-11/12
     <>
       <Head>
         <title>Below Zero: Shaved Ice | Menu</title>
       </Head>
-      <div className="flex justify-center">
-        <div className="flex pt-36 max-lg:space-x-12 ">
-          <div className="w-5/12">
+      <div className="flex justify-center flex-col bg-red-500">
+        <div className="flex max-lg:flex-col pt-36  bg-blue-400">
+          <div className="lg:w-5/12 bg-yellow-500">
             <Menubar
               selectedMenuItem={isClicked}
               onMenuItemClick={handleClick}
             />
           </div>
-
-          <div className="flex flex-col items-center min-h-screen gap-y-10 lg:gap-y-20 w-full  pr-[5%] ">
-            <div className="flex justify-end flex-col w-full space-y-[3%] max-sm:w-10/12 sm:w-full lg:w-10/12">
+          <div className="flex flex-col items-center min-h-screen gap-y-10 lg:gap-y-20 w-fit lg:pr-[5%] bg-pink-400">
+            <div className="flex justify-end flex-col w-full space-y-[3%] max-sm:w-10/12 sm:w-full lg:w-10/12 bg-orange-300">
               <Image
                 src={Banner}
                 alt="Landing"
@@ -326,7 +324,6 @@ const Contact = () => {
               )}
             </div>
           </div>
-          {/* max-sm:w-10/12 sm:w-10/12 lg:w-7/12 */}
         </div>
       </div>
     </>
