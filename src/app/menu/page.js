@@ -244,7 +244,7 @@ const Contact = () => {
               {isClicked === "SHAVED ICE COMBOS" && (
                 <div className="flex flex-col justify-center">
                   <div className="pt-[2%]">
-                    <div className="font-semibold text-2xl max-lg:text-center max-lg:text-3xl max-lg:pb-5">
+                    <div className="font-semibold text-2xl max-lg:text-center max-lg:text-3xl pb-3">
                       SHAVED ICE COMBOS
                     </div>
                     <div className="text-text-subtext font-extralight lg:w-8/12 xl:w-6/12">

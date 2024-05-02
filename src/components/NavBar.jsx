@@ -5,6 +5,7 @@ import BelowZeroLogo from "/public/BelowZeroLogo.svg";
 import Button from "./Button";
 import React, { useEffect, useRef, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
+import Link from "next/link";
 // import Link from "next/link";
 
 const NavBar = () => {
@@ -31,24 +32,36 @@ const NavBar = () => {
 
   return (
     <div>
-      <div className="z-10 flex justify-center bg-primary-background">
+      <div className="z-10 flex justify-center bg-primary-background mb-[3%]">
         <div className="flex items-center justify-between w-11/12 py-6 max-sm:hidden ">
           <div className="max-sm:w-[40%] sm:w-[20%] lg:w-[13%] max-sm:py-[5%]">
-            <Image
-              src={BelowZeroLogo}
-              alt="Landing"
-              layout="responsive"
-              className=""
-              width="1"
-              height="1"
-            />
+            <Link href="/" className="text-black w-full no-underline">
+              <Image
+                src={BelowZeroLogo}
+                alt="Landing"
+                layout="responsive"
+                className=""
+                width="1"
+                height="1"
+              />
+            </Link>
           </div>
           <div className="flex items-center w-fit sm:space-x-6 lg:space-x-12">
-            <p>HOME</p>
-            <p>MENU</p>
-            <p>ABOUT</p>
-            <p>SERVICES</p>
-            <Button>CONTACT</Button>
+            <Link href="/" className="text-black w-full no-underline">
+              HOME
+            </Link>
+            <Link href="/menu" className="text-black w-full no-underline">
+              MENU
+            </Link>
+            <Link href="/about" className="text-black w-full no-underline">
+              ABOUT
+            </Link>
+            <Link href="/services" className="text-black w-full no-underline">
+              SERVICES
+            </Link>
+            <Link href="/contact" className="text-black w-full no-underline">
+              <Button>CONTACT</Button>
+            </Link>
           </div>
         </div>
         <div
