@@ -91,11 +91,30 @@ const NavBar = () => {
             <div className="sm:hidden w-full absolute z-10 top-[80%] ">
               <div>
                 <div className="bg-primary text-white flex font-outfit flex-col justify-left items-left space-y-[7%] w-full px-[10%] py-[5%]">
-                  <p>HOME</p>
-                  <p>MENU</p>
-                  <p>ABOUT</p>
-                  <p>SERVICES</p>
-                  <p>CONTACT</p>
+                  <Link href="/" className="text-black w-full no-underline">
+                    HOME
+                  </Link>
+                  <Link href="/menu" className="text-black w-full no-underline">
+                    MENU
+                  </Link>
+                  <Link
+                    href="/about"
+                    className="text-black w-full no-underline"
+                  >
+                    ABOUT
+                  </Link>
+                  <Link
+                    href="/services"
+                    className="text-black w-full no-underline"
+                  >
+                    SERVICES
+                  </Link>
+                  <Link
+                    href="/contact"
+                    className="text-black w-full no-underline"
+                  >
+                    CONTACT
+                  </Link>
                 </div>
               </div>
             </div>
