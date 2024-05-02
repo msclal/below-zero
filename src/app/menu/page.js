@@ -226,7 +226,7 @@ const Contact = () => {
               {isClicked === "SHAVED ICE" && (
                 <div className="flex flex-col justify-center">
                   <div className="pt-[2%]">
-                    <div className="font-semibold text-2xl max-lg:text-center max-lg:text-3xl max-lg:pb-5">
+                    <div className="font-semibold text-2xl max-lg:text-center max-lg:text-3xl max-lg:pb-5  pb-3">
                       SHAVED ICE
                     </div>
                     <div className="text-text-subtext font-extralight lg:w-8/12 xl:w-6/12">
@@ -264,7 +264,7 @@ const Contact = () => {
               {isClicked === "ICE CREAM" && (
                 <div className="flex flex-col justify-center">
                   <div className="pt-[2%]">
-                    <div className="font-semibold text-2xl max-lg:text-center max-lg:text-3xl max-lg:pb-5">
+                    <div className="font-semibold text-2xl max-lg:text-center max-lg:text-3xl max-lg:pb-5  pb-3">
                       ICE CREAM
                     </div>
                     <div className="text-text-subtext font-extralight lg:w-8/12 xl:w-6/12">
@@ -294,7 +294,7 @@ const Contact = () => {
               {isClicked === "SHAKES" && (
                 <div className="flex flex-col justify-center">
                   <div className="pt-[2%]">
-                    <div className="font-semibold text-2xl max-lg:text-center max-lg:text-3xl max-lg:pb-5">
+                    <div className="font-semibold text-2xl max-lg:text-center max-lg:text-3xl max-lg:pb-5  pb-3">
                       SHAKES
                     </div>
                     <div className="text-text-subtext font-extralight lg:w-8/12 xl:w-6/12">
@@ -314,7 +314,7 @@ const Contact = () => {
               {isClicked === "HOUSE SPECIALTIES" && (
                 <div className="flex flex-col justify-center">
                   <div className="pt-[2%]">
-                    <div className="font-semibold text-2xl max-lg:text-center max-lg:text-3xl max-lg:pb-5">
+                    <div className="font-semibold text-2xl max-lg:text-center max-lg:text-3xl max-lg:pb-5  pb-3">
                       HOUSE SPECIALTIES
                     </div>
                     <div className="text-text-subtext font-extralight lg:w-8/12 xl:w-6/12">
