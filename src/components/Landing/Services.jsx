@@ -6,19 +6,12 @@ import Button from "../Button";
 const Services = () => {
   return (
     <>
-      <div className="flex  justify-center py-[6%] pt-36 bg-secondary-background">
+      <div className="flex justify-center py-[6%] bg-secondary-background">
         <div className="sm:w-10/12 lg:w-8/12 flex max-sm:flex-col max-sm:items-center space-x-[7%]">
           <div className="sm:w-4/12 max-sm:w-10/12">
-            <Image
-              src={Storefront}
-              alt="Landing"
-              layout="responsive"
-              className="rounded-xl"
-              width="1"
-              height="1"
-            />
+            <Image src={Storefront} alt="Landing" className="rounded-xl" />
           </div>
-          <div className="max-sm:10/12 sm:w-7/12 flex flex-col justify-center">
+          <div className="flex flex-col justify-center max-sm:10/12 sm:w-7/12">
             <div className="max-sm:text-3xl sm:text-4xl font-semibold mb-[3%] max-sm:mt-[5%]">
               Twelve Years of <br className="max-lg:hidden" />{" "}
               <span className="text-primary">Serving</span>{" "}
@@ -33,24 +26,24 @@ const Services = () => {
             <Button>OUR SERVICES</Button>
             <div className="max-lg:hidden flex mt-[10%] space-x-[5%]">
               <div>
-                <div className="font-medium pb-2">CATERING</div>
-                <div className="font-light text-text-subtext text-sm">
+                <div className="pb-2 font-medium">CATERING</div>
+                <div className="text-sm font-light text-text-subtext">
                   provide not only the best product, but an excellent customer
                   service. We stand for quality, values and the charm that only
                   a family business can provide.
                 </div>
               </div>
               <div>
-                <div className="font-medium pb-2">FUNDRAISING</div>
-                <div className="font-light text-text-subtext text-sm">
+                <div className="pb-2 font-medium">FUNDRAISING</div>
+                <div className="text-sm font-light text-text-subtext">
                   provide not only the best product, but an excellent customer
                   service. We stand for quality, values and the charm that only
                   a family business can provide.
                 </div>
               </div>
               <div>
-                <div className="font-medium pb-2">EVENTS</div>
-                <div className="font-light text-text-subtext text-sm">
+                <div className="pb-2 font-medium">EVENTS</div>
+                <div className="text-sm font-light text-text-subtext">
                   provide not only the best product, but an excellent customer
                   service. We stand for quality, values and the charm that only
                   a family business can provide.

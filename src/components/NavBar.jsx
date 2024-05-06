@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
 // import { Link as ScrollLink } from "react-scroll";
 import BelowZeroLogo from "/public/BelowZeroLogo.svg";
 import Button from "./Button";
@@ -30,65 +31,66 @@ const NavBar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div>
-      <div className="fixed z-10 flex justify-center bg-primary-background">
-        <div className="flex items-center justify-between w-11/12 py-6 max-sm:hidden ">
-          <div className="max-sm:w-[40%] sm:w-[20%] lg:w-[13%] max-sm:py-[5%]">
-            <Image
-              src={BelowZeroLogo}
-              alt="Landing"
-              layout="responsive"
-              className=""
-              width="1"
-              height="1"
-            />
-          </div>
-          <div className="flex items-center w-fit sm:space-x-6 lg:space-x-12">
-            <p>HOME</p>
-            <p>MENU</p>
-            <p>ABOUT</p>
-            <p>SERVICES</p>
-            <Button>CONTACT</Button>
-          </div>
+    <div className="fixed z-10 flex justify-center bg-primary-background">
+      <div className="flex items-center justify-between w-11/12 py-6 max-sm:hidden ">
+        <div className="max-sm:w-[40%] sm:w-[20%] lg:w-[13%] max-sm:py-[5%]">
+          <Image
+            src={BelowZeroLogo}
+            alt="Landing"
+            layout="responsive"
+            className=""
+            width="1"
+            height="1"
+          />
+        </div>
+        <div className="flex items-center w-fit sm:space-x-6 lg:space-x-12">
+          <p>HOME</p>
+          <p>MENU</p>
+          <p>ABOUT</p>
+          <p>SERVICES</p>
+          <Button>CONTACT</Button>
+        </div>
+      </div>
+      <div
+        ref={componentRef}
+        className="sm:hidden w-full flex justify-between items-center px-4 py-3 max-sm:w-[90%] sm:w-[20%] lg:w-[13%]"
+      >
+        <div className="max-sm:w-[40%] sm:w-[20%] lg:w-[13%] max-sm:py-[5%]">
+          <Image
+            src={BelowZeroLogo}
+            alt="Landing"
+            layout="responsive"
+            className=""
+            width="1"
+            height="1"
+          />
         </div>
         <div
           ref={componentRef}
-          className="sm:hidden w-full flex justify-between items-center px-4 py-3 max-sm:w-[90%] sm:w-[20%] lg:w-[13%]"
+          className="text-xl font-bold text-primary"
+          onClick={() => setToggle(!toggle)}
         >
-          <div className="max-sm:w-[40%] sm:w-[20%] lg:w-[13%] max-sm:py-[5%]">
-            <Image
-              src={BelowZeroLogo}
-              alt="Landing"
-              layout="responsive"
-              className=""
-              width="1"
-              height="1"
-            />
-          </div>
-          <div
-            ref={componentRef}
-            className="text-xl font-bold text-primary"
-            onClick={() => setToggle(!toggle)}
-          >
-            <RxHamburgerMenu />
-          </div>
+          <RxHamburgerMenu />
         </div>
-        {toggle && (
-          <>
-            <div className="sm:hidden w-full absolute z-10 top-[80%] ">
-              <div>
-                <div className="bg-primary text-white flex font-outfit flex-col justify-left items-left space-y-[7%] w-full px-[10%] py-[5%]">
-                  <p>HOME</p>
-                  <p>MENU</p>
-                  <p>ABOUT</p>
-                  <p>SERVICES</p>
-                  <p>CONTACT</p>
-                </div>
-              </div>
-            </div>
-          </>
-        )}
       </div>
+      {toggle && (
+        <motion.div
+          initial={{ opacity: 0, y: 0 }}
+          animate={{ opacity: 1, x: 0, transition: { delay: 0.07 } }}
+          exit={{ opacity: 0, y: 0 }}
+          className="sm:hidden w-full absolute z-10 top-[80%] "
+        >
+          <div>
+            <div className="bg-primary text-white flex font-outfit flex-col justify-left items-left space-y-[7%] w-full px-[10%] py-[5%]">
+              <p>HOME</p>
+              <p>MENU</p>
+              <p>ABOUT</p>
+              <p>SERVICES</p>
+              <p>CONTACT</p>
+            </div>
+          </div>
+        </motion.div>
+      )}
     </div>
   );
 };

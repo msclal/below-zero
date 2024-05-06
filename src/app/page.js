@@ -1,14 +1,16 @@
 import Rewards from "@/components/Landing/Rewards";
 import Services from "@/components/Landing/Services";
-import React from "react";
 
-const page = () => {
+import Carousel from "../components/Landing/Carousel";
+
+const Landing = () => {
   return (
     <>
+      <Carousel />
       <Services />
       <Rewards />
     </>
   );
 };
 
-export default page;
+export default Landing;
