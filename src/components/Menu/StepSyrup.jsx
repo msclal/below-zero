@@ -2,14 +2,16 @@
 // import Thrifty from "/public/thrifty.webp";
 import React from "react";
 
-const Steps = () => {
+const Steps = ({ step }) => {
   return (
     <>
       <div className="flex flex-col w-full">
         <div className="flex items-center">
-          <div className="absolute font-medium border-8 border-primary border-xl text-primary text-lg rounded-full bg-white flex h-[55px] w-[55px] items-center justify-center">
-            3
-          </div>
+          {step !== "" && (
+            <div className="absolute font-medium border-8 border-primary border-xl text-primary text-lg rounded-full bg-white flex h-[55px] w-[55px] items-center justify-center">
+              {step}
+            </div>
+          )}
           <div className="flex justify-start w-full py-3 pl-12 ml-5 text-white rounded-tr max-sm:hidden bg-primary font-montserrat">
             CHOOSE UP TO THREE SHAVED ICE FLAVORS
           </div>
@@ -21,8 +23,7 @@ const Steps = () => {
           <div className="lg:ml-[5%] max-lg:w-full w-6/12 ">
             <p className="pb-3 text-lg font-medium">Non-Dairy</p>
             <div className="flex max-sm:flex-wrap sm:space-x-[8%]">
-              {/* <div> */}
-              <div className="w-fit max-sm:mr-[7%]">
+              <div className="grid sm:grid-cols-2 2xl:grid-cols-3 gap-x-4 max-sm:mr-[7%]">
                 <li>Bahama Mama</li>
                 <li>Banana</li>
                 <li>Blueberry</li>
@@ -31,8 +32,6 @@ const Steps = () => {
                 <li>Cherry</li>
                 <li>Cola</li>
                 <li>Coconut</li>
-              </div>
-              <div className="w-fit">
                 <li>Guava</li>
                 <li>Grape</li>
                 <li>Hawaiian</li>
@@ -41,9 +40,6 @@ const Steps = () => {
                 <li>Margarita</li>
                 <li>Orange</li>
                 <li>Pineapple</li>
-              </div>
-              {/* </div> */}
-              <div className="w-fit max-sm:mt-[7%]">
                 <li>Pomegrante</li>
                 <li>Praline</li>
                 <li>Raspberry</li>

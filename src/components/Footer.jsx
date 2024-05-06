@@ -12,7 +12,7 @@ const Footer = () => {
       <Marquee
         autoFill
         speed={75}
-        className="py-2.5 text-5xl xl:text-8xl font-semibold sm:p-5 bg-primary font-outfit absolute -z-[10] text-white mt-10"
+        className="py-2.5 text-5xl xl:text-8xl font-semibold sm:p-5 bg-primary font-outfit absolute -z-[10] text-white"
       >
         BELOW ZERO SHAVED ICE
         <div className="w-3/4 px-4 mx-auto sm:px-10 sm:w-4/5 xl:w-full">
@@ -47,8 +47,7 @@ const Footer = () => {
 
           <div className="flex flex-col w-full">
             <span className="mb-2 font-semibold">STORE HOURS</span>
-            <span>Tuesday-Saturday: 12:00PM-6:30PM</span>
-            Sunday: 12:00PM - 6:00PM
+            <span>Everyday: 12:00PM-7:00PM</span>
           </div>
 
           <div className="flex flex-col w-full">
