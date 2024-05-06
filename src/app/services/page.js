@@ -26,7 +26,7 @@ const Services = () => {
     }, 2000);
 
     return () => clearTimeout(timer);
-  }, [pathname]);
+  }, [pathname, router]);
   return (
     <div className="pt-20 mb-20 space-y-20 sm:mb-28 sm:space-y-28">
       <Info />
