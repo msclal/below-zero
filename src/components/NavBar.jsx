@@ -32,10 +32,10 @@ const NavBar = () => {
 
   return (
     <div>
-      <div className="z-10 flex justify-center bg-primary-background mb-[3%]">
+      <div className="sticky z-10 flex justify-center bg-primary-background mb-[3%]">
         <div className="flex items-center justify-between w-11/12 py-6 max-sm:hidden ">
           <div className="max-sm:w-[40%] sm:w-[20%] lg:w-[13%] max-sm:py-[5%]">
-            <Link href="/" className="text-black w-full no-underline">
+            <Link href="/" className="w-full text-black no-underline">
               <Image
                 src={BelowZeroLogo}
                 alt="Landing"
@@ -47,19 +47,19 @@ const NavBar = () => {
             </Link>
           </div>
           <div className="flex items-center w-fit sm:space-x-6 lg:space-x-12">
-            <Link href="/" className="text-black w-full no-underline">
+            <Link href="/" className="w-full text-black no-underline">
               HOME
             </Link>
-            <Link href="/menu" className="text-black w-full no-underline">
+            <Link href="/menu" className="w-full text-black no-underline">
               MENU
             </Link>
-            <Link href="/about" className="text-black w-full no-underline">
+            <Link href="/about" className="w-full text-black no-underline">
               ABOUT
             </Link>
-            <Link href="/services" className="text-black w-full no-underline">
+            <Link href="/services" className="w-full text-black no-underline">
               SERVICES
             </Link>
-            <Link href="/contact" className="text-black w-full no-underline">
+            <Link href="/contact" className="w-full text-black no-underline">
               <Button>CONTACT</Button>
             </Link>
           </div>
@@ -91,27 +91,27 @@ const NavBar = () => {
             <div className="sm:hidden w-full absolute z-10 top-[80%] ">
               <div>
                 <div className="bg-primary text-white flex font-outfit flex-col justify-left items-left space-y-[7%] w-full px-[10%] py-[5%]">
-                  <Link href="/" className="text-black w-full no-underline">
+                  <Link href="/" className="w-full text-black no-underline">
                     HOME
                   </Link>
-                  <Link href="/menu" className="text-black w-full no-underline">
+                  <Link href="/menu" className="w-full text-black no-underline">
                     MENU
                   </Link>
                   <Link
                     href="/about"
-                    className="text-black w-full no-underline"
+                    className="w-full text-black no-underline"
                   >
                     ABOUT
                   </Link>
                   <Link
                     href="/services"
-                    className="text-black w-full no-underline"
+                    className="w-full text-black no-underline"
                   >
                     SERVICES
                   </Link>
                   <Link
                     href="/contact"
-                    className="text-black w-full no-underline"
+                    className="w-full text-black no-underline"
                   >
                     CONTACT
                   </Link>

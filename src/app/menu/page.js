@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import IceCream from "@/components/Menu/StepIceCream";
 import Syrups from "@/components/Menu/StepSyrup";
 import Sizes from "@/components/Menu/StepSizes";
@@ -10,6 +10,7 @@ import IceCreamBanner from "/public/menu/IceCream.webp";
 import Menubar from "../../components/Menu/Menubar";
 import Head from "next/head";
 import Image from "next/image";
+import { useSearchParams } from "next/navigation";
 
 const specialties = [
   {
@@ -196,16 +197,25 @@ const combos = [
 ];
 
 const Contact = () => {
+  const searchParams = useSearchParams();
+
   const [isClicked, setIsClicked] = useState("SHAVED ICE");
   const handleClick = (item) => {
     setIsClicked(item);
   };
+  useEffect(() => {
+    const search = searchParams.get("filter");
+    if (search) {
+      setIsClicked(search.toUpperCase());
+      console.log(search);
+    }
+  }, [searchParams]);
   return (
     <>
       <Head>
         <title>Below Zero: Shaved Ice | Menu</title>
       </Head>
-      <div className="flex justify-center flex-col ">
+      <div className="flex flex-col justify-center ">
         <div className="flex max-lg:flex-col ">
           <div className="lg:w-5/12 ">
             <Menubar
@@ -226,7 +236,7 @@ const Contact = () => {
               {isClicked === "SHAVED ICE" && (
                 <div className="flex flex-col justify-center">
                   <div className="pt-[2%]">
-                    <div className="font-semibold text-2xl max-lg:text-center max-lg:text-3xl max-lg:pb-5  pb-3">
+                    <div className="pb-3 text-2xl font-semibold max-lg:text-center max-lg:text-3xl max-lg:pb-5">
                       SHAVED ICE
                     </div>
                     <div className="text-text-subtext font-extralight lg:w-8/12 xl:w-6/12">
@@ -244,7 +254,7 @@ const Contact = () => {
               {isClicked === "SHAVED ICE COMBOS" && (
                 <div className="flex flex-col justify-center">
                   <div className="pt-[2%]">
-                    <div className="font-semibold text-2xl max-lg:text-center max-lg:text-3xl pb-3">
+                    <div className="pb-3 text-2xl font-semibold max-lg:text-center max-lg:text-3xl">
                       SHAVED ICE COMBOS
                     </div>
                     <div className="text-text-subtext font-extralight lg:w-8/12 xl:w-6/12">
@@ -264,7 +274,7 @@ const Contact = () => {
               {isClicked === "ICE CREAM" && (
                 <div className="flex flex-col justify-center">
                   <div className="pt-[2%]">
-                    <div className="font-semibold text-2xl max-lg:text-center max-lg:text-3xl max-lg:pb-5  pb-3">
+                    <div className="pb-3 text-2xl font-semibold max-lg:text-center max-lg:text-3xl max-lg:pb-5">
                       ICE CREAM
                     </div>
                     <div className="text-text-subtext font-extralight lg:w-8/12 xl:w-6/12">
@@ -294,7 +304,7 @@ const Contact = () => {
               {isClicked === "SHAKES" && (
                 <div className="flex flex-col justify-center">
                   <div className="pt-[2%]">
-                    <div className="font-semibold text-2xl max-lg:text-center max-lg:text-3xl max-lg:pb-5  pb-3">
+                    <div className="pb-3 text-2xl font-semibold max-lg:text-center max-lg:text-3xl max-lg:pb-5">
                       SHAKES
                     </div>
                     <div className="text-text-subtext font-extralight lg:w-8/12 xl:w-6/12">
@@ -314,7 +324,7 @@ const Contact = () => {
               {isClicked === "HOUSE SPECIALTIES" && (
                 <div className="flex flex-col justify-center">
                   <div className="pt-[2%]">
-                    <div className="font-semibold text-2xl max-lg:text-center max-lg:text-3xl max-lg:pb-5  pb-3">
+                    <div className="pb-3 text-2xl font-semibold max-lg:text-center max-lg:text-3xl max-lg:pb-5">
                       HOUSE SPECIALTIES
                     </div>
                     <div className="text-text-subtext font-extralight lg:w-8/12 xl:w-6/12">
