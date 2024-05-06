@@ -72,36 +72,36 @@ const Carousel = () => {
         <div className="relative flex justify-center w-1/3">
           {index === 0 && (
             <motion.div
-              initial={{ opacity: 0, y: -100 }}
-              animate={{ opacity: 1, y: 0, transition: { delay: 0.03 } }}
-              exit={{ opacity: 0, y: 100 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1, transition: { delay: 0.08 } }}
+              exit={{ opacity: 0 }}
             >
               <Image src={ShavedIce} alt="shaved ice" draggable={false} />
             </motion.div>
           )}
           {index === 1 && (
             <motion.div
-              initial={{ opacity: 0, y: -100 }}
-              animate={{ opacity: 1, y: 0, transition: { delay: 0.03 } }}
-              exit={{ opacity: 0, y: 100 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1, transition: { delay: 0.08 } }}
+              exit={{ opacity: 0 }}
             >
               <Image src={ShavedIceCombo} alt="shaved ice " />
             </motion.div>
           )}
           {index === 2 && (
             <motion.div
-              initial={{ opacity: 0.5, y: -100 }}
-              animate={{ opacity: 1, y: 0, transition: { delay: 0.03 } }}
-              exit={{ opacity: 0, y: 100 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1, transition: { delay: 0.08 } }}
+              exit={{ opacity: 0 }}
             >
               <Image src={ShavedIce} alt="shaved ice " />
             </motion.div>
           )}
           {index === 3 && (
             <motion.div
-              initial={{ opacity: 0, y: -100 }}
-              animate={{ opacity: 1, y: 0, transition: { delay: 0.03 } }}
-              exit={{ opacity: 0, y: 100 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1, transition: { delay: 0.08 } }}
+              exit={{ opacity: 0 }}
             >
               <Image
                 src={ShavedIceCombo}
@@ -115,18 +115,11 @@ const Carousel = () => {
           )}
           {index === 4 && (
             <motion.div
-              initial={{ opacity: 0, y: -100 }}
-              animate={{ opacity: 1, y: 0, transition: { delay: 0.03 } }}
-              exit={{ opacity: 0, y: 100 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1, transition: { delay: 0.08 } }}
+              exit={{ opacity: 0 }}
             >
-              <Image
-                src={ShavedIce}
-                alt="shaved ice "
-                // width="0"
-                // height="0"
-                // sizes="100vw"
-                // className="w-full h-auto"
-              />
+              <Image src={ShavedIce} alt="shaved ice " />
             </motion.div>
           )}
         </div>
@@ -212,7 +205,7 @@ const Carousel = () => {
             className="absolute right-[65%] lg:right-[70%] -rotate-[10deg] lg:-rotate-[25deg] bottom-52 lg:bottom-16 -z-[100]"
           />
           <div
-            className={`${(index === 0 && "bg-below-zero-blue-200") || (index === 1 && "bg-below-zero-red-200") || (index === 2 && "bg-below-zero-yellow-200") || (index === 3 && "bg-below-zero-purple-200") || (index === 4 && "bg-below-zero-green-200")} rounded-md px-6 py-2 w-1/2 font-semibold transition-all duration-300 ease-in-out font-montserrat mt-10 text-white text-center absolute bottom-40 lg:bottom-10 right-10`}
+            className={`${(index === 0 && "bg-below-zero-blue-200 hover:bg-below-zero-blue-200/80") || (index === 1 && "bg-below-zero-red-200 hover:bg-below-zero-red-200/80") || (index === 2 && "bg-below-zero-yellow-200  hover:bg-below-zero-yellow-200/80") || (index === 3 && "bg-below-zero-purple-200 hover:bg-below-zero-purple-200/80") || (index === 4 && "bg-below-zero-green-200 hover:bg-below-zero-green-200/80")} rounded-md px-6 py-2 w-1/2 font-semibold transition-all duration-300 ease-in-out font-montserrat mt-10 text-white text-center absolute bottom-40 lg:bottom-10 right-10`}
           >
             SEE All{" "}
             {(index === 0 && "SHAVED ICE") ||

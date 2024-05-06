@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+
 import Image from "next/image";
 
 import BlueArrow from "/public/landing/BlueArrow.png";
@@ -65,9 +67,12 @@ const Filters = ({ selectedMenuItem, onMenuItemClick }) => {
         alt="arrow"
         className="absolute -rotate-[22deg] bottom-10 -left-32 -z-[100] w-16"
       />
-      <div>
+      <Link
+        href="/menu"
+        className="transition-all duration-300 ease-in-out hover:text-black/60"
+      >
         <motion.div
-          className={`${(selectedMenuItem === 0 && "bg-below-zero-blue-200") || (selectedMenuItem === 1 && "bg-below-zero-red-200") || (selectedMenuItem === 2 && "bg-below-zero-yellow-200") || (selectedMenuItem === 3 && "bg-below-zero-purple-200") || (selectedMenuItem === 4 && "bg-below-zero-green-200")} rounded-md px-6 py-2 font-semibold transition-all duration-300 ease-in-out font-montserrat mt-10 text-white text-center mb-10`}
+          className={`${(selectedMenuItem === 0 && "bg-below-zero-blue-200 hover:bg-below-zero-blue-200/80") || (selectedMenuItem === 1 && "bg-below-zero-red-200 hover:bg-below-zero-red-200/80") || (selectedMenuItem === 2 && "bg-below-zero-yellow-200 hover:bg-below-zero-yellow-200/80") || (selectedMenuItem === 3 && "bg-below-zero-purple-200 hover:bg-below-zero-purple-200/80") || (selectedMenuItem === 4 && "bg-below-zero-green-200 hover:bg-below-zero-green-200/80")} rounded-md px-6 py-2 font-semibold transition-all duration-300 ease-in-out font-montserrat mt-10 text-white text-center mb-10 `}
         >
           SEE All{" "}
           {(selectedMenuItem === 0 && "SHAVED ICE") ||
@@ -76,7 +81,7 @@ const Filters = ({ selectedMenuItem, onMenuItemClick }) => {
             (selectedMenuItem === 3 && "SHAKES") ||
             (selectedMenuItem === 4 && "SPECIALTIES")}
         </motion.div>
-      </div>
+      </Link>
     </div>
   );
 };

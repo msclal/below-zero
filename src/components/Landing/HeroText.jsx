@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Button from "../Button";
 import { FaStar, FaStarHalf } from "react-icons/fa";
 
@@ -19,7 +20,9 @@ const HeroText = () => {
             service. We stand for quality, values and the charm that only a
             family business can provide for 12 years
           </p>
-          <Button>SEE FULL MENU</Button>
+          <Link href="/menu">
+            <Button>SEE FULL MENU</Button>
+          </Link>
         </div>
         <div>
           <div className="flex text-yellow-400">
@@ -30,7 +33,14 @@ const HeroText = () => {
             <FaStarHalf />
           </div>
           <div>
-            Visit <span className="underline underline-offset-2">Yelp</span>
+            Visit our{" "}
+            <Link
+              href="https://www.yelp.com/biz/below-zero-shaved-ice-upland"
+              target="_blank"
+              className="underline transition-all duration-300 ease-in-out hover:text-black/60 underline-offset-2"
+            >
+              Yelp
+            </Link>
           </div>
         </div>
       </div>
@@ -79,7 +89,9 @@ const HeroText = () => {
           can provide for 12 years
         </p>
         <div className="text-sm">
-          <Button>SEE FULL MENU</Button>
+          <Link href="/menu">
+            <Button>SEE FULL MENU</Button>
+          </Link>
         </div>
       </div>
     </>

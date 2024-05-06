@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 import Storefront from "/public/storefront.webp";
 import Button from "../Button";
@@ -23,7 +24,12 @@ const Services = () => {
               delicious shaved ice flavors, shaved ice combos, ice cream and
               “House Specialties”.
             </div>
-            <Button>OUR SERVICES</Button>
+            <Link
+              href="/services"
+              className="transition-all duration-300 ease-in-out hover:text-black/60"
+            >
+              <Button>OUR SERVICES</Button>
+            </Link>
             <div className="max-lg:hidden flex mt-[10%] space-x-[5%]">
               <div>
                 <div className="pb-2 font-medium">CATERING</div>

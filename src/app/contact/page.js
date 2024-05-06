@@ -4,7 +4,7 @@ import Map from "@/components/Contact/Map";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col min-h-screen gap-y-10 lg:gap-y-20">
+    <div className="pt-20 space-y-10 lg:space-y-20">
       <ContactForm />
       <Map />
     </div>

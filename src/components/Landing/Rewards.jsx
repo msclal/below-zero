@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import MobileCards from "/public/landing/MobileRewards.webp";
 import Button from "../Button";
+import Link from "next/link";
 
 const Rewards = () => {
   return (
@@ -25,9 +26,9 @@ const Rewards = () => {
             enough points and watch as your favorite frosty treat becomes
             absolutely FREE. Find our location now!
           </div>
-          <div className="w-fit">
+          <Link href="/contact" className="w-fit">
             <Button>OUR LOCATION</Button>
-          </div>
+          </Link>
         </div>
         <div className="w-3/4 max-sm:hidden ">
           <Image
