@@ -42,8 +42,8 @@ const Menubar = ({ selectedMenuItem, onMenuItemClick }) => {
           </p>
         </div>
       </div>
-      <div className="w-full flex justify-center lg:hidden">
-        <div className="bg-primary text-white font-semibold text-lg text-center w-11/12 my-[5%]">
+      <div className="flex justify-center w-full lg:hidden">
+        <div className="w-11/12 text-lg font-semibold text-center text-white bg-primary">
           MENU
         </div>
       </div>

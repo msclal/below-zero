@@ -12,7 +12,7 @@ import Filters from "./Filters";
 import HeroText from "./HeroText";
 import { SlArrowDown } from "react-icons/sl";
 import { motion } from "framer-motion";
-
+import Link from "next/link";
 const images = [
   { image: ShavedIce, alt: "Mika with Cat" },
   { image: ShavedIceCombo, alt: "Grad Pic" },
@@ -207,12 +207,22 @@ const Carousel = () => {
           <div
             className={`${(index === 0 && "bg-below-zero-blue-200 hover:bg-below-zero-blue-200/80") || (index === 1 && "bg-below-zero-red-200 hover:bg-below-zero-red-200/80") || (index === 2 && "bg-below-zero-yellow-200  hover:bg-below-zero-yellow-200/80") || (index === 3 && "bg-below-zero-purple-200 hover:bg-below-zero-purple-200/80") || (index === 4 && "bg-below-zero-green-200 hover:bg-below-zero-green-200/80")} rounded-md px-6 py-2 w-1/2 font-semibold transition-all duration-300 ease-in-out font-montserrat mt-10 text-white text-center absolute bottom-40 lg:bottom-10 right-10`}
           >
-            SEE All{" "}
-            {(index === 0 && "SHAVED ICE") ||
-              (index === 1 && "COMBOS") ||
-              (index === 2 && "ICE CREAMS") ||
-              (index === 3 && "SHAKES") ||
-              (index === 4 && "SPECIALTIES")}
+            <Link
+              href={
+                (index === 0 && "/menu?filter=shaved ice") ||
+                (index === 1 && "/menu?filter=shaved ice combos") ||
+                (index === 2 && "/menu?filter=ice cream") ||
+                (index === 3 && "/menu?filter=shakes") ||
+                (index === 4 && "/menu?filter=house specalties")
+              }
+            >
+              SEE All{" "}
+              {(index === 0 && "SHAVED ICE") ||
+                (index === 1 && "COMBOS") ||
+                (index === 2 && "ICE CREAMS") ||
+                (index === 3 && "SHAKES") ||
+                (index === 4 && "SPECIALTIES")}
+            </Link>
           </div>
         </div>
       </div>
@@ -257,12 +267,22 @@ const Carousel = () => {
           <div
             className={`${(index === 0 && "bg-below-zero-blue-200") || (index === 1 && "bg-below-zero-red-200") || (index === 2 && "bg-below-zero-yellow-200") || (index === 3 && "bg-below-zero-purple-200") || (index === 4 && "bg-below-zero-green-200")} rounded-md px-6 py-2 w-[55%] min-[380px]:w-1/2 font-semibold transition-all duration-300 ease-in-out font-montserrat text-white text-center m-auto text-sm my-14 min-[400px]:my-20`}
           >
-            SEE All{" "}
-            {(index === 0 && "SHAVED ICE") ||
-              (index === 1 && "COMBOS") ||
-              (index === 2 && "ICE CREAMS") ||
-              (index === 3 && "SHAKES") ||
-              (index === 4 && "SPECIALTIES")}
+            <Link
+              href={
+                (index === 0 && "/menu?filter=shaved ice") ||
+                (index === 1 && "/menu?filter=shaved ice combos") ||
+                (index === 2 && "/menu?filter=ice cream") ||
+                (index === 3 && "/menu?filter=shakes") ||
+                (index === 4 && "/menu?filter=house specalties")
+              }
+            >
+              SEE All{" "}
+              {(index === 0 && "SHAVED ICE") ||
+                (index === 1 && "COMBOS") ||
+                (index === 2 && "ICE CREAMS") ||
+                (index === 3 && "SHAKES") ||
+                (index === 4 && "SPECIALTIES")}
+            </Link>
           </div>
         </div>
       </div>

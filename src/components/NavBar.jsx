@@ -112,7 +112,9 @@ const NavBar = () => {
               <Link href="/about">ABOUT</Link>
               <Link href="/services">SERVICES</Link>
               <Link href="/contact">
-                <Button>CONTACT</Button>
+                <div className="px-6 py-2 font-medium text-white transition-all duration-300 ease-in-out border-2 border-white rounded-md cursor-pointer w-fit bg-primary hover:bg-primary/80 font-montserrat">
+                  CONTACT
+                </div>
               </Link>
             </div>
           </div>

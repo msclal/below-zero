@@ -68,7 +68,13 @@ const Filters = ({ selectedMenuItem, onMenuItemClick }) => {
         className="absolute -rotate-[22deg] bottom-10 -left-32 -z-[100] w-16"
       />
       <Link
-        href="/menu"
+        href={
+          (selectedMenuItem === 0 && "/menu?filter=shaved ice") ||
+          (selectedMenuItem === 1 && "/menu?filter=shaved ice combos") ||
+          (selectedMenuItem === 2 && "/menu?filter=ice cream") ||
+          (selectedMenuItem === 3 && "/menu?filter=shakes") ||
+          (selectedMenuItem === 4 && "/menu?filter=house specalties")
+        }
         className="transition-all duration-300 ease-in-out hover:text-black/60"
       >
         <motion.div
