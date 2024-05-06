@@ -2,15 +2,13 @@ import Mission from "@/components/Landing/Mission";
 import Rewards from "@/components/Landing/Rewards";
 import Services from "@/components/Landing/Services";
 import Video from "@/components/Landing/Video";
-import Head from "next/head";
-import React from "react";
 
-const page = () => {
+import Carousel from "../components/Landing/Carousel";
+
+const Landing = () => {
   return (
     <>
-      <Head>
-        <title>Below Zero: Shaved Ice</title>
-      </Head>
+      <Carousel />
       <Services />
       <Rewards />
       <Video />
@@ -19,4 +17,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Landing;
