@@ -8,8 +8,8 @@ import BlueArrow from "/public/landing/BlueArrow.png";
 import RedArrow from "/public/landing/RedArrow.png";
 const Filters = ({ selectedMenuItem, onMenuItemClick }) => {
   return (
-    <div className="relative flex flex-col justify-between w-1/3 min-[1350px]:w-1/6 h-full font-outfit">
-      <div className="flex flex-col mt-20">
+    <div className="relative flex flex-col justify-between w-1/3 min-[1350px]:w-1/6 h-full self-start font-outfit">
+      <div className="flex flex-col">
         <motion.div
           className={`${selectedMenuItem === 0 && "bg-below-zero-blue-100"} p-6 rounded-lg text-primary cursor-pointer transition-all duration-300 ease-in-out `}
           onClick={() => onMenuItemClick(0)}

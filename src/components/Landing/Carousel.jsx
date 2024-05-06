@@ -67,7 +67,7 @@ const Carousel = () => {
 
   return (
     <>
-      <div className="relative items-center justify-around hidden w-full h-full xl:flex">
+      <div className="relative items-center justify-around hidden w-full h-[850px] min-[1920px]:h-[800px] xl:flex mt-5">
         <HeroText />
         <div className="relative flex justify-center w-1/3">
           {index === 0 && (

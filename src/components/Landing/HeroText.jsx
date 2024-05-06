@@ -6,8 +6,8 @@ import { FaStar, FaStarHalf } from "react-icons/fa";
 const HeroText = () => {
   return (
     <>
-      <div className="hidden xl:flex flex-col justify-between h-full w-1/3 self-start p-10">
-        <div className="flex flex-col mt-20 gap-y-10">
+      <div className="flex-col self-start justify-between hidden w-1/3 h-full p-10 xl:flex">
+        <div className="flex flex-col gap-y-10">
           <div className="flex flex-col">
             <p className="mb-5 text-text-subtext">HAWAIIAN SHAVED ICE</p>
             <p className="font-semibold text-7xl ">

@@ -31,7 +31,7 @@ const NavBar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div className=" z-10 flex justify-center bg-primary-background">
+    <div className="z-10 flex justify-center bg-primary-background">
       <div className="flex items-center justify-between w-11/12 py-6 max-sm:hidden ">
         <Link
           href="/"
