@@ -10,7 +10,6 @@ import IceCreamBanner from "/public/menu/IceCream.webp";
 import Menubar from "../../components/Menu/Menubar";
 import Head from "next/head";
 import Image from "next/image";
-import { useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import { BiSolidDownArrow } from "react-icons/bi";
 
@@ -199,8 +198,6 @@ const combos = [
 ];
 
 const Contact = () => {
-  const searchParams = useSearchParams();
-
   const [isClicked, setIsClicked] = useState("SHAVED ICE");
   const [subcategory, setSubcategory] = useState("ALL");
   const [toggle, setToggle] = useState(false);
@@ -227,12 +224,12 @@ const Contact = () => {
   }, []);
 
   useEffect(() => {
-    const search = searchParams.get("filter");
-    if (search) {
-      setIsClicked(search.toUpperCase());
-      console.log(search);
+    const params = new URLSearchParams(document.location.search);
+    const filter = params.get("filter");
+    if (filter) {
+      setIsClicked(filter.toUpperCase());
     }
-  }, [searchParams]);
+  }, []);
 
   return (
     <>

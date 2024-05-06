@@ -45,7 +45,7 @@ const HeroText = () => {
         </div>
       </div>
       {/* TABLET */}
-      <div className="flex flex-col self-end justify-between w-1/2 h-[90%] p-10 max-sm:hidden xl:hidden">
+      <div className="flex flex-col self-end justify-between w-1/2 h-full p-10 max-sm:hidden xl:hidden">
         <div className="flex flex-col gap-y-10">
           <div className="flex flex-col">
             <p className="mb-5 text-text-subtext">HAWAIIAN SHAVED ICE</p>
