@@ -5,7 +5,7 @@ const Video = () => {
     <div>
       <iframe
         className="aspect-video w-full"
-        src="https://www.youtube.com/embed/w4WiXKGCJhg?si=U03lYF9GtVD4J3-x"
+        src="https://www.youtube.com/embed/NGcbJGqEQEM?si=G-sxzIK7wvJWaLXT"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
