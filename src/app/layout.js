@@ -28,7 +28,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${outfit.variable} ${montserrat.variable} font-outfit bg-primary-background text-text`}
       >
-        <NavBar />
+        <div className="sticky top-0 z-[100]">
+          <NavBar />
+        </div>
         {children}
 
         <Footer />

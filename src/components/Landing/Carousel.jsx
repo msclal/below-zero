@@ -67,7 +67,7 @@ const Carousel = () => {
 
   return (
     <>
-      <div className="relative items-center justify-around hidden w-full h-screen xl:flex">
+      <div className="relative items-center justify-around hidden w-full h-full xl:flex">
         <HeroText />
         <div className="relative flex justify-center w-1/3">
           {index === 0 && (
@@ -129,7 +129,7 @@ const Carousel = () => {
             repeat: Infinity,
             duration: 2,
           }}
-          className="absolute bottom-12"
+          className="absolute bottom-8"
         >
           <SlArrowDown className="stroke-[20px] text-primary text-6xl" />
         </motion.div>
