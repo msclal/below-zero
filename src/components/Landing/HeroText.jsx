@@ -45,7 +45,7 @@ const HeroText = () => {
         </div>
       </div>
       {/* TABLET */}
-      <div className="flex flex-col self-end justify-between w-1/2 h-full max-sm:hidden xl:hidden">
+      <div className="flex flex-col  justify-between w-1/2 h-full max-sm:hidden xl:hidden">
         <div className="flex flex-col gap-y-10">
           <div className="flex flex-col">
             <p className="mb-5 text-text-subtext font-light">
@@ -63,7 +63,7 @@ const HeroText = () => {
           </p>
           <Button>SEE FULL MENU</Button>
         </div>
-        <div className="">
+        <div className="my-10">
           <div className="flex text-yellow-400">
             <FaStar />
             <FaStar />
@@ -71,7 +71,7 @@ const HeroText = () => {
             <FaStar />
           </div>
           <div>
-            <span className="font-bold">4.3</span>
+            <span className="font-medium">4.3 </span>
             (Yelp rating)
           </div>
         </div>

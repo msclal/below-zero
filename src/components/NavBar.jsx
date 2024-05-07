@@ -47,12 +47,12 @@ const NavBar = () => {
           />
         </Link>
         <div className="flex items-center w-fit sm:space-x-6 lg:space-x-12">
-          <Link
+          {/* <Link
             href="/"
             className="transition-all duration-300 ease-in-out hover:text-black/60"
           >
             HOME
-          </Link>
+          </Link> */}
           <Link
             href="/menu"
             className="transition-all duration-300 ease-in-out hover:text-black/60"
@@ -107,7 +107,6 @@ const NavBar = () => {
         >
           <div>
             <div className="bg-primary text-white flex font-outfit flex-col justify-left items-left space-y-[7%] w-full px-[10%] py-[5%]">
-              <Link href="/">HOME</Link>
               <Link href="/menu">MENU</Link>
               <Link href="/about">ABOUT</Link>
               <Link href="/services">SERVICES</Link>

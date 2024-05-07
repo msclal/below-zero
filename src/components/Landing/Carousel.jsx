@@ -149,12 +149,12 @@ const Carousel = () => {
       </div>
 
       {/* TABLET */}
-      <div className="flex justify-center ">
-        <div className="max-sm:hidden  relative flex items-center justify-around w-11/12 h-[800px] lg:h-[900px] xl:hidden">
+      <div className="flex justify-center  h-fit">
+        <div className="max-sm:hidden  relative flex items-center justify-around w-11/12 h-[700px] lg:h-[900px] xl:hidden">
           <HeroText />
 
-          <div className="relative self-end w-2/3 h-full p-10">
-            <div className="flex justify-center">
+          <div className="relative self-end w-2/3 h-full p-10 ">
+            <div className="flex justify-center ">
               {index === 0 && (
                 <motion.div
                   initial={{ opacity: 0, x: -100 }}
@@ -215,10 +215,10 @@ const Carousel = () => {
                 (index === 4 && BlueArrow)
               }
               alt="arrow"
-              className="absolute right-[65%] lg:right-[70%] -rotate-[10deg] lg:-rotate-[25deg] bottom-52 lg:bottom-16 -z-[100]"
+              className=" absolute right-[65%] lg:right-[70%] -rotate-[10deg] lg:-rotate-[25deg] bottom-52 lg:bottom-16 -z-[100]"
             />
             <div
-              className={`${(index === 0 && "bg-below-zero-blue-200 hover:bg-below-zero-blue-200/80") || (index === 1 && "bg-below-zero-red-200 hover:bg-below-zero-red-200/80") || (index === 2 && "bg-below-zero-yellow-200  hover:bg-below-zero-yellow-200/80") || (index === 3 && "bg-below-zero-purple-200 hover:bg-below-zero-purple-200/80") || (index === 4 && "bg-below-zero-green-200 hover:bg-below-zero-green-200/80")} rounded-md px-6 py-2 w-1/2 font-semibold transition-all duration-300 ease-in-out font-montserrat mt-10 text-white text-center absolute bottom-40 lg:bottom-10 right-10 text-sm`}
+              className={`${(index === 0 && "bg-below-zero-blue-200 hover:bg-below-zero-blue-200/80") || (index === 1 && "bg-below-zero-red-200 hover:bg-below-zero-red-200/80") || (index === 2 && "bg-below-zero-yellow-200  hover:bg-below-zero-yellow-200/80") || (index === 3 && "bg-below-zero-purple-200 hover:bg-below-zero-purple-200/80") || (index === 4 && "bg-below-zero-green-200 hover:bg-below-zero-green-200/80")} rounded-md px-6 py-2 w-1/2 font-semibold transition-all duration-300 ease-in-out font-montserrat mt-10 text-white text-center absolute bottom-10 lg:bottom-10 right-10 text-sm`}
             >
               <Link
                 href={
