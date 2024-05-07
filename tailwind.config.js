@@ -50,7 +50,10 @@ module.exports = {
           DEFAULT: "#1C56A6",
           background: "#FCFEFF",
         },
-        secondary: { background: "#F3F6FA" },
+        secondary: {
+          background: "#F3F6FA",
+          filter: "#E8EFFA",
+        },
         text: {
           subtext: "#777777",
         },

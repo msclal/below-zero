@@ -6,11 +6,11 @@ import { FaStar, FaStarHalf } from "react-icons/fa";
 const HeroText = () => {
   return (
     <>
-      <div className="flex-col self-start justify-between hidden w-1/3 h-full p-10 xl:flex">
+      <div className="flex-col self-start  justify-between hidden min-[1350px]:w-6/12 h-full xl:flex">
         <div className="flex flex-col gap-y-10">
           <div className="flex flex-col">
             <p className="mb-5 text-text-subtext">HAWAIIAN SHAVED ICE</p>
-            <p className="font-semibold text-7xl ">
+            <p className="font-semibold text-6xl ">
               Taste <span className="text-primary">Paradise </span> with Every
               Bite
             </p>
@@ -45,10 +45,12 @@ const HeroText = () => {
         </div>
       </div>
       {/* TABLET */}
-      <div className="flex flex-col self-end justify-between w-1/2 h-full p-10 max-sm:hidden xl:hidden">
+      <div className="flex flex-col self-end justify-between w-1/2 h-full max-sm:hidden xl:hidden">
         <div className="flex flex-col gap-y-10">
           <div className="flex flex-col">
-            <p className="mb-5 text-text-subtext">HAWAIIAN SHAVED ICE</p>
+            <p className="mb-5 text-text-subtext font-light">
+              HAWAIIAN SHAVED ICE
+            </p>
             <p className="text-5xl font-semibold lg:text-7xl ">
               Taste <span className="text-primary">Paradise </span> with Every
               Bite

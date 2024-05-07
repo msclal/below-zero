@@ -8,50 +8,50 @@ import BlueArrow from "/public/landing/BlueArrow.png";
 import RedArrow from "/public/landing/RedArrow.png";
 const Filters = ({ selectedMenuItem, onMenuItemClick }) => {
   return (
-    <div className="relative flex flex-col justify-between w-1/3 min-[1350px]:w-1/6 h-full self-start font-outfit">
+    <div className="relative flex flex-col justify-between w-full min-[1350px]:w-5/12 h-full self-start font-outfit">
       <div className="flex flex-col">
         <motion.div
-          className={`${selectedMenuItem === 0 && "bg-below-zero-blue-100"} p-6 rounded-lg text-primary cursor-pointer transition-all duration-300 ease-in-out `}
+          className={`${selectedMenuItem === 0 && "bg-secondary-filter text-primary "} p-6 rounded-lgcursor-pointer transition-all duration-300 ease-in-out `}
           onClick={() => onMenuItemClick(0)}
         >
           <p className="mb-3 font-semibold">SHAVED ICE</p>
-          <p className="text-sm font-light">
+          <p className="text-sm font-light text-text-subtext">
             Hawaiian shaved ice with perfectly curated syrups made in-house
           </p>
         </motion.div>
         <motion.div
-          className={`${selectedMenuItem === 1 && "bg-below-zero-blue-100"} p-6 rounded-lg text-primary cursor-pointer transition-all duration-300 ease-in-out `}
+          className={`${selectedMenuItem === 1 && "bg-secondary-filter text-primary"} p-6 rounded-lg cursor-pointer transition-all duration-300 ease-in-out `}
           onClick={() => onMenuItemClick(1)}
         >
           <p className="mb-3 font-semibold">SHAVED ICE COMBO</p>
-          <p className="text-sm font-light">
+          <p className="text-sm font-light text-text-subtext">
             Hawaiian shaved ice with perfectly curated syrups made in-house
           </p>
         </motion.div>
         <motion.div
-          className={`${selectedMenuItem === 2 && "bg-below-zero-blue-100"} p-6 rounded-lg text-primary cursor-pointer transition-all duration-300 ease-in-out `}
+          className={`${selectedMenuItem === 2 && "bg-secondary-filter text-primary"} p-6 rounded-lg cursor-pointer transition-all duration-300 ease-in-out `}
           onClick={() => onMenuItemClick(2)}
         >
           <p className="mb-3 font-semibold">ICE CREAM</p>
-          <p className="text-sm font-light">
+          <p className="text-sm font-light text-text-subtext">
             Hawaiian shaved ice with perfectly curated syrups made in-house
           </p>
         </motion.div>
         <motion.div
-          className={`${selectedMenuItem === 3 && "bg-below-zero-blue-100"} p-6 rounded-lg text-primary cursor-pointer transition-all duration-300 ease-in-out `}
+          className={`${selectedMenuItem === 3 && "bg-secondary-filter text-primary"} p-6 rounded-lg cursor-pointer transition-all duration-300 ease-in-out `}
           onClick={() => onMenuItemClick(3)}
         >
           <p className="mb-3 font-semibold">SHAKES</p>
-          <p className="text-sm font-light">
+          <p className="text-sm font-light text-text-subtext">
             Hawaiian shaved ice with perfectly curated syrups made in-house
           </p>
         </motion.div>
         <motion.div
-          className={`${selectedMenuItem === 4 && "bg-below-zero-blue-100"} p-6 rounded-lg text-primary cursor-pointer transition-all duration-300 ease-in-out `}
+          className={`${selectedMenuItem === 4 && "bg-secondary-filter text-primary"} p-6 rounded-lg cursor-pointer transition-all duration-300 ease-in-out `}
           onClick={() => onMenuItemClick(4)}
         >
           <p className="mb-3 font-semibold">HOUSE SPECIALTIES</p>
-          <p className="text-sm font-light">
+          <p className="text-sm font-light text-text-subtext">
             Hawaiian shaved ice with perfectly curated syrups made in-house
           </p>
         </motion.div>
