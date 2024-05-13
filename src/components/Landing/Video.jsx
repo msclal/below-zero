@@ -4,13 +4,12 @@ const Video = () => {
   return (
     <div>
       <iframe
-        className="aspect-video w-full"
+        className="w-full aspect-video"
         src="https://www.youtube.com/embed/NGcbJGqEQEM?si=G-sxzIK7wvJWaLXT"
         title="YouTube video player"
-        frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
       ></iframe>
     </div>
   );

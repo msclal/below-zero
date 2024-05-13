@@ -1,9 +1,46 @@
+"use client";
+import { useRef } from "react";
 import Link from "next/link";
 import React from "react";
 import { FaYelp, FaInstagram, FaFacebook } from "react-icons/fa";
-import Button from "../Button";
+// import Button from "../Button";
 
 const ContactForm = () => {
+  const form = useRef();
+  const handleSend = (e) => {
+    e.preventDefault();
+    console.log(e.target[0].value, e.target[1].value, e.target[2].value);
+    // if (e.target[0].value && e.target[1].value && e.target[2].value) {
+    //   emailjs
+    //     .sendForm(
+    //       "service_hy4bsvp",
+    //       "template_9e567ar",
+    //       form.current,
+    //       "B0GWTfpimt3X7kH-y"
+    //     )
+    //     .then(
+    //       (result) => {},
+    //       (error) => {
+    //         console.log(error.text);
+    //       }
+    //     )
+    //     .finally(() => {
+    //       e.target.reset();
+    //       toast({
+    //         variant: "success",
+    //         title: "Message Sent!",
+    //         description: "We'll get back to you as soon as possible.",
+    //       });
+    //     });
+    // } else {
+    //   toast({
+    //     variant: "destructive",
+    //     title: "Oops! Something's Missing...",
+    //     description: "Double-check the form for any missing details.",
+    //   });
+    // }
+  };
+
   return (
     <div className="flex flex-wrap-reverse items-center justify-center w-full p-5 sm:p-10 gap-x-20 gap-y-14">
       <div className="flex flex-col gap-y-7 max-[830px]:text-center">
@@ -47,7 +84,11 @@ const ContactForm = () => {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col max-sm:w-full">
+      <form
+        ref={form}
+        onSubmit={handleSend}
+        className="flex flex-col max-sm:w-full"
+      >
         <p className="mb-3 text-3xl font-semibold lg:mb-2 font-montserrat">
           SEND A MESSAGE
         </p>
@@ -68,11 +109,16 @@ const ContactForm = () => {
             className="h-[250px] w-full lg:w-[600px] px-3 sm:px-5 py-3 border rounded-md resize-none border-border"
             id=""
           />
-          <div className="self-end ">
-            <Button>{"LET'S"} CONNECT</Button>
+          <div className="self-end">
+            <input
+              type="submit"
+              value="LET'S CONNECT"
+              className="px-6 py-2 font-medium text-white transition-all duration-300 ease-in-out rounded-md cursor-pointer w-fit bg-primary hover:bg-primary/80 font-montserrat"
+            />
           </div>
+          {/* <Button>{"LET'S"} CONNECT</Button> */}
         </div>
-      </div>
+      </form>
     </div>
   );
 };
