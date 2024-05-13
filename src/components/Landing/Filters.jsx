@@ -73,7 +73,7 @@ const Filters = ({ selectedMenuItem, onMenuItemClick }) => {
           (selectedMenuItem === 1 && "/menu?filter=shaved ice combos") ||
           (selectedMenuItem === 2 && "/menu?filter=ice cream") ||
           (selectedMenuItem === 3 && "/menu?filter=shakes") ||
-          (selectedMenuItem === 4 && "/menu?filter=house specalties")
+          (selectedMenuItem === 4 && "/menu?filter=house specialties")
         }
         className="transition-all duration-300 ease-in-out hover:text-black/60"
       >

@@ -197,7 +197,7 @@ const combos = [
   },
 ];
 
-const Contact = () => {
+const Menu = () => {
   const [isClicked, setIsClicked] = useState("SHAVED ICE");
   const [subcategory, setSubcategory] = useState("ALL");
   const [toggle, setToggle] = useState(false);
@@ -519,4 +519,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Menu;

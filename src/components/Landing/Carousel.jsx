@@ -149,7 +149,7 @@ const Carousel = () => {
       </div>
 
       {/* TABLET */}
-      <div className="flex justify-center  h-fit">
+      <div className="flex justify-center h-fit">
         <div className="max-sm:hidden  relative flex items-center justify-around w-11/12 h-[700px] lg:h-[900px] xl:hidden">
           <HeroText />
 
@@ -226,7 +226,7 @@ const Carousel = () => {
                   (index === 1 && "/menu?filter=shaved ice combos") ||
                   (index === 2 && "/menu?filter=ice cream") ||
                   (index === 3 && "/menu?filter=shakes") ||
-                  (index === 4 && "/menu?filter=house specalties")
+                  (index === 4 && "/menu?filter=house specialties")
                 }
               >
                 SEE All{" "}
@@ -287,7 +287,7 @@ const Carousel = () => {
                 (index === 1 && "/menu?filter=shaved ice combos") ||
                 (index === 2 && "/menu?filter=ice cream") ||
                 (index === 3 && "/menu?filter=shakes") ||
-                (index === 4 && "/menu?filter=house specalties")
+                (index === 4 && "/menu?filter=house specialties")
               }
             >
               SEE All{" "}
