@@ -47,12 +47,12 @@ const NavBar = () => {
           />
         </Link>
         <div className="flex items-center w-fit sm:space-x-6 lg:space-x-12">
-          {/* <Link
+          <Link
             href="/"
             className="transition-all duration-300 ease-in-out hover:text-black/60"
           >
             HOME
-          </Link> */}
+          </Link>
           <Link
             href="/menu"
             className="transition-all duration-300 ease-in-out hover:text-black/60"
@@ -65,12 +65,12 @@ const NavBar = () => {
           >
             ABOUT
           </Link>
-          <Link
+          <a
             href="/services"
             className="transition-all duration-300 ease-in-out hover:text-black/60"
           >
             SERVICES
-          </Link>
+          </a>
           <Link href="/contact">
             <Button>CONTACT</Button>
           </Link>
@@ -109,7 +109,7 @@ const NavBar = () => {
             <div className="bg-primary text-white flex font-outfit flex-col justify-left items-left space-y-[7%] w-full px-[10%] py-[5%]">
               <Link href="/menu">MENU</Link>
               <Link href="/about">ABOUT</Link>
-              <Link href="/services">SERVICES</Link>
+              <a href="/services">SERVICES</a>
               <Link href="/contact">
                 <div className="px-6 py-2 font-medium text-white transition-all duration-300 ease-in-out border-2 border-white rounded-md cursor-pointer w-fit bg-primary hover:bg-primary/80 font-montserrat">
                   CONTACT

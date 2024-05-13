@@ -7,7 +7,7 @@ import CateringImage from "/public/services/catering.png";
 const Info = () => {
   return (
     <div className="flex flex-col items-start p-5 justify-evenly xl:justify-center gap-y-10 sm:flex-row gap-x-16 xl:gap-x-14 sm:gap-x-10">
-      <div className="w-full h-[475px] sm:w-[400px] sm:h-[575px] relative bg-red-200">
+      <div className="w-full h-[475px] sm:w-[400px] sm:h-[575px] relative">
         <Image
           src={CateringImage}
           alt="Below Zero Catering"
