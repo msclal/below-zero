@@ -61,7 +61,7 @@ const Menu = () => {
               onMenuItemClick={handleClick}
             />
           </div>
-          <div className="flex flex-col items-center min-h-screen gap-y-10 lg:gap-y-20 w-fit lg:pr-[5%] ">
+          <div className="flex flex-col items-center w-full min-h-screen gap-y-10 lg:gap-y-20">
             <div className="flex flex-col space-y-[3%] lg:w-10/12 max-lg:w-11/12">
               {/* Mobile TABS */}
               <div ref={componentRef} className="relative">
@@ -171,7 +171,7 @@ const Menu = () => {
                     <div className="pb-3 text-2xl font-semibold max-lg:text-center max-lg:text-3xl max-lg:pb-5">
                       SHAVED ICE
                     </div>
-                    <div className="text-text-subtext font-extralight lg:w-8/12 xl:w-6/12">
+                    <div className="text-text-subtext font-extralight lg:w-full xl:w-6/12">
                       provide not only the best product, but an excellent
                       customer service. We stand for quality, values and the
                       charm that only a family business can provide for 12 years
@@ -189,7 +189,7 @@ const Menu = () => {
                     <div className="pb-3 text-2xl font-semibold max-lg:text-center max-lg:text-3xl">
                       SHAVED ICE COMBOS
                     </div>
-                    <div className="text-text-subtext font-extralight lg:w-8/12 xl:w-6/12">
+                    <div className="text-text-subtext font-extralight lg:w-full xl:w-6/12">
                       provide not only the best product, but an excellent
                       customer service. We stand for quality, values and the
                       charm that only a family business can provide for 12 years
@@ -216,27 +216,6 @@ const Menu = () => {
                     </p>
                   </div>
 
-                  {/* Combo Subcateogry */}
-                  {/* <div className="flex w-full my-5 sm:hidden gap-x-4">
-                    <div
-                      className={`${subcategory === "ALL" ? `bg-below-zero-red-200 text-white border-below-zero-red-200` : `border-border text-text-subtext`} border-2 px-3 min-[395px]:px-6 py-1 font-medium w-fit rounded-3xl duration-300 transition-all ease-in-out`}
-                      onClick={() => setSubcategory("ALL")}
-                    >
-                      All
-                    </div>
-                    <div
-                      className={`${subcategory === "BUILD YOUR OWN" ? `bg-below-zero-red-200 text-white border-below-zero-red-200` : `border-border text-text-subtext`} border-2  px-3 min-[395px]:px-6 py-1 font-medium rounded-3xl duration-300 transition-all ease-in-out`}
-                      onClick={() => setSubcategory("BUILD YOUR OWN")}
-                    >
-                      Build Your Own
-                    </div>
-                    <div
-                      className={`${subcategory === "CLASSICS" ? `bg-below-zero-red-200 text-white border-below-zero-red-200` : `border-border text-text-subtext`} border-2  px-3 min-[395px]:px-6 py-1 font-medium rounded-3xl duration-300 transition-all ease-in-out`}
-                      onClick={() => setSubcategory("CLASSICS")}
-                    >
-                      Classics
-                    </div>
-                  </div> */}
                   <div className="space-y-[5%] pb-[5%] pt-[5%]">
                     {(subcategory === "ALL" ||
                       subcategory === "BUILD YOUR OWN") && (
@@ -267,7 +246,7 @@ const Menu = () => {
                     <div className="pb-3 text-2xl font-semibold max-lg:text-center max-lg:text-3xl max-lg:pb-5">
                       ICE CREAM
                     </div>
-                    <div className="text-text-subtext font-extralight lg:w-8/12 xl:w-6/12">
+                    <div className="text-text-subtext font-extralight lg:w-full xl:w-6/12">
                       provide not only the best product, but an excellent
                       customer service. We stand for quality, values and the
                       charm that only a family business can provide for 12 years
@@ -297,7 +276,7 @@ const Menu = () => {
                     <div className="pb-3 text-2xl font-semibold max-lg:text-center max-lg:text-3xl max-lg:pb-5">
                       SHAKES
                     </div>
-                    <div className="text-text-subtext font-extralight lg:w-8/12 xl:w-6/12">
+                    <div className="text-text-subtext font-extralight lg:w-full xl:w-6/12">
                       provide not only the best product, but an excellent
                       customer service. We stand for quality, values and the
                       charm that only a family business can provide for 12 years
@@ -317,7 +296,7 @@ const Menu = () => {
                     <div className="pb-3 text-2xl font-semibold max-lg:text-center max-lg:text-3xl max-lg:pb-5">
                       HOUSE SPECIALTIES
                     </div>
-                    <div className="text-text-subtext font-extralight lg:w-8/12 xl:w-6/12">
+                    <div className="text-text-subtext font-extralight lg:w-full xl:w-6/12">
                       provide not only the best product, but an excellent
                       customer service. We stand for quality, values and the
                       charm that only a family business can provide for 12 years
