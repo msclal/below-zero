@@ -47,7 +47,9 @@ const Footer = () => {
 
           <div className="flex flex-col w-full">
             <span className="mb-2 font-semibold">STORE HOURS</span>
-            <span>Everyday: 12:00PM-7:00PM</span>
+            <span>Monday: Closed </span>
+            <span>Mon-Sat: 12PM - 6:30PM</span>
+            <span>Sunday: 12PM - 6PM</span>
           </div>
 
           <div className="flex flex-col w-full">
