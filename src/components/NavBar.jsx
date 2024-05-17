@@ -47,12 +47,12 @@ const NavBar = () => {
           />
         </Link>
         <div className="flex items-center w-fit sm:space-x-6 lg:space-x-12 ">
-          {/* <Link
+          <Link
             href="/"
             className="transition-all duration-300 ease-in-out hover:text-black/60"
           >
             HOME
-          </Link> */}
+          </Link>
           <Link
             href="/menu"
             className="transition-all duration-300 ease-in-out hover:text-black/60"
