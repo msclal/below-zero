@@ -45,13 +45,13 @@ const HeroText = () => {
         </div>
       </div>
       {/* TABLET */}
-      <div className="flex flex-col  justify-between w-1/2 h-full max-sm:hidden xl:hidden">
-        <div className="flex flex-col gap-y-10">
+      <div className="flex flex-col pt-5 pr-5 justify-between w-full h-full max-sm:hidden xl:hidden">
+        <div className="flex flex-col space-y-[12%] ">
           <div className="flex flex-col">
-            <p className="mb-5 text-text-subtext font-light">
+            <p className="mb-5 text-text-subtext font-light text-sm">
               HAWAIIAN SHAVED ICE
             </p>
-            <p className="text-5xl font-semibold lg:text-7xl ">
+            <p className="text-5xl font-semibold lg:text-6xl ">
               Taste <span className="text-primary">Paradise </span> with Every
               Bite
             </p>
@@ -61,9 +61,11 @@ const HeroText = () => {
             service. We stand for quality, values and the charm that only a
             family business can provide for 12 years
           </p>
-          <Button>SEE FULL MENU</Button>
+          <div className="text-sm">
+            <Button>SEE FULL MENU</Button>
+          </div>
         </div>
-        <div className="my-10">
+        <div className="mt-10 ">
           <div className="flex text-yellow-400">
             <FaStar />
             <FaStar />
@@ -81,7 +83,7 @@ const HeroText = () => {
         <div className="flex flex-col items-center justify-center p-5 text-center sm:hidden gap-y-7 min-[400px]:gap-y-3 mb-5 w-10/12 ">
           <div className="flex flex-col">
             <p className="text-text-subtext font-light">HAWAIIAN SHAVED ICE</p>
-            <p className="text-6xl font-semibold ">
+            <p className="text-5xl font-semibold ">
               Taste <span className="text-primary">Paradise </span> with Every
               Bite
             </p>
