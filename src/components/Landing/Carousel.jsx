@@ -242,7 +242,7 @@ const Carousel = () => {
       </div>
 
       {/* MOBILE */}
-      <div className="relative flex flex-col min-h-screen pt-16 overflow-hidden sm:hidden">
+      <div className="relative flex flex-col min-h-screen overflow-hidden sm:hidden">
         <HeroText />
 
         <div className="flex justify-center w-2/3 m-auto">

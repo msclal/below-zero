@@ -35,7 +35,7 @@ const NavBar = () => {
       <div className="flex items-center justify-between w-11/12 py-6 max-sm:hidden">
         <Link
           href="/"
-          className="max-sm:w-[40%] sm:w-[20%] lg:w-[13%] max-sm:py-[5%]"
+          className="max-sm:w-[40%] sm:w-[20%] lg:w-[13%] max-sm:py-[5%] "
         >
           <Image
             src={BelowZeroLogo}
@@ -46,7 +46,7 @@ const NavBar = () => {
             height="1"
           />
         </Link>
-        <div className="flex items-center w-fit sm:space-x-6 lg:space-x-12">
+        <div className="flex items-center w-fit sm:space-x-6 lg:space-x-12 ">
           {/* <Link
             href="/"
             className="transition-all duration-300 ease-in-out hover:text-black/60"
@@ -78,7 +78,7 @@ const NavBar = () => {
       </div>
       <div
         ref={componentRef}
-        className="sm:hidden w-full flex justify-between items-center px-4 py-3 max-sm:w-[90%] sm:w-[20%] lg:w-[13%]"
+        className="sm:hidden w-full  flex justify-between items-center px-4 py-3 max-sm:w-[90%] sm:w-[20%] lg:w-[13%]"
       >
         <div className="max-sm:w-[40%] sm:w-[20%] lg:w-[13%] max-sm:py-[5%]">
           <Image

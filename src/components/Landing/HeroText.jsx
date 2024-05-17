@@ -15,7 +15,7 @@ const HeroText = () => {
               Bite
             </p>
           </div>
-          <p className="text-text-subtext">
+          <p className="text-text-subtext font-light">
             Provide not only the best product, but an excellent customer
             service. We stand for quality, values and the charm that only a
             family business can provide for 12 years
@@ -56,7 +56,7 @@ const HeroText = () => {
               Bite
             </p>
           </div>
-          <p className="text-text-subtext">
+          <p className="text-text-subtext font-light">
             Provide not only the best product, but an excellent customer
             service. We stand for quality, values and the charm that only a
             family business can provide for 12 years
@@ -77,23 +77,25 @@ const HeroText = () => {
         </div>
       </div>
       {/* MOBILE */}
-      <div className="flex flex-col items-center justify-center p-5 text-center sm:hidden gap-y-7 min-[400px]:gap-y-3 mb-5">
-        <div className="flex flex-col">
-          <p className="text-text-subtext">HAWAIIAN SHAVED ICE</p>
-          <p className="text-4xl font-semibold ">
-            Taste <span className="text-primary">Paradise </span> with Every
-            Bite
+      <div className="flex justify-center">
+        <div className="flex flex-col items-center justify-center p-5 text-center sm:hidden gap-y-7 min-[400px]:gap-y-3 mb-5 w-10/12 ">
+          <div className="flex flex-col">
+            <p className="text-text-subtext font-light">HAWAIIAN SHAVED ICE</p>
+            <p className="text-6xl font-semibold ">
+              Taste <span className="text-primary">Paradise </span> with Every
+              Bite
+            </p>
+          </div>
+          <p className="text-text-subtext font-light pt-2 pb-4">
+            Provide not only the best product, but an excellent customer
+            service. We stand for quality, values and the charm that only a
+            family business can provide for 12 years
           </p>
-        </div>
-        <p className="text-text-subtext">
-          Provide not only the best product, but an excellent customer service.
-          We stand for quality, values and the charm that only a family business
-          can provide for 12 years
-        </p>
-        <div className="text-sm">
-          <Link href="/menu">
-            <Button>SEE FULL MENU</Button>
-          </Link>
+          <div className="text-sm pb-4">
+            <Link href="/menu">
+              <Button>SEE FULL MENU</Button>
+            </Link>
+          </div>
         </div>
       </div>
     </>
