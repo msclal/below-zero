@@ -258,7 +258,7 @@ const Carousel = () => {
             onTouchEnd={handleTouchEnd}
           >
             <div
-              className="relative whitespace-nowrap transition-ease duration-[650ms] w-full"
+              className="relative whitespace-nowrap transition-ease duration-[650ms] "
               style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
             >
               {images.map((image, idx) => (
@@ -266,7 +266,7 @@ const Carousel = () => {
                   key={idx}
                   src={image.image}
                   alt={image.alt}
-                  className="inline-block w-full relative z-[10]"
+                  className="inline-block w-full relative z-[10] px-3"
                 />
               ))}
             </div>
