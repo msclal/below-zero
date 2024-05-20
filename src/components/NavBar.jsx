@@ -96,7 +96,7 @@ const NavBar = () => {
         >
           <div>
             <div className="bg-primary text-white flex font-outfit flex-col justify-left items-left space-y-[7%] w-full px-[10%] py-[5%]">
-              <Link href="/menu" className="hover:text-border">
+              <Link href="/home" className="hover:text-border">
                 HOME
               </Link>
               <Link href="/menu" className="hover:text-border">

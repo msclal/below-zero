@@ -12,12 +12,13 @@ const Yelp = () => {
 
       <div className="relative grid grid-cols-1 gap-y-5 sm:hidden">
         <span
-          class="yelp-review"
+          className="yelp-review"
           data-review-id="fz0OCixkLNFdUOiv-bx2vA"
           data-hostname="www.yelp.com"
         >
           Read{" "}
           <a
+            target="_blank"
             href="https://www.yelp.com/user_details?userid=ftF0UAOs9LmmbVfKm7UCgA"
             rel="nofollow noopener"
           >
@@ -25,6 +26,7 @@ const Yelp = () => {
           </a>
           {"'s "}
           <a
+            target="_blank"
             href="https://www.yelp.com/biz/below-zero-shaved-ice-upland?hrid=fz0OCixkLNFdUOiv-bx2vA"
             rel="nofollow noopener"
           >
@@ -32,13 +34,18 @@ const Yelp = () => {
           </a>{" "}
           of{" "}
           <a
+            target="_blank"
             href="https://www.yelp.com/biz/pHYLIh3wLUriqiUg8DrvcA"
             rel="nofollow noopener"
           >
             Below Zero Shaved Ice
           </a>{" "}
           on{" "}
-          <a href="https://www.yelp.com" rel="nofollow noopener">
+          <a
+            target="_blank"
+            href="https://www.yelp.com"
+            rel="nofollow noopener"
+          >
             Yelp
           </a>
           <script
@@ -58,12 +65,13 @@ const Yelp = () => {
           />
         </div>
         <span
-          class="yelp-review"
+          className="yelp-review"
           data-review-id="fz0OCixkLNFdUOiv-bx2vA"
           data-hostname="www.yelp.com"
         >
           Read{" "}
           <a
+            target="_blank"
             href="https://www.yelp.com/user_details?userid=ftF0UAOs9LmmbVfKm7UCgA"
             rel="nofollow noopener"
           >
@@ -71,6 +79,7 @@ const Yelp = () => {
           </a>
           {"'s "}
           <a
+            target="_blank"
             href="https://www.yelp.com/biz/below-zero-shaved-ice-upland?hrid=fz0OCixkLNFdUOiv-bx2vA"
             rel="nofollow noopener"
           >
@@ -78,13 +87,18 @@ const Yelp = () => {
           </a>{" "}
           of{" "}
           <a
+            target="_blank"
             href="https://www.yelp.com/biz/pHYLIh3wLUriqiUg8DrvcA"
             rel="nofollow noopener"
           >
             Below Zero Shaved Ice
           </a>{" "}
           on{" "}
-          <a href="https://www.yelp.com" rel="nofollow noopener">
+          <a
+            target="_blank"
+            href="https://www.yelp.com"
+            rel="nofollow noopener"
+          >
             Yelp
           </a>
           <script
@@ -118,12 +132,13 @@ const Yelp = () => {
           />
         </div>
         <span
-          class="yelp-review"
+          className="yelp-review"
           data-review-id="fz0OCixkLNFdUOiv-bx2vA"
           data-hostname="www.yelp.com"
         >
           Read{" "}
           <a
+            target="_blank"
             href="https://www.yelp.com/user_details?userid=ftF0UAOs9LmmbVfKm7UCgA"
             rel="nofollow noopener"
           >
@@ -131,6 +146,7 @@ const Yelp = () => {
           </a>
           {"'s "}
           <a
+            target="_blank"
             href="https://www.yelp.com/biz/below-zero-shaved-ice-upland?hrid=fz0OCixkLNFdUOiv-bx2vA"
             rel="nofollow noopener"
           >
@@ -138,13 +154,18 @@ const Yelp = () => {
           </a>{" "}
           of{" "}
           <a
+            target="_blank"
             href="https://www.yelp.com/biz/pHYLIh3wLUriqiUg8DrvcA"
             rel="nofollow noopener"
           >
             Below Zero Shaved Ice
           </a>{" "}
           on{" "}
-          <a href="https://www.yelp.com" rel="nofollow noopener">
+          <a
+            target="_blank"
+            href="https://www.yelp.com"
+            rel="nofollow noopener"
+          >
             Yelp
           </a>
           <script
@@ -154,12 +175,13 @@ const Yelp = () => {
           ></script>
         </span>
         <span
-          class="yelp-review"
+          className="yelp-review"
           data-review-id="fz0OCixkLNFdUOiv-bx2vA"
           data-hostname="www.yelp.com"
         >
           Read{" "}
           <a
+            target="_blank"
             href="https://www.yelp.com/user_details?userid=ftF0UAOs9LmmbVfKm7UCgA"
             rel="nofollow noopener"
           >
@@ -167,6 +189,7 @@ const Yelp = () => {
           </a>
           {"'s "}
           <a
+            target="_blank"
             href="https://www.yelp.com/biz/below-zero-shaved-ice-upland?hrid=fz0OCixkLNFdUOiv-bx2vA"
             rel="nofollow noopener"
           >
@@ -174,13 +197,18 @@ const Yelp = () => {
           </a>{" "}
           of{" "}
           <a
+            target="_blank"
             href="https://www.yelp.com/biz/pHYLIh3wLUriqiUg8DrvcA"
             rel="nofollow noopener"
           >
             Below Zero Shaved Ice
           </a>{" "}
           on{" "}
-          <a href="https://www.yelp.com" rel="nofollow noopener">
+          <a
+            target="_blank"
+            href="https://www.yelp.com"
+            rel="nofollow noopener"
+          >
             Yelp
           </a>
           <script
@@ -210,12 +238,13 @@ const Yelp = () => {
           />
         </div>
         <span
-          class="yelp-review"
+          className="yelp-review"
           data-review-id="fz0OCixkLNFdUOiv-bx2vA"
           data-hostname="www.yelp.com"
         >
           Read{" "}
           <a
+            target="_blank"
             href="https://www.yelp.com/user_details?userid=ftF0UAOs9LmmbVfKm7UCgA"
             rel="nofollow noopener"
           >
@@ -223,6 +252,7 @@ const Yelp = () => {
           </a>
           {"'s "}
           <a
+            target="_blank"
             href="https://www.yelp.com/biz/below-zero-shaved-ice-upland?hrid=fz0OCixkLNFdUOiv-bx2vA"
             rel="nofollow noopener"
           >
@@ -230,13 +260,18 @@ const Yelp = () => {
           </a>{" "}
           of{" "}
           <a
+            target="_blank"
             href="https://www.yelp.com/biz/pHYLIh3wLUriqiUg8DrvcA"
             rel="nofollow noopener"
           >
             Below Zero Shaved Ice
           </a>{" "}
           on{" "}
-          <a href="https://www.yelp.com" rel="nofollow noopener">
+          <a
+            target="_blank"
+            href="https://www.yelp.com"
+            rel="nofollow noopener"
+          >
             Yelp
           </a>
           <script
