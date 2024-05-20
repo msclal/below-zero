@@ -14,7 +14,7 @@ const NavBar = () => {
   const [scrolledFromTop, setScrolledFromTop] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY >= 200) {
+    if (window.scrollY >= 150) {
       setScrolledFromTop(true);
     } else {
       setScrolledFromTop(false);
@@ -53,11 +53,11 @@ const NavBar = () => {
       className={`z-10 flex justify-center bg-primary-background lg:mb-[2%] overflow-hidden  transition-all duration-200 h-24`}
     >
       <div
-        className={`flex items-center justify-between w-11/12 max-sm:hidden transition-all duration-200`}
+        className={`flex items-center justify-between w-11/12 max-sm:hidden transition-all duration-300`}
       >
         <Link
           href="/"
-          className={`transition-all duration-200 sm:w-[20%] lg:w-[13%] ${pathname === "/" && !scrolledFromTop && "sm:w-[35%] lg:w-[26%]"}`}
+          className={`transition-all duration-300 cursor-pointer sm:w-[20%] lg:w-[13%] ${pathname === "/" && !scrolledFromTop && "sm:w-[35%] lg:w-[26%]"}`}
         >
           <Image src={BelowZeroLogo} alt="Below Zero logo" />
         </Link>
@@ -93,12 +93,9 @@ const NavBar = () => {
       </div>
       <div
         ref={componentRef}
-        className="sm:hidden w-full flex justify-between items-center px-4 py-3 max-sm:w-[90%] sm:w-[20%] lg:w-[13%]"
+        className="flex items-center justify-between w-[95%] px-4 py-3 sm:hidden"
       >
-        <Link
-          href="/"
-          className="max-sm:w-[40%] sm:w-[20%] lg:w-[13%] max-sm:py-[5%]"
-        >
+        <Link href="/" className="w-[55%] py-[5%]">
           <Image src={BelowZeroLogo} alt="Below Zero logo" />
         </Link>
         <div
@@ -118,7 +115,7 @@ const NavBar = () => {
         >
           <div>
             <div className="bg-primary text-white flex font-outfit flex-col justify-left items-left space-y-[7%] w-full px-[10%] py-[5%]">
-              <Link href="/home" className="hover:text-border">
+              <Link href="/" className="hover:text-border">
                 HOME
               </Link>
               <Link href="/menu" className="hover:text-border">
