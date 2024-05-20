@@ -50,7 +50,7 @@ const NavBar = () => {
 
   return (
     <div
-      className={`z-10 flex justify-center bg-primary-background lg:mb-[2%] overflow-hidden  transition-all duration-200 h-16 sm:h-[88px]`}
+      className={`z-10 flex justify-center bg-primary-background lg:mb-[2%] overflow-hidden  transition-all duration-300 h-16 sm:h-[88px]`}
     >
       <div
         className={`flex items-center justify-between w-11/12 max-sm:hidden transition-all duration-300`}
@@ -64,25 +64,25 @@ const NavBar = () => {
         <div className={`flex items-center w-fit sm:space-x-6 lg:space-x-12`}>
           <Link
             href="/"
-            className="transition-all duration-300 ease-in-out hover:text-black/60"
+            className="transition-all duration-300 ease-in-out hover:text-text-subtext"
           >
             HOME
           </Link>
           <Link
             href="/menu"
-            className="transition-all duration-300 ease-in-out hover:text-black/60"
+            className="transition-all duration-300 ease-in-out hover:text-text-subtext"
           >
             MENU
           </Link>
           <Link
             href="/about"
-            className="transition-all duration-300 ease-in-out hover:text-black/60"
+            className="transition-all duration-300 ease-in-out hover:text-text-subtext"
           >
             ABOUT
           </Link>
           <a
             href="/services"
-            className="transition-all duration-300 ease-in-out hover:text-black/60"
+            className="transition-all duration-300 ease-in-out hover:text-text-subtext"
           >
             SERVICES
           </a>
@@ -114,16 +114,16 @@ const NavBar = () => {
           className="sm:hidden w-full absolute z-10 top-[100%] "
         >
           <div className="bg-primary text-white flex font-outfit flex-col justify-left items-left space-y-[7%] w-full px-[10%] py-[5%]">
-            <Link href="/" className="hover:text-border">
+            <Link href="/" className="hover:text-text-subtext">
               HOME
             </Link>
-            <Link href="/menu" className="hover:text-border">
+            <Link href="/menu" className="hover:text-text-subtext">
               MENU
             </Link>
-            <Link href="/about" className="hover:text-border">
+            <Link href="/about" className="hover:text-text-subtext">
               ABOUT
             </Link>
-            <a href="/services" className="hover:text-border">
+            <a href="/services" className="hover:text-text-subtext">
               SERVICES
             </a>
             <Link href="/contact">
