@@ -94,7 +94,7 @@ const Menu = () => {
                     exit={{ opacity: 0, y: 0 }}
                     className="absolute z-10 w-full top-5 lg:hidden"
                   >
-                    <div className="flex flex-col w-full border-2 border-border text-text-subtext bg-primary-background font-outfit md:space-y-7">
+                    <div className="flex flex-col w-full border-2 border-border text-text-subtext bg-primary-background font-outfit">
                       <div
                         className={`font-semibold text-black flex items-center justify-between w-full px-7 py-3 select-none`}
                         onClick={() => {

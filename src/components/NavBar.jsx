@@ -81,10 +81,10 @@ const NavBar = () => {
         </Link>
         <div
           ref={componentRef}
-          className="text-xl font-bold text-primary"
+          className="text-2xl font-bold text-primary"
           onClick={() => setToggle(!toggle)}
         >
-          <RxHamburgerMenu />
+          <RxHamburgerMenu className="stroke-[0.5px]" />
         </div>
       </div>
       {toggle && (
@@ -92,16 +92,24 @@ const NavBar = () => {
           initial={{ opacity: 0, y: 0 }}
           animate={{ opacity: 1, x: 0, transition: { delay: 0.07 } }}
           exit={{ opacity: 0, y: 0 }}
-          className="sm:hidden w-full absolute z-10 top-[80%] "
+          className="sm:hidden w-full absolute z-10 top-[100%] "
         >
           <div>
             <div className="bg-primary text-white flex font-outfit flex-col justify-left items-left space-y-[7%] w-full px-[10%] py-[5%]">
-              <Link href="/menu">HOME</Link>
-              <Link href="/menu">MENU</Link>
-              <Link href="/about">ABOUT</Link>
-              <a href="/services">SERVICES</a>
+              <Link href="/menu" className="hover:text-border">
+                HOME
+              </Link>
+              <Link href="/menu" className="hover:text-border">
+                MENU
+              </Link>
+              <Link href="/about" className="hover:text-border">
+                ABOUT
+              </Link>
+              <a href="/services" className="hover:text-border">
+                SERVICES
+              </a>
               <Link href="/contact">
-                <div className="px-6 py-2 font-medium text-white transition-all duration-300 ease-in-out border-2 border-white rounded-md cursor-pointer w-fit bg-primary hover:bg-primary/80 font-montserrat">
+                <div className="px-6 py-2 font-medium text-white transition-all duration-300 ease-in-out border-2 border-white rounded-md cursor-pointer w-fit hover:bg-white hover:text-primary font-montserrat">
                   CONTACT
                 </div>
               </Link>
