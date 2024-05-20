@@ -37,14 +37,7 @@ const NavBar = () => {
           href="/"
           className="max-sm:w-[40%] sm:w-[20%] lg:w-[13%] max-sm:py-[5%]"
         >
-          <Image
-            src={BelowZeroLogo}
-            alt="Landing"
-            layout="responsive"
-            className=""
-            width="1"
-            height="1"
-          />
+          <Image src={BelowZeroLogo} alt="Landing" />
         </Link>
         <div className="flex items-center w-fit sm:space-x-6 lg:space-x-12">
           <Link
@@ -80,16 +73,12 @@ const NavBar = () => {
         ref={componentRef}
         className="sm:hidden w-full flex justify-between items-center px-4 py-3 max-sm:w-[90%] sm:w-[20%] lg:w-[13%]"
       >
-        <div className="max-sm:w-[40%] sm:w-[20%] lg:w-[13%] max-sm:py-[5%]">
-          <Image
-            src={BelowZeroLogo}
-            alt="Landing"
-            layout="responsive"
-            className=""
-            width="1"
-            height="1"
-          />
-        </div>
+        <Link
+          href="/"
+          className="max-sm:w-[40%] sm:w-[20%] lg:w-[13%] max-sm:py-[5%]"
+        >
+          <Image src={BelowZeroLogo} alt="Landing" className="" />
+        </Link>
         <div
           ref={componentRef}
           className="text-xl font-bold text-primary"
