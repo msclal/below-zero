@@ -51,6 +51,7 @@ const Menu = () => {
     <>
       <div className="flex flex-col justify-center ">
         <div className="flex max-lg:flex-col ">
+          {/* DESKTOP */}
           <div className="lg:w-5/12 ">
             <Menubar
               selectedMenuItem={isClicked}
@@ -93,19 +94,18 @@ const Menu = () => {
                     exit={{ opacity: 0, y: 0 }}
                     className="absolute z-10 w-full top-5 lg:hidden"
                   >
-                    <div className="border-2 border-border text-text-subtext bg-primary-background flex font-outfit flex-col space-y-[7%] w-full px-7 py-3 md:space-y-7">
+                    <div className="flex flex-col w-full border-2 border-border text-text-subtext bg-primary-background font-outfit md:space-y-7">
                       <div
-                        className={`font-semibold text-black flex items-center justify-between w-full`}
+                        className={`font-semibold text-black flex items-center justify-between w-full px-7 py-3 select-none`}
                         onClick={() => {
                           setToggle(false);
-                          setIsClicked("SHAVED ICE");
                         }}
                       >
                         {isClicked}
                         <BiSolidDownArrow className="text-lg rotate-180" />
                       </div>
                       <div
-                        className={`${isClicked === "SHAVED ICE" && `hidden`}`}
+                        className={`${isClicked === "SHAVED ICE" && `hidden`} px-7 py-3 hover:bg-border select-none`}
                         onClick={() => {
                           setToggle(false);
                           setIsClicked("SHAVED ICE");
@@ -114,7 +114,7 @@ const Menu = () => {
                         SHAVED ICE
                       </div>
                       <div
-                        className={`${isClicked === "SHAVED ICE COMBOS" && `hidden`}`}
+                        className={`${isClicked === "SHAVED ICE COMBOS" && `hidden`} px-7 py-3 hover:bg-border select-none`}
                         onClick={() => {
                           setToggle(false);
                           setIsClicked("SHAVED ICE COMBOS");
@@ -123,7 +123,7 @@ const Menu = () => {
                         SHAVED ICE COMBOS
                       </div>
                       <div
-                        className={`${isClicked === "SHAKES" && `hidden`}`}
+                        className={`${isClicked === "SHAKES" && `hidden`} px-7 py-3 hover:bg-border select-none`}
                         onClick={() => {
                           setToggle(false);
                           setIsClicked("SHAKES");
@@ -132,7 +132,7 @@ const Menu = () => {
                         SHAKES
                       </div>
                       <div
-                        className={`${isClicked === "ICE CREAM" && `hidden`}`}
+                        className={`${isClicked === "ICE CREAM" && `hidden`} px-7 py-3 hover:bg-border select-none`}
                         onClick={() => {
                           setToggle(false);
                           setIsClicked("ICE CREAM");
@@ -141,7 +141,7 @@ const Menu = () => {
                         ICE CREAM
                       </div>
                       <div
-                        className={`${isClicked === "HOUSE SPECIALTIES" && `hidden`}`}
+                        className={`${isClicked === "HOUSE SPECIALTIES" && `hidden`} px-7 py-3 hover:bg-border select-none`}
                         onClick={() => {
                           setToggle(false);
                           setIsClicked("HOUSE SPECIALTIES");

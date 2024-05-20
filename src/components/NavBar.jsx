@@ -107,6 +107,7 @@ const NavBar = () => {
         >
           <div>
             <div className="bg-primary text-white flex font-outfit flex-col justify-left items-left space-y-[7%] w-full px-[10%] py-[5%]">
+              <Link href="/menu">HOME</Link>
               <Link href="/menu">MENU</Link>
               <Link href="/about">ABOUT</Link>
               <a href="/services">SERVICES</a>
