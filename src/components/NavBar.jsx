@@ -1,15 +1,33 @@
 "use client";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
-// import { Link as ScrollLink } from "react-scroll";
+import { RxHamburgerMenu } from "react-icons/rx";
 import BelowZeroLogo from "/public/BelowZeroLogo.svg";
 import Button from "./Button";
-import React, { useEffect, useRef, useState } from "react";
-import { RxHamburgerMenu } from "react-icons/rx";
-import Link from "next/link";
 
 const NavBar = () => {
+  const pathname = usePathname();
   const componentRef = useRef(null);
+  const [scrolledFromTop, setScrolledFromTop] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY >= 200) {
+      setScrolledFromTop(true);
+    } else {
+      setScrolledFromTop(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -31,15 +49,19 @@ const NavBar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div className="z-10 flex justify-center bg-primary-background lg:mb-[2%]">
-      <div className="flex items-center justify-between w-11/12 py-6 max-sm:hidden">
+    <div
+      className={`z-10 flex justify-center bg-primary-background lg:mb-[2%] overflow-hidden  transition-all duration-200 h-24`}
+    >
+      <div
+        className={`flex items-center justify-between w-11/12 max-sm:hidden transition-all duration-200`}
+      >
         <Link
           href="/"
-          className="max-sm:w-[40%] sm:w-[20%] lg:w-[13%] max-sm:py-[5%]"
+          className={`transition-all duration-200 sm:w-[20%] lg:w-[13%] ${pathname === "/" && !scrolledFromTop && "sm:w-[35%] lg:w-[26%]"}`}
         >
-          <Image src={BelowZeroLogo} alt="Landing" />
+          <Image src={BelowZeroLogo} alt="Below Zero logo" />
         </Link>
-        <div className="flex items-center w-fit sm:space-x-6 lg:space-x-12">
+        <div className={`flex items-center w-fit sm:space-x-6 lg:space-x-12`}>
           <Link
             href="/"
             className="transition-all duration-300 ease-in-out hover:text-black/60"
@@ -77,7 +99,7 @@ const NavBar = () => {
           href="/"
           className="max-sm:w-[40%] sm:w-[20%] lg:w-[13%] max-sm:py-[5%]"
         >
-          <Image src={BelowZeroLogo} alt="Landing" className="" />
+          <Image src={BelowZeroLogo} alt="Below Zero logo" />
         </Link>
         <div
           ref={componentRef}

@@ -34,8 +34,8 @@ export default function RootLayout({ children }) {
             <Image
               src={IceCreamBanner}
               alt="Landing"
+              height={90}
               layout="responsive"
-              className=""
             />
           </Marquee>
         )}
