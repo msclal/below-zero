@@ -13,6 +13,7 @@ const Info = () => {
           alt="Below Zero Catering"
           priority={true}
           fill
+          sizes="auto"
           draggable={false}
           className="object-cover rounded-xl"
         />

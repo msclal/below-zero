@@ -50,7 +50,7 @@ const NavBar = () => {
 
   return (
     <div
-      className={`z-10 flex justify-center bg-primary-background lg:mb-[2%] overflow-hidden  transition-all duration-200 h-24`}
+      className={`z-10 flex justify-center bg-primary-background lg:mb-[2%] overflow-hidden  transition-all duration-200 h-16 sm:h-[88px]`}
     >
       <div
         className={`flex items-center justify-between w-11/12 max-sm:hidden transition-all duration-300`}
@@ -93,9 +93,9 @@ const NavBar = () => {
       </div>
       <div
         ref={componentRef}
-        className="flex items-center justify-between w-[95%] px-4 py-3 sm:hidden"
+        className="flex items-center justify-between w-[95%] px-4 sm:hidden"
       >
-        <Link href="/" className="w-[55%] py-[5%]">
+        <Link href="/" className="w-[55%]">
           <Image src={BelowZeroLogo} alt="Below Zero logo" />
         </Link>
         <div
@@ -113,26 +113,24 @@ const NavBar = () => {
           exit={{ opacity: 0, y: 0 }}
           className="sm:hidden w-full absolute z-10 top-[100%] "
         >
-          <div>
-            <div className="bg-primary text-white flex font-outfit flex-col justify-left items-left space-y-[7%] w-full px-[10%] py-[5%]">
-              <Link href="/" className="hover:text-border">
-                HOME
-              </Link>
-              <Link href="/menu" className="hover:text-border">
-                MENU
-              </Link>
-              <Link href="/about" className="hover:text-border">
-                ABOUT
-              </Link>
-              <a href="/services" className="hover:text-border">
-                SERVICES
-              </a>
-              <Link href="/contact">
-                <div className="px-6 py-2 font-medium text-white transition-all duration-300 ease-in-out border-2 border-white rounded-md cursor-pointer w-fit hover:bg-white hover:text-primary font-montserrat">
-                  CONTACT
-                </div>
-              </Link>
-            </div>
+          <div className="bg-primary text-white flex font-outfit flex-col justify-left items-left space-y-[7%] w-full px-[10%] py-[5%]">
+            <Link href="/" className="hover:text-border">
+              HOME
+            </Link>
+            <Link href="/menu" className="hover:text-border">
+              MENU
+            </Link>
+            <Link href="/about" className="hover:text-border">
+              ABOUT
+            </Link>
+            <a href="/services" className="hover:text-border">
+              SERVICES
+            </a>
+            <Link href="/contact">
+              <div className="px-6 py-2 font-medium text-white transition-all duration-300 ease-in-out border-2 border-white rounded-md cursor-pointer w-fit hover:bg-white hover:text-primary font-montserrat">
+                CONTACT
+              </div>
+            </Link>
           </div>
         </motion.div>
       )}

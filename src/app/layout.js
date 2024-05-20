@@ -33,9 +33,10 @@ export default function RootLayout({ children }) {
           <Marquee autoFill speed={30}>
             <Image
               src={IceCreamBanner}
-              alt="Landing"
-              height={90}
+              alt="Snowcones banner"
               layout="responsive"
+              draggable="false"
+              priority={true}
             />
           </Marquee>
         )}

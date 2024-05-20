@@ -58,8 +58,8 @@ const Yelp = () => {
           <Image
             src={Customers1}
             alt="Below Zero Cup"
-            priority={true}
             fill
+            sizes="auto"
             draggable={false}
             className="object-cover bg-secondary-background sm:object-contain rounded-xl "
           />
@@ -111,8 +111,8 @@ const Yelp = () => {
           <Image
             src={Customers2}
             alt="Below Zero Cup"
-            priority={true}
             fill
+            sizes="auto"
             draggable={false}
             className="object-cover bg-secondary-background sm:object-contain rounded-xl "
           />
@@ -126,7 +126,7 @@ const Yelp = () => {
             src={Customers1}
             alt="Below Zero Cup"
             fill
-            priority={true}
+            sizes="auto"
             draggable={false}
             className="object-cover bg-secondary-background rounded-xl "
           />
@@ -221,8 +221,8 @@ const Yelp = () => {
           <Image
             src={Customers2}
             alt="Below Zero Cup"
-            priority={true}
             fill
+            sizes="auto"
             draggable={false}
             className="object-cover bg-secondary-background rounded-xl"
           />
@@ -231,8 +231,8 @@ const Yelp = () => {
           <Image
             src={Customers2}
             alt="Below Zero Catering"
-            priority={true}
             fill
+            sizes="auto"
             draggable={false}
             className="object-cover bg-secondary-background rounded-xl"
           />

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import StoryImage from "/public/about/story.png";
+import Storefront from "/public/storefront.webp";
 
 const Story = () => {
   return (
@@ -34,10 +34,11 @@ const Story = () => {
       </div>
       <div className="w-full h-[475px] sm:w-[400px] sm:h-[500px] bg-secondary-background relative">
         <Image
-          src={StoryImage}
+          src={Storefront}
           alt="Below Zero store front"
           priority={true}
           fill
+          sizes="auto"
           draggable={false}
           className="object-fill rounded-xl"
         />

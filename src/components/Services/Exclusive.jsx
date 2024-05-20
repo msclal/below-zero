@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import ThreeCups from "/public/services/three_cups.png";
+import Snowcones from "/public/services/snowcones.png";
 
 const Exclusive = () => {
   return (
@@ -17,9 +17,9 @@ const Exclusive = () => {
       <div className="flex w-full sm:w-1/2 sm:h-full">
         <div className="w-full h-[275px] sm:h-[400px] xl:h-[475px] relative max-sm:left-0 sm:-right-16 xl:-right-48">
           <Image
-            src={ThreeCups}
+            src={Snowcones}
+            sizes="auto"
             alt="Below Zero Cup"
-            priority={true}
             fill
             draggable={false}
             className="object-cover bg-secondary-background sm:object-contain rounded-xl "

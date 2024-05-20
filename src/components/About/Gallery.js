@@ -22,8 +22,8 @@ const Gallery = () => {
           <Image
             src={Sample}
             alt="shaved ice"
-            priority={true}
             fill
+            sizes="auto"
             draggable={false}
             className="object-cover"
           />
@@ -36,8 +36,8 @@ const Gallery = () => {
           <Image
             src={Sample}
             alt="shaved ice"
-            priority={true}
             fill
+            sizes="auto"
             draggable={false}
             className="object-cover"
           />
@@ -50,8 +50,8 @@ const Gallery = () => {
           <Image
             src={Sample}
             alt="shaved ice"
-            priority={true}
             fill
+            sizes="auto"
             draggable={false}
             className="object-cover"
           />
@@ -64,8 +64,8 @@ const Gallery = () => {
           <Image
             src={Sample}
             alt="shaved ice"
-            priority={true}
             fill
+            sizes="auto"
             draggable={false}
             className="object-cover"
           />
@@ -78,8 +78,8 @@ const Gallery = () => {
           <Image
             src={Sample}
             alt="shaved ice"
-            priority={true}
             fill
+            sizes="auto"
             draggable={false}
             className="object-cover"
           />
@@ -92,8 +92,8 @@ const Gallery = () => {
           <Image
             src={Sample}
             alt="shaved ice"
-            priority={true}
             fill
+            sizes="auto"
             draggable={false}
             className="object-cover"
           />
@@ -106,8 +106,8 @@ const Gallery = () => {
           <Image
             src={Sample}
             alt="shaved ice"
-            priority={true}
             fill
+            sizes="auto"
             draggable={false}
             className="object-cover"
           />
@@ -120,8 +120,8 @@ const Gallery = () => {
           <Image
             src={Sample}
             alt="shaved ice"
-            priority={true}
             fill
+            sizes="auto"
             draggable={false}
             className="object-cover"
           />
