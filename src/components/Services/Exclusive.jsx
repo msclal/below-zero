@@ -4,7 +4,7 @@ import ThreeCups from "/public/services/three_cups.png";
 
 const Exclusive = () => {
   return (
-    <div className="flex flex-col items-center justify-center overflow-x-hidden bg-secondary-background gap-y-10 sm:flex-row py-14 md:py-0 xl:py-10">
+    <div className="flex flex-col items-center px-[5%] justify-center overflow-x-hidden bg-secondary-background gap-y-10 sm:flex-row py-14 md:py-0 xl:py-10">
       <div className="w-full px-5 xl:w-1/3 sm:w-1/2">
         <p className="mb-3 text-4xl font-semibold">Catering Exclusive</p>
         <p>

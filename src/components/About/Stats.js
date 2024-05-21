@@ -6,7 +6,7 @@ const Stats = () => {
   const flavors = 19;
   return (
     <div className="flex flex-col items-center p-10 sm:items-center sm:flex-row bg-secondary-background">
-      <div className="justify-between max-sm:space-y-10 sm:w-full sm:flex xl:justify-evenly">
+      <div className="justify-between max-sm:space-y-10 sm:w-full sm:flex xl:justify-evenly  px-[15%]">
         <div className="flex items-center max-sm:gap-x-3.5">
           <p className="text-5xl font-bold sm:text-3xl lg:text-5xl text-primary">
             {years}+

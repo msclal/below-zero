@@ -5,7 +5,7 @@ import StoryImage from "/public/about/story.png";
 const Story = () => {
   return (
     <div className="flex flex-col-reverse items-start p-5 justify-evenly xl:justify-center gap-y-10 sm:flex-row gap-x-16 xl:gap-x-28 sm:gap-x-10">
-      <div className="w-full xl:w-1/3 sm:w-1/2">
+      <div className="w-full sm:w-1/3">
         <p className="mb-3 text-3xl font-semibold">OUR STORY</p>
         <p className="sm:text-sm xl:text-base">
           Our Shaved Ice story begun upon visiting Hawaii. We fell in love not

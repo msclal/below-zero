@@ -4,7 +4,7 @@ import React from "react";
 const Menubar = ({ selectedMenuItem, onMenuItemClick }) => {
   return (
     <>
-      <div className="w-full max-lg:hidden sticky top-[10%]">
+      <div className="w-full max-lg:hidden sticky top-24">
         <div className="text-4xl font-semibold text-white bg-primary p-6 lg:pl-[20%] xl:pl-[35%] mb-[14pt] rounded-r-2xl">
           MENU
         </div>
@@ -43,7 +43,7 @@ const Menubar = ({ selectedMenuItem, onMenuItemClick }) => {
         </div>
       </div>
       <div className="flex justify-center w-full lg:hidden">
-        <div className="w-11/12 text-lg font-semibold text-center text-white bg-primary">
+        <div className="w-11/12 text-lg mb-4 font-medium rounded-sm text-center text-white bg-primary">
           MENU
         </div>
       </div>
