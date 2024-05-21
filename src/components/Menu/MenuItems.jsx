@@ -7,7 +7,7 @@ const MenuItems = ({ data }) => {
       <div className="grid w-full grid-cols-2 lg:grid-cols-3">
         {data.map((item, index) => {
           return (
-            <div key={index} className="m-[11%]">
+            <div key={index} className="my-[5%]">
               <MenuItem
                 name={item.name}
                 picture={item.picture}

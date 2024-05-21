@@ -4,7 +4,7 @@ import Image from "next/image";
 const MenuItem = ({ key, name, picture, description }) => {
   return (
     <>
-      <div className="flex w-full items-center flex-col">
+      <div className="flex w-full items-center flex-col p-5 hover:bg-secondary-background hover:rounded-lg">
         <div className="w-full pb-[10%]">
           <Image
             src={picture}
