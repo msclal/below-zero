@@ -7,7 +7,7 @@ import Button from "../Button";
 const Services = () => {
   return (
     <>
-      <div className="flex justify-center py-[6%] bg-secondary-background">
+      <div className="flex justify-center max-sm:py-[15%]  py-[6%] bg-secondary-background">
         <div className="sm:w-10/12 lg:w-8/12 flex max-sm:flex-col max-sm:items-center space-x-[7%]">
           <div className="sm:w-4/12 max-sm:w-10/12">
             <Image src={Storefront} alt="Landing" className="rounded-xl" />

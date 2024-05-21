@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Rewards = () => {
   return (
-    <div className="flex py-[5%] justify-center">
+    <div className="flex max-sm:py-[15%]  py-[5%] justify-center">
       <div className="flex justify-center max-sm:flex-col max-sm:w-10/12 sm:w-10/12 lg:w-8/12 max-sm:items-center">
         <div className="sm:hidden w-[100%] pb-[10%]">
           <Image

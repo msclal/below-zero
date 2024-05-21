@@ -13,7 +13,7 @@ import RedArrow from "/public/landing/RedArrow.png";
 // import PurpleArrow from "/public/landing/PurpleArrow.png";
 import Filters from "./Filters";
 import HeroText from "./HeroText";
-import { SlArrowDown } from "react-icons/sl";
+// import { SlArrowDown } from "react-icons/sl";
 import { motion } from "framer-motion";
 import Link from "next/link";
 const images = [
@@ -70,13 +70,13 @@ const Carousel = () => {
 
   return (
     <>
-      <div className="flex justify-center">
+      <div className="flex justify-center ">
         <div className="relative items-center justify-center hidden  w-11/12 h-[850px] min-[1920px]:h-[850px] xl:flex">
           {/* <div className="w-1/3"> */}
           <HeroText />
           {/* </div> */}
           <div className="flex justify-center w-full h-full ">
-            <div className="relative flex justify-center items-center h-fit min-[1350px]:w-9/12 min-[1920px]:w-7/12 min-[2400px]:w-5/12 ">
+            <div className="relative flex justify-center items-center h-fit min-[1350px]:w-9/12 min-[1450px]:w-8/12 min-[1920px]:w-7/12 min-[2400px]:w-5/12 ">
               {index === 0 && (
                 <motion.div
                   initial={{ opacity: 0 }}
@@ -134,7 +134,7 @@ const Carousel = () => {
             </div>
           </div>
 
-          <motion.div
+          {/* <motion.div
             animate={{ y: [0, 20, 0] }}
             transition={{
               repeat: Infinity,
@@ -143,14 +143,14 @@ const Carousel = () => {
             className="absolute bottom-8 "
           >
             <SlArrowDown className="stroke-[20px] text-primary text-4xl" />
-          </motion.div>
+          </motion.div> */}
           <Filters selectedMenuItem={index} onMenuItemClick={handleSelection} />
         </div>{" "}
       </div>
 
       {/* TABLET */}
-      <div className="flex  justify-center pb-[6%] pt-[3%]">
-        <div className="max-sm:hidden flex  items-start w-11/12  xl:hidden">
+      <div className="flex  justify-center pb-[6%] pt-[3%] xl:hidden">
+        <div className="max-sm:hidden flex  items-start w-11/12  ">
           <div className="  h-full w-6/12">
             <HeroText />
           </div>
@@ -248,10 +248,10 @@ const Carousel = () => {
       </div>
 
       {/* MOBILE */}
-      <div className="relative flex flex-col min-h-screen overflow-hidden sm:hidden">
+      <div className="relative flex flex-col overflow-hidden sm:hidden  max-sm:pb-[10%] ">
         <HeroText />
 
-        <div className="flex justify-center w-2/3 m-auto">
+        <div className="flex justify-center w-2/3 m-auto pt-[5%]">
           <motion.div
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
@@ -272,7 +272,7 @@ const Carousel = () => {
             </div>
           </motion.div>
         </div>
-        <div className="relative">
+        <div className="relative ">
           <Image
             src={
               (index === 0 && BlueArrow) ||
@@ -282,10 +282,10 @@ const Carousel = () => {
               (index === 4 && BlueArrow)
             }
             alt="arrow"
-            className="absolute left-6 min-[400px]:left-10 -rotate-[25deg] bottom-14  min-[400px]:bottom-20 -z-[100] w-8"
+            className="hidden absolute left-6 min-[400px]:left-10 -rotate-[25deg] bottom-14  min-[400px]:bottom-20 -z-[100] w-8"
           />
           <div
-            className={`${(index === 0 && "bg-below-zero-blue-200") || (index === 1 && "bg-below-zero-red-200") || (index === 2 && "bg-below-zero-yellow-200") || (index === 3 && "bg-below-zero-purple-200") || (index === 4 && "bg-below-zero-green-200")} rounded-md px-6 py-2 w-[55%] min-[380px]:w-1/2 font-semibold transition-all duration-300 ease-in-out font-montserrat text-white text-center m-auto text-sm my-14 min-[400px]:my-20`}
+            className={`${(index === 0 && "bg-below-zero-blue-200") || (index === 1 && "bg-below-zero-red-200") || (index === 2 && "bg-below-zero-yellow-200") || (index === 3 && "bg-below-zero-purple-200") || (index === 4 && "bg-below-zero-green-200")} rounded-md px-6 py-2 w-[55%] min-[380px]:w-1/2 font-semibold transition-all duration-300 ease-in-out font-montserrat text-white text-center m-auto text-sm min-[400px]:my-[5%]`}
           >
             <Link
               href={

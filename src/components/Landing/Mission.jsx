@@ -3,7 +3,7 @@ import Button from "../Button";
 
 const Mission = () => {
   return (
-    <div className="flex py-[5%] justify-center ">
+    <div className="flex max-sm:py-[15%] py-[5%] justify-center ">
       <div className="flex flex-col justify-center max-sm:items-start items-center max-sm:flex-col max-sm:w-10/12 sm:w-10/12 lg:w-8/12">
         <div className="flex flex-col max-sm:items-start w-7/12 space-y-5 max-sm:w-full items-center">
           <div className="text-4xl font-semibold">Our Mission</div>

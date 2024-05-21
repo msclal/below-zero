@@ -79,7 +79,7 @@ const HeroText = () => {
         </div>
       </div>
       {/* MOBILE */}
-      <div className="flex justify-center">
+      <div className="flex justify-center ">
         <div className="flex flex-col items-center justify-center p-5 text-center sm:hidden gap-y-7 min-[400px]:gap-y-3 mb-5 w-10/12 ">
           <div className="flex flex-col">
             <p className="text-text-subtext font-light">HAWAIIAN SHAVED ICE</p>
