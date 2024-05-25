@@ -25,7 +25,7 @@ const Filters = ({ selectedMenuItem, onMenuItemClick }) => {
         >
           <p className="mb-3 font-semibold">SHAVED ICE COMBO</p>
           <p className="text-sm font-light text-text-subtext">
-            Hawaiian shaved ice with perfectly curated syrups made in-house
+            Shaved ice with creamy, delicious, and refreshing ice cream
           </p>
         </motion.div>
         <motion.div
@@ -34,7 +34,7 @@ const Filters = ({ selectedMenuItem, onMenuItemClick }) => {
         >
           <p className="mb-3 font-semibold">ICE CREAM</p>
           <p className="text-sm font-light text-text-subtext">
-            Hawaiian shaved ice with perfectly curated syrups made in-house
+            Indulge in classic Thrifty ice cream flavors. Simply delicious.
           </p>
         </motion.div>
         <motion.div
@@ -43,7 +43,7 @@ const Filters = ({ selectedMenuItem, onMenuItemClick }) => {
         >
           <p className="mb-3 font-semibold">SHAKES</p>
           <p className="text-sm font-light text-text-subtext">
-            Hawaiian shaved ice with perfectly curated syrups made in-house
+            Irresistibly creamy shakes made with Thrifty Ice Cream
           </p>
         </motion.div>
         <motion.div
@@ -52,7 +52,7 @@ const Filters = ({ selectedMenuItem, onMenuItemClick }) => {
         >
           <p className="mb-3 font-semibold">HOUSE SPECIALTIES</p>
           <p className="text-sm font-light text-text-subtext">
-            Hawaiian shaved ice with perfectly curated syrups made in-house
+            Signature delights: sweet, savory, and irresistible treats
           </p>
         </motion.div>
       </div>

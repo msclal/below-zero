@@ -26,21 +26,19 @@ const Info = () => {
             <p>WEDDINGS</p>
             <p>SPECIAL EVENTS</p>
           </div>
-          <p className="sm:text-sm xl:text-base">
-            Our Shaved Ice story begun upon visiting Hawaii. We fell in love not
-            only with the beauty of {"it's"} beaches and hospitable people, but
-            with this refreshing, fluffy and mouth melting deliciousness that
-            every one was talking about.
+          <p className="sm:text-sm xl:text-base text-text-subtext font-light">
+            Our catering services extend beyond mere food provision;
+            they`&#39;`re a testament to our commitment to excellence. Whether
+            it`&#39;`s a corporate event demanding sophistication or a joyous
+            wedding celebration, we tailor our offerings to meet your unique
+            needs.
             <br />
             <br />
-            It was love at the first sight! We said to ourselves how come we
-            {" don't"} see much of it in the states.
-            <br />
-            <br />
-            Of course, you {"can't"} find what you are not loo for. So we
-            started on a quest to find the right product with the same quality
-            but there
-            {" wasn't"}
+            Fundraising becomes a breeze with our delectable treats as
+            irresistible incentives for your supporters. From intimate
+            gatherings to grand affairs, our team ensures every event is infused
+            with charm and flavor, leaving a lasting impression on all who
+            attend.
           </p>
           <div>
             <Link href={"/contact"}>

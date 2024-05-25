@@ -7,13 +7,11 @@ import Carousel from "../components/Landing/Carousel";
 const Landing = () => {
   return (
     <>
-      {/* <div className="max-sm:space-y-[10%]"> */}
       <Carousel />
       <Services />
       <Rewards />
       <Video />
       <Mission />
-      {/* </div> */}
     </>
   );
 };

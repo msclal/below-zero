@@ -355,9 +355,10 @@ const Contact = () => {
                       SHAVED ICE
                     </div>
                     <div className="text-text-subtext font-extralight lg:w-8/12 xl:w-6/12">
-                      provide not only the best product, but an excellent
-                      customer service. We stand for quality, values and the
-                      charm that only a family business can provide for 12 years
+                      Indulge in the authentic taste of the islands with our
+                      Hawaiian shaved ice, featuring finely shaved ice topped
+                      with our housemade syrups, meticulously crafted for a
+                      burst of refreshing flavor in every bite.
                     </div>
                   </div>
                   <div className="space-y-[5%] pb-[3%] pt-[5%]">
@@ -373,9 +374,10 @@ const Contact = () => {
                       SHAVED ICE COMBOS
                     </div>
                     <div className="text-text-subtext font-extralight lg:w-8/12 xl:w-6/12">
-                      provide not only the best product, but an excellent
-                      customer service. We stand for quality, values and the
-                      charm that only a family business can provide for 12 years
+                      Experience the ultimate refreshment with our Hawaiian
+                      shaved ice combos, where you can customize your creation
+                      or opt for classic combinations. Enjoy the perfect harmony
+                      of finely shaved ice, our housemade syrups, and ice cream.
                     </div>
                   </div>
                   <div className="flex w-full my-5 md:mt-8 gap-x-4 md:gap-x-5">
@@ -451,9 +453,9 @@ const Contact = () => {
                       ICE CREAM
                     </div>
                     <div className="text-text-subtext font-extralight lg:w-8/12 xl:w-6/12">
-                      provide not only the best product, but an excellent
-                      customer service. We stand for quality, values and the
-                      charm that only a family business can provide for 12 years
+                      Immerse yourself in the classic flavors of Thrifty ice
+                      cream. Customize your scoops for your next taste
+                      adventure!
                     </div>
                   </div>
                   <div className="space-y-[5%] pb-[3%] pt-[5%]">
@@ -481,9 +483,11 @@ const Contact = () => {
                       SHAKES
                     </div>
                     <div className="text-text-subtext font-extralight lg:w-8/12 xl:w-6/12">
-                      provide not only the best product, but an excellent
-                      customer service. We stand for quality, values and the
-                      charm that only a family business can provide for 12 years
+                      Treat yourself to our luscious shakes, lovingly crafted
+                      with the rich goodness of Thrifty ice cream. Whether
+                      you`&#39;`re a fan of classic flavors or crave something
+                      adventurous, our customizable shakes are sure to satisfy
+                      your sweet cravings
                     </div>
                   </div>
                   <div className="space-y-[5%] pb-[3%] pt-[5%]">
@@ -501,9 +505,10 @@ const Contact = () => {
                       HOUSE SPECIALTIES
                     </div>
                     <div className="text-text-subtext font-extralight lg:w-8/12 xl:w-6/12">
-                      provide not only the best product, but an excellent
-                      customer service. We stand for quality, values and the
-                      charm that only a family business can provide for 12 years
+                      Discover our delectable house specialties, featuring
+                      customer favorites like Chamango and Cookie Slammer. Each
+                      crafted with care and bursting with flavor, they`&#39;`re
+                      sure to delight your taste buds
                     </div>
                   </div>
                   <div className="space-y-[5%] pb-[3%] pt-[5%]">

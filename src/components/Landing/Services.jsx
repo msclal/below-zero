@@ -34,25 +34,25 @@ const Services = () => {
               <div>
                 <div className="pb-2 font-medium">CATERING</div>
                 <div className="text-sm font-light text-text-subtext">
-                  provide not only the best product, but an excellent customer
-                  service. We stand for quality, values and the charm that only
-                  a family business can provide.
+                  Treat your guests to an unforgettable experience with our
+                  customizable menu options and dedicated catering services
+                  tailored to your event`&#39;`s needs.
                 </div>
               </div>
               <div>
                 <div className="pb-2 font-medium">FUNDRAISING</div>
                 <div className="text-sm font-light text-text-subtext">
-                  provide not only the best product, but an excellent customer
-                  service. We stand for quality, values and the charm that only
-                  a family business can provide.
+                  Partner with us to turn your fundraising events into sweet
+                  successes, offering our delicious treats as irresistible
+                  incentives for your supporters.
                 </div>
               </div>
               <div>
                 <div className="pb-2 font-medium">EVENTS</div>
                 <div className="text-sm font-light text-text-subtext">
-                  provide not only the best product, but an excellent customer
-                  service. We stand for quality, values and the charm that only
-                  a family business can provide.
+                  Make your special occasions truly memorable with our
+                  delightful treats and professional event services, ensuring
+                  every moment is filled with joy and flavor.
                 </div>
               </div>
             </div>
