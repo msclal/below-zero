@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import ThreeCups from "/public/services/three_cups.png";
+import ThreeCups from "/public/services/three_cups.webp";
 
 const Exclusive = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import StoryImage from "/public/about/story.png";
+import StoryImage from "/public/storefront.webp";
 
 const Story = () => {
   return (

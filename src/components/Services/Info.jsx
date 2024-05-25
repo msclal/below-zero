@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Button from "../Button";
 import Link from "next/link";
-import CateringImage from "/public/services/catering.png";
+import CateringImage from "/public/services/catering.webp";
 
 const Info = () => {
   return (
