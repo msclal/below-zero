@@ -8,9 +8,9 @@ import Specialties from "/public/landing/Specialties.webp";
 import IceCream from "/public/landing/IceCream.webp";
 import BlueArrow from "/public/landing/BlueArrow.png";
 import RedArrow from "/public/landing/RedArrow.png";
-// import YellowArrow from "/public/landing/YellowArrow.png";
-// import GreenArrow from "/public/landing/GreenArrow.png";
-// import PurpleArrow from "/public/landing/PurpleArrow.png";
+import YellowArrow from "/public/landing/YellowArrow.png";
+import GreenArrow from "/public/landing/GreenArrow.png";
+import PurpleArrow from "/public/landing/PurpleArrow.png";
 import Filters from "./Filters";
 import HeroText from "./HeroText";
 // import { SlArrowDown } from "react-icons/sl";
@@ -213,9 +213,9 @@ const Carousel = () => {
                 src={
                   (index === 0 && BlueArrow) ||
                   (index === 1 && RedArrow) ||
-                  (index === 2 && BlueArrow) ||
-                  (index === 3 && RedArrow) ||
-                  (index === 4 && BlueArrow)
+                  (index === 2 && YellowArrow) ||
+                  (index === 3 && PurpleArrow) ||
+                  (index === 4 && GreenArrow)
                 }
                 alt="arrow"
                 className=" absolute right-[40%] lg:right-[37%]  -rotate-[50deg] lg:-rotate-[50deg] -z-[100]"
