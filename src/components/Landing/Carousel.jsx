@@ -7,21 +7,20 @@ import Shakes from "/public/landing/Shakes.webp";
 import Specialties from "/public/landing/Specialties.webp";
 import IceCream from "/public/landing/IceCream.webp";
 import BlueArrow from "/public/landing/BlueArrow.png";
-import RedArrow from "/public/landing/RedArrow.png";
+import PinkArrow from "/public/landing/PinkArrow.png";
 import YellowArrow from "/public/landing/YellowArrow.png";
 import GreenArrow from "/public/landing/GreenArrow.png";
 import PurpleArrow from "/public/landing/PurpleArrow.png";
 import Filters from "./Filters";
 import HeroText from "./HeroText";
-// import { SlArrowDown } from "react-icons/sl";
 import { motion } from "framer-motion";
 import Link from "next/link";
 const images = [
-  { image: ShavedIce, alt: "Mika with Cat" },
-  { image: ShavedIceCombos, alt: "Grad Pic" },
-  { image: Shakes, alt: "Mika with Cat" },
-  { image: Specialties, alt: "Grad Pic" },
-  { image: IceCream, alt: "Grad Pic" },
+  { image: ShavedIce, alt: "ShavedIce" },
+  { image: ShavedIceCombos, alt: "Combos" },
+  { image: IceCream, alt: "IceCream" },
+  { image: Shakes, alt: "Shakes" },
+  { image: Specialties, alt: "Specialties" },
 ];
 const delay = 3000;
 const swipeThreshold = 0;
@@ -72,9 +71,7 @@ const Carousel = () => {
     <>
       <div className="flex justify-center ">
         <div className="relative items-center justify-center hidden  w-11/12 h-[850px] min-[1920px]:h-[850px] xl:flex">
-          {/* <div className="w-1/3"> */}
           <HeroText />
-          {/* </div> */}
           <div className="flex justify-center w-full h-full ">
             <div className="relative flex justify-center items-center h-fit min-[1350px]:w-9/12 min-[1450px]:w-8/12 min-[1920px]:w-7/12 min-[2400px]:w-5/12 ">
               {index === 0 && (
@@ -94,7 +91,7 @@ const Carousel = () => {
                   animate={{ opacity: 1, transition: { delay: 0.08 } }}
                   exit={{ opacity: 0 }}
                 >
-                  <Image src={ShavedIceCombos} alt="shaved ice " />
+                  <Image src={ShavedIceCombos} alt="shaved ice combos" />
                 </motion.div>
               )}
               {index === 2 && (
@@ -103,7 +100,7 @@ const Carousel = () => {
                   animate={{ opacity: 1, transition: { delay: 0.08 } }}
                   exit={{ opacity: 0 }}
                 >
-                  <Image src={IceCream} alt="shaved ice " />
+                  <Image src={IceCream} alt="ice cream" />
                 </motion.div>
               )}
               {index === 3 && (
@@ -112,14 +109,7 @@ const Carousel = () => {
                   animate={{ opacity: 1, transition: { delay: 0.08 } }}
                   exit={{ opacity: 0 }}
                 >
-                  <Image
-                    src={Shakes}
-                    alt="shaved ice "
-                    // width="0"
-                    // height="0"
-                    // sizes="100vw"
-                    // className="w-full h-auto"
-                  />
+                  <Image src={Shakes} alt="shakes" />
                 </motion.div>
               )}
               {index === 4 && (
@@ -128,22 +118,11 @@ const Carousel = () => {
                   animate={{ opacity: 1, transition: { delay: 0.08 } }}
                   exit={{ opacity: 0 }}
                 >
-                  <Image src={Specialties} alt="shaved ice " />
+                  <Image src={Specialties} alt="specialties" />
                 </motion.div>
               )}
             </div>
           </div>
-
-          {/* <motion.div
-            animate={{ y: [0, 20, 0] }}
-            transition={{
-              repeat: Infinity,
-              duration: 2,
-            }}
-            className="absolute bottom-8 "
-          >
-            <SlArrowDown className="stroke-[20px] text-primary text-4xl" />
-          </motion.div> */}
           <Filters selectedMenuItem={index} onMenuItemClick={handleSelection} />
         </div>{" "}
       </div>
@@ -185,7 +164,7 @@ const Carousel = () => {
                     exit={{ opacity: 0, x: 100 }}
                     transition={{ delay: 0.08 }}
                   >
-                    <Image src={Shakes} alt="shaved ice " />
+                    <Image src={IceCream} alt="shaved ice " />
                   </motion.div>
                 )}
                 {index === 3 && (
@@ -195,7 +174,7 @@ const Carousel = () => {
                     exit={{ opacity: 0, x: 100 }}
                     transition={{ delay: 0.08 }}
                   >
-                    <Image src={ShavedIceCombos} alt="shaved ice " />
+                    <Image src={Shakes} alt="shaved ice " />
                   </motion.div>
                 )}
                 {index === 4 && (
@@ -212,13 +191,13 @@ const Carousel = () => {
               <Image
                 src={
                   (index === 0 && BlueArrow) ||
-                  (index === 1 && RedArrow) ||
+                  (index === 1 && PinkArrow) ||
                   (index === 2 && YellowArrow) ||
                   (index === 3 && PurpleArrow) ||
                   (index === 4 && GreenArrow)
                 }
                 alt="arrow"
-                className=" absolute right-[40%] lg:right-[37%]  -rotate-[50deg] lg:-rotate-[50deg] -z-[100]"
+                className=" absolute w-40 rotate-[40deg] right-64 lg:w-56 lg:rotate-[24deg] lg:right-72"
               />
             </div>
             <div className="flex justify-end">
@@ -276,9 +255,9 @@ const Carousel = () => {
           <Image
             src={
               (index === 0 && BlueArrow) ||
-              (index === 1 && RedArrow) ||
+              (index === 1 && PinkArrow) ||
               (index === 2 && BlueArrow) ||
-              (index === 3 && RedArrow) ||
+              (index === 3 && PinkArrow) ||
               (index === 4 && BlueArrow)
             }
             alt="arrow"
