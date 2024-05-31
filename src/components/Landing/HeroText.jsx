@@ -28,7 +28,7 @@ const HeroText = () => {
         </div>
         <div className="absolute bottom-10">
           <div className="text-sm font-light pb-4">MORE FROM US:</div>
-          <div className="flex text-4xl font-medium gap-x-5 max-sm:justify-center">
+          <div className="flex text-4xl w-1/2 font-medium gap-x-5 max-sm:justify-center">
             <Link
               href="https://www.instagram.com/belowzeroshavedice/?hl=en"
               target="_blank"
@@ -93,21 +93,28 @@ const HeroText = () => {
               target="_blank"
               className="transition-all duration-300 ease-in-out hover:text-black/60"
             >
-              <FaInstagram />
+              <div className="text-3xl">
+                <FaInstagram />
+              </div>
             </Link>
             <Link
               href="https://www.yelp.com/biz/below-zero-shaved-ice-upland"
               target="_blank"
               className="transition-all duration-300 ease-in-out hover:text-black/60"
             >
-              <FaYelp />
+              <div className="text-3xl">
+                <FaYelp />
+              </div>
             </Link>
             <Link
               href="https://www.facebook.com/p/Below-Zero-Shaved-Ice-100065604604709/"
               target="_blank"
               className="transition-all duration-300 ease-in-out hover:text-black/60"
             >
-              <FaFacebook />
+              <div className="text-3xl">
+                {" "}
+                <FaFacebook />
+              </div>
             </Link>
           </div>
         </div>
