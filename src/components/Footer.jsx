@@ -5,6 +5,7 @@ import Marquee from "react-fast-marquee";
 import KABOLogo from "/public/KABOLogo.svg";
 import BelowZeroLogo from "/public/BelowZeroLogo.svg";
 import BelowZeroIcon from "/public/BelowZeroIcon.svg";
+import { FaFacebook, FaInstagram, FaYelp } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -57,6 +58,29 @@ const Footer = () => {
               {" "}
               belowzeroshavedice@yahoo.com
             </Link>
+            <div className="flex text-xl pt-2 font-medium gap-x-5">
+              <Link
+                href="https://www.instagram.com/belowzeroshavedice/?hl=en"
+                target="_blank"
+                className="transition-all duration-300 ease-in-out hover:text-black/60"
+              >
+                <FaInstagram />
+              </Link>
+              <Link
+                href="https://www.yelp.com/biz/below-zero-shaved-ice-upland"
+                target="_blank"
+                className="transition-all duration-300 ease-in-out hover:text-black/60"
+              >
+                <FaYelp />
+              </Link>
+              <Link
+                href="https://www.facebook.com/p/Below-Zero-Shaved-Ice-100065604604709/"
+                target="_blank"
+                className="transition-all duration-300 ease-in-out hover:text-black/60"
+              >
+                <FaFacebook />
+              </Link>
+            </div>
           </div>
         </div>
         <div className="flex text-primary text-xs justify-center max-sm:pt-[10%] max-sm:pb-[5%]">

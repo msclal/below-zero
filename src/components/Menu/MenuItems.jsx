@@ -1,7 +1,6 @@
 import React from "react";
 import MenuItem from "./MenuItem";
 import Image from "next/image";
-
 import {
   Dialog,
   DialogContent,
@@ -18,7 +17,7 @@ const MenuItems = ({ data }) => {
           return (
             <div key={index} className="m-[11%]">
               <Dialog>
-                <DialogTrigger>
+                <DialogTrigger className="data-[state=open]:bg-primary-background focus:bg-primary-background focus:outline-none">
                   <MenuItem
                     name={item.name}
                     picture={item.picture}

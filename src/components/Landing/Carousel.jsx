@@ -24,7 +24,7 @@ const images = [
   { image: IceCream, alt: "Grad Pic" },
 ];
 const delay = 3000;
-const swipeThreshold = 0;
+const swipeThreshold = -20;
 
 const Carousel = () => {
   const [index, setIndex] = useState(0);
@@ -62,9 +62,15 @@ const Carousel = () => {
 
   function handleTouchEnd() {
     if (touchStart - touchEnd > swipeThreshold) {
-      setIndex((prevIndex) => (prevIndex + 1) % images.length);
+      // Swipe right to left
+      if (index < images.length - 1) {
+        setIndex((prevIndex) => prevIndex + 1);
+      }
     } else if (touchEnd - touchStart > swipeThreshold) {
-      setIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+      // Swipe left to right
+      if (index > 0) {
+        setIndex((prevIndex) => prevIndex - 1);
+      }
     }
   }
 
@@ -258,7 +264,7 @@ const Carousel = () => {
             onTouchEnd={handleTouchEnd}
           >
             <div
-              className="relative whitespace-nowrap transition-ease duration-[650ms] "
+              className={`carousel-wrapper slide-in-from-left-${index}`}
               style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
             >
               {images.map((image, idx) => (
@@ -266,7 +272,8 @@ const Carousel = () => {
                   key={idx}
                   src={image.image}
                   alt={image.alt}
-                  className="inline-block w-full relative z-[10] px-3"
+                  // className="carousel-item"
+                  className="inline-block w-full relative z-[10] px-4"
                 />
               ))}
             </div>
