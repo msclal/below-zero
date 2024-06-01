@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Button from "../Button";
 import Link from "next/link";
-import CateringImage from "/public/services/catering.webp";
+import CateringImage from "/public/catering/catering.webp";
 
 const Info = () => {
   return (
@@ -26,12 +26,11 @@ const Info = () => {
             <p>WEDDINGS</p>
             <p>SPECIAL EVENTS</p>
           </div>
-          <p className="font-light sm:text-sm xl:text-base text-text-subtext">
-            Our catering services extend beyond mere food provision;
-            they`&#39;`re a testament to our commitment to excellence. Whether
-            it`&#39;`s a corporate event demanding sophistication or a joyous
-            wedding celebration, we tailor our offerings to meet your unique
-            needs.
+          <p className="font-light text-text-subtext">
+            Our catering services extend beyond mere food provision; they{"'"}re
+            a testament to our commitment to excellence. Whether it{"'"}s a
+            corporate event demanding sophistication or a joyous wedding
+            celebration, we tailor our offerings to meet your unique needs.
             <br />
             <br />
             Fundraising becomes a breeze with our delectable treats as

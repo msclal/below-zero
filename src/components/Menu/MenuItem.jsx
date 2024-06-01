@@ -13,12 +13,13 @@ const MenuItem = ({ name, picture, description }) => {
             className="rounded-xl"
             width="1"
             height="1"
+            draggable={false}
           />
         </div>
         <div className="font-bold text-center uppercase font-montserrat">
           {name}
         </div>
-        <div className="text-center font-extralight text-text-subtext">
+        <div className="font-light text-center text-text-subtext">
           {description}
         </div>
       </div>

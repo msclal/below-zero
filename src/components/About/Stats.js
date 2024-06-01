@@ -37,34 +37,3 @@ const Stats = () => {
 };
 
 export default Stats;
-
-{
-  /* <div className="flex items-center py-14 sm:py-10 max-sm:flex-col bg-secondary-background">
-<div className="items-end space-y-10 sm:w-full sm:flex sm:justify-evenly">
-  <div className="flex items-center max-sm:gap-x-3.5">
-    <p className="text-5xl font-bold sm:text-3xl lg:text-5xl text-primary">
-      {years}+
-    </p>
-    <div className="ml-2 font-light sm:text-xs lg:text-sm">
-      YEARS OF <br /> SERVICE
-    </div>
-  </div>
-  <div className="flex items-center max-sm:gap-x-2">
-    <p className="text-5xl font-bold sm:text-3xl lg:text-5xl text-primary">
-      {syrups}+
-    </p>
-    <div className="ml-2 font-light sm:text-xs lg:text-sm">
-      HANDMADE SHAVED <br /> ICE SYRUPS
-    </div>
-  </div>
-  <div className="flex items-center max-sm:gap-x-3.5">
-    <p className="text-5xl font-bold sm:text-3xl lg:text-5xl text-primary">
-      {flavors}+
-    </p>
-    <div className="ml-2 font-light sm:text-xs lg:text-sm">
-      THRIFTY ICE <br /> CREAM FLAVORS
-    </div>
-  </div>
-</div>
-</div> */
-}

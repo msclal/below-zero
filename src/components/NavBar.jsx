@@ -59,7 +59,7 @@ const NavBar = () => {
           href="/"
           className={`transition-all duration-300 cursor-pointer sm:w-[20%] lg:w-[13%] ${pathname === "/" && !scrolledFromTop && "sm:w-[35%] lg:w-[26%]"}`}
         >
-          <Image src={BelowZeroLogo} alt="Below Zero logo" />
+          <Image src={BelowZeroLogo} alt="Below Zero logo" draggable={false} />
         </Link>
         <div className={`flex items-center w-fit sm:space-x-6 lg:space-x-12`}>
           <Link
@@ -81,10 +81,10 @@ const NavBar = () => {
             ABOUT
           </Link>
           <a
-            href="/services"
+            href="/catering"
             className="transition-all duration-300 ease-in-out hover:text-text-subtext"
           >
-            SERVICES
+            CATERING
           </a>
           <Link href="/contact">
             <Button>CONTACT</Button>
@@ -96,7 +96,7 @@ const NavBar = () => {
         className="flex items-center justify-between w-[95%] px-4 sm:hidden"
       >
         <Link href="/" className="w-[55%]">
-          <Image src={BelowZeroLogo} alt="Below Zero logo" />
+          <Image src={BelowZeroLogo} alt="Below Zero logo" draggable={false} />
         </Link>
         <div
           ref={componentRef}
@@ -123,8 +123,8 @@ const NavBar = () => {
             <Link href="/about" className="hover:text-text-subtext">
               ABOUT
             </Link>
-            <a href="/services" className="hover:text-text-subtext">
-              SERVICES
+            <a href="/catering" className="hover:text-text-subtext">
+              CATERING
             </a>
             <Link href="/contact">
               <div className="px-6 py-2 font-medium text-white transition-all duration-300 ease-in-out border-2 border-white rounded-md cursor-pointer w-fit hover:bg-white hover:text-primary font-montserrat">

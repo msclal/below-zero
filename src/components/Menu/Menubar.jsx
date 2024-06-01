@@ -4,7 +4,7 @@ import React from "react";
 const Menubar = ({ selectedMenuItem, onMenuItemClick }) => {
   return (
     <>
-      <div className="sticky w-full max-lg:hidden top-24">
+      <div className="w-full max-lg:hidden sticky top-24 pb-[15%]">
         <div className="text-4xl font-semibold text-white bg-primary p-6 lg:pl-[20%] xl:pl-[35%] mb-[14pt] rounded-r-2xl">
           MENU
         </div>

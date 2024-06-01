@@ -17,14 +17,14 @@ const Footer = () => {
       >
         BELOW ZERO SHAVED ICE
         <div className="w-3/4 px-4 mx-auto sm:px-10 sm:w-4/5 xl:w-full">
-          <Image src={BelowZeroIcon} alt="Below Zero Icon" />
+          <Image src={BelowZeroIcon} alt="Below Zero Icon" draggable={false} />
         </div>
       </Marquee>
 
       {/* FOOOTER */}
       <div className="flex flex-col sm:items-center sm:justify-center bg-secondary-background py-[4%] max-sm:pl-[8%]">
         <div className="max-sm:w-[40%] sm:w-[20%] lg:w-[13%] max-sm:py-[5%]">
-          <Image src={BelowZeroLogo} alt="Below Zero logo" />
+          <Image src={BelowZeroLogo} alt="Below Zero logo" draggable={false} />
         </div>
 
         <div className="flex max-sm:flex-col max-sm:items-start max-sm:space-y-[6%] sm:space-x-[5%] sm:w-10/12 lg:w-8/12 text-black mt-[3%] mb-[7%] text-base">
@@ -55,10 +55,9 @@ const Footer = () => {
               href="mailto:belowzeroshavedice@yahoo.com"
               className="text-black no-underline"
             >
-              {" "}
               belowzeroshavedice@yahoo.com
             </Link>
-            <div className="flex text-xl pt-2 font-medium gap-x-5">
+            <div className="flex pt-2 text-2xl font-medium gap-x-3">
               <Link
                 href="https://www.instagram.com/belowzeroshavedice/?hl=en"
                 target="_blank"
@@ -83,13 +82,18 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex text-primary text-xs justify-center max-sm:pt-[10%] max-sm:pb-[5%]">
+        <Link
+          target="_blank"
+          href="mailto:kabo.blueprint@gmail.com"
+          className="flex text-primary text-xs justify-center max-sm:pt-[10%] max-sm:pb-[5%]"
+        >
           <p className="flex items-center">MADE BY</p>
           <div className="w-[40px] mx-2">
             <Image
               src={KABOLogo}
-              alt="Landing"
+              alt="KABO Logo"
               layout="responsive"
+              draggable={false}
               className=""
               width="1"
               height="1"
@@ -102,7 +106,7 @@ const Footer = () => {
               <p>WEB STUDIO</p>
             </div>
           </div>
-        </div>
+        </Link>
       </div>
     </>
   );

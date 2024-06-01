@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import Customers1 from "/public/services/customers1.webp";
-import Customers2 from "/public/services/customers2.webp";
+import Customers1 from "/public/catering/customers1.webp";
+import Customers2 from "/public/catering/customers2.webp";
 
 const Yelp = () => {
   return (
@@ -57,7 +57,7 @@ const Yelp = () => {
         <div className="relative w-full h-[200px]">
           <Image
             src={Customers1}
-            alt="Below Zero Cup"
+            alt="Customer 1"
             fill
             sizes="auto"
             draggable={false}
@@ -110,7 +110,7 @@ const Yelp = () => {
         <div className="relative w-full h-[200px]">
           <Image
             src={Customers2}
-            alt="Below Zero Cup"
+            alt="Customer 2"
             fill
             sizes="auto"
             draggable={false}
@@ -124,7 +124,7 @@ const Yelp = () => {
         <div className="relative w-full sm:h-full">
           <Image
             src={Customers1}
-            alt="Below Zero Cup"
+            alt="Customer 1"
             fill
             sizes="auto"
             draggable={false}
@@ -220,7 +220,7 @@ const Yelp = () => {
         <div className="relative w-full h-full">
           <Image
             src={Customers2}
-            alt="Below Zero Cup"
+            alt="Customer 2"
             fill
             sizes="auto"
             draggable={false}
@@ -230,7 +230,7 @@ const Yelp = () => {
         <div className="relative w-full h-full">
           <Image
             src={Customers2}
-            alt="Below Zero Catering"
+            alt="Customer 2"
             fill
             sizes="auto"
             draggable={false}

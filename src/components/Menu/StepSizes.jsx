@@ -25,22 +25,24 @@ const Steps = ({ step }) => {
               <div className="flex flex-col items-center max-sm:w-1/2 sm:w-5/12">
                 <Image
                   src={Mini}
-                  alt="Landing"
+                  alt="Mini cup"
                   layout="responsive"
                   className="rounded-xl"
                   width="1"
                   height="1"
+                  draggable={false}
                 />
                 <div className="pt-2 font-medium">MINI</div>
               </div>
               <div className="flex flex-col items-center max-sm:w-1/2 sm:w-5/12">
                 <Image
                   src={Small}
-                  alt="Landing"
+                  alt="Small cup"
                   layout="responsive"
                   className="rounded-xl"
                   width="1"
                   height="1"
+                  draggable={false}
                 />
                 <div className="pt-2 font-medium">SMALL</div>
               </div>
@@ -49,22 +51,24 @@ const Steps = ({ step }) => {
               <div className="flex flex-col items-center max-sm:w-1/2 sm:w-5/12">
                 <Image
                   src={Large}
-                  alt="Landing"
+                  alt="Large cup"
                   layout="responsive"
                   className="rounded-xl"
                   width="1"
                   height="1"
+                  draggable={false}
                 />
                 <div className="pt-2 font-medium">LARGE</div>
               </div>
               <div className="flex flex-col items-center max-sm:w-1/2 sm:w-5/12">
                 <Image
                   src={XL}
-                  alt="Landing"
+                  alt="XL Cup"
                   layout="responsive"
                   className="rounded-xl"
                   width="1"
                   height="1"
+                  draggable={false}
                 />
                 <div className="pt-2 font-medium">X-LARGE</div>
               </div>

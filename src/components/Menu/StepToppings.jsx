@@ -41,11 +41,12 @@ const Steps = ({ step }) => {
           <div className="w-1/2 ">
             <Image
               src={Thrifty}
-              alt="Landing"
+              alt="Thrify Logo"
               layout="responsive"
               className="rounded"
               width="1"
               height="1"
+              draggable={false}
             />
           </div>
         </div>

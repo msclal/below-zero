@@ -15,7 +15,7 @@ const MenuItems = ({ data }) => {
       <div className="grid w-full grid-cols-2 lg:grid-cols-3">
         {data.map((item, index) => {
           return (
-            <div key={index} className="m-[11%]">
+            <div key={index} className="m-[5%]">
               <Dialog>
                 <DialogTrigger className="data-[state=open]:bg-primary-background focus:bg-primary-background focus:outline-none">
                   <MenuItem
@@ -28,15 +28,14 @@ const MenuItems = ({ data }) => {
                   <DialogHeader>
                     <DialogTitle>{item.name}</DialogTitle>
                     <DialogDescription>
-                      <div className="pr-10 text-base font-extralight text-text-subtext">
-                        {item.description}
-                      </div>
+                      {item.description}
                       <Image
                         src={item.gif}
                         alt={item.description}
                         layout="responsive"
                         width={1}
                         height={1}
+                        draggable={false}
                       />
                     </DialogDescription>
                   </DialogHeader>

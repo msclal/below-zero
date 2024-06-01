@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import BlueArrow from "/public/landing/BlueArrow.png";
-import RedArrow from "/public/landing/RedArrow.png";
+import PinkArrow from "/public/landing/PinkArrow.png";
 import YellowArrow from "/public/landing/YellowArrow.png";
 import GreenArrow from "/public/landing/GreenArrow.png";
 import PurpleArrow from "/public/landing/PurpleArrow.png";
@@ -63,13 +63,14 @@ const Filters = ({ selectedMenuItem, onMenuItemClick }) => {
       <Image
         src={
           (selectedMenuItem === 0 && BlueArrow) ||
-          (selectedMenuItem === 1 && RedArrow) ||
+          (selectedMenuItem === 1 && PinkArrow) ||
           (selectedMenuItem === 2 && YellowArrow) ||
           (selectedMenuItem === 3 && PurpleArrow) ||
           (selectedMenuItem === 4 && GreenArrow)
         }
         alt="arrow"
-        className="absolute -rotate-[22deg] bottom-10 -left-32 -z-[100] w-16"
+        className="absolute xl:rotate-[32deg] xl:bottom-32 xl:-left-48 xl:-z-[100] xl:w-48"
+        draggable={false}
       />
       <Link
         href={

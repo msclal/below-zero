@@ -44,7 +44,7 @@ const Steps = ({ step }) => {
                 <li>Praline</li>
                 <li>Raspberry</li>
                 <li>Rootbeer</li>
-                <li>S&#39;mores</li>
+                <li>S{"'"}mores</li>
                 <li>Sour Apple</li>
                 <li>Tamarindo</li>
               </div>
@@ -71,7 +71,7 @@ const Steps = ({ step }) => {
                   <li>Mango</li>
                   <li>Pina Colada</li>
                   <li>Strawberry</li>
-                  <li>Tiger&#39;s Blood</li>
+                  <li>Tiger{"'"}s Blood</li>
                   <li>Vanilla</li>
                   <li>Watermelon</li>
                 </div>

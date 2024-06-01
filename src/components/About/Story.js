@@ -7,7 +7,7 @@ const Story = () => {
     <div className="flex flex-col-reverse items-start p-5 justify-evenly xl:justify-center gap-y-10 sm:flex-row gap-x-16 xl:gap-x-28 sm:gap-x-10">
       <div className="w-full sm:w-1/3">
         <p className="mb-3 text-3xl font-semibold">OUR STORY</p>
-        <p className="sm:text-sm xl:text-base">
+        <p className="font-light text-text-subtext">
           Our Shaved Ice story begun upon visiting Hawaii. We fell in love not
           only with the beauty of {"it's"} beaches and hospitable people, but
           with this refreshing, fluffy and mouth melting deliciousness that
@@ -27,9 +27,9 @@ const Story = () => {
           flavor of your choice.
           <br />
           <br />
-          Our mission at Below Zero Shaved Ice, is to strive to provide not only
+          Our mission at Below Zero Shaved Ice, is to strive to serve not only
           the best product, but an excellent customer service. We stand for
-          quality, values and the charm that only a family business can provide.
+          quality, values, and charm that only a family business can provide.
         </p>
       </div>
       <div className="w-full h-[475px] sm:w-[400px] sm:h-[500px] bg-secondary-background relative">

@@ -57,8 +57,16 @@ const ContactForm = () => {
         </div>
         <div>
           <p className="text-xl font-semibold font-montserrat">CONTACT</p>
-          <p>(909) 899-9998</p>
-          <p>belowzeroshavedice@yahoo.com</p>
+          <Link target="_blank" href={"tel:9099209230"}>
+            (909) 920-9230
+          </Link>
+          <Link
+            target="_blank"
+            href="mailto:belowzeroshavedice@yahoo.com"
+            className="text-black no-underline"
+          >
+            <p>belowzeroshavedice@yahoo.com</p>
+          </Link>
         </div>
         <div className="flex text-4xl font-medium gap-x-5 max-sm:justify-center">
           <Link
@@ -116,7 +124,6 @@ const ContactForm = () => {
               className="px-6 py-2 font-medium text-white transition-all duration-300 ease-in-out rounded-md cursor-pointer w-fit bg-primary hover:bg-primary/80 font-montserrat"
             />
           </div>
-          {/* <Button>{"LET'S"} CONNECT</Button> */}
         </div>
       </form>
     </div>

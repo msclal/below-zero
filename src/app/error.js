@@ -1,8 +1,9 @@
+"use client";
 import Button from "@/components/Button";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import BelowZeroIcon from "/public/Icon2.svg";
+import BelowZeroIcon from "/public/BelowZeroIcon.svg";
 
 const error = () => {
   return (
@@ -11,22 +12,22 @@ const error = () => {
         <div className="w-2/12 pr-[3%] max-sm:hidden">
           <Image
             src={BelowZeroIcon}
-            alt="Landing"
+            alt="Below Zero icon"
             layout="responsive"
-            className=""
+            draggable={false}
           />{" "}
         </div>
-        <div className="max-sm:w-7/12 w-5/12 space-y-[4%] max-lg:flex max-lg:flex-col">
+        <div className="sm:w-5/12 space-y-[4%] max-lg:flex max-lg:flex-col">
           <div className="flex flex-col">
-            <p className="text-text-subtext font-light max-xl:pb-4 lg:pb-[2%] ">
-              404
+            <p className="text-text-subtext max-xl:pb-4 lg:pb-[2%] text-5xl">
+              500
             </p>
-            <p className="font-semibold xl:text-6xl max-lg:text-4xl  lg:text-5xl">
-              Oops! Page Not Found
+            <p className="font-semibold xl:text-6xl max-lg:text-4xl lg:text-5xl">
+              Oops! This is unexpected...
             </p>
             <p className="text-text-subtext font-light pt-[3%]">
-              Oops! Sorry, the page you are looking for doesn&#39;t exist or has
-              been moved. Let&#39;s go back home and try that again.
+              An error has occurred and we{"'"}re working to fix the problem. We
+              will be up and running shortly!
             </p>
           </div>
 
@@ -37,8 +38,6 @@ const error = () => {
           </div>
         </div>
       </div>
-
-      {/* </div> */}
     </>
   );
 };
