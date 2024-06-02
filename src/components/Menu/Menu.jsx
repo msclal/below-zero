@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { specialties, shakes, combos } from "@/lib/data";
@@ -12,6 +12,7 @@ import Menubar from "@/components/Menu/Menubar";
 import Banner from "/public/menu/banner.webp";
 import IceCreamBanner from "/public/menu/IceCream.webp";
 import { BiSolidDownArrow } from "react-icons/bi";
+import { MotionDiv } from "../MotionDiv";
 
 const Menu = () => {
   const [isClicked, setIsClicked] = useState("SHAVED ICE");
@@ -48,9 +49,9 @@ const Menu = () => {
   }, []);
 
   return (
-    <motion.div
+    <MotionDiv
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: { delay: 0.3 } }}
+      animate={{ opacity: 1, transition: { delay: 0.5 } }}
       exit={{ opacity: 0 }}
       className="flex flex-col justify-center "
     >
@@ -304,7 +305,7 @@ const Menu = () => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </MotionDiv>
   );
 };
 
