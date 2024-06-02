@@ -169,7 +169,7 @@ const Menu = () => {
                     refreshing flavor in every bite.
                   </div>
                 </div>
-                <div className="space-y-[5%] pb-[3%] pt-[5%]">
+                <div className="space-y-[5%] pb-[28%] pt-[5%]">
                   <Sizes step="1" />
                   <Syrups step="2" />
                 </div>
@@ -208,7 +208,7 @@ const Menu = () => {
                     Classics
                   </p>
                 </div>
-                <div className="space-y-[5%] pb-[5%] pt-[5%]">
+                <div className="space-y-[5%] pb-[28%] pt-[5%]">
                   {(subcategory === "ALL" ||
                     subcategory === "BUILD YOUR OWN") && (
                     <>
@@ -276,7 +276,7 @@ const Menu = () => {
                     your sweet cravings
                   </div>
                 </div>
-                <div className="space-y-[5%] pb-[3%] pt-[5%]">
+                <div className="space-y-[5%] pb-[28%] pt-[5%]">
                   <div className="flex">
                     <Toppings step="" />
                   </div>
@@ -297,7 +297,7 @@ const Menu = () => {
                     to delight your taste buds
                   </div>
                 </div>
-                <div className="space-y-[5%] pb-[3%] pt-[5%]">
+                <div className="space-y-[5%] pb-[28%] pt-[5%]">
                   <MenuItems data={specialties} />
                 </div>
               </div>
