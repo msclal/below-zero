@@ -1,27 +1,29 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import ShavedIce from "/public/landing/ShavedIce.png";
-import ShavedIceCombo from "/public/landing/ShavedIceCombo.png";
+import ShavedIce from "/public/landing/ShavedIce.webp";
+import ShavedIceCombos from "/public/landing/ShavedIceCombos.webp";
+import Shakes from "/public/landing/Shakes.webp";
+import Specialties from "/public/landing/Specialties.webp";
+import IceCream from "/public/landing/IceCream.webp";
 import BlueArrow from "/public/landing/BlueArrow.png";
-import RedArrow from "/public/landing/RedArrow.png";
-// import YellowArrow from "/public/landing/YellowArrow.png";
-// import GreenArrow from "/public/landing/GreenArrow.png";
-// import PurpleArrow from "/public/landing/PurpleArrow.png";
+import PinkArrow from "/public/landing/PinkArrow.png";
+import YellowArrow from "/public/landing/YellowArrow.png";
+import GreenArrow from "/public/landing/GreenArrow.png";
+import PurpleArrow from "/public/landing/PurpleArrow.png";
 import Filters from "./Filters";
 import HeroText from "./HeroText";
-import { SlArrowDown } from "react-icons/sl";
 import { motion } from "framer-motion";
 import Link from "next/link";
 const images = [
-  { image: ShavedIce, alt: "Mika with Cat" },
-  { image: ShavedIceCombo, alt: "Grad Pic" },
-  { image: ShavedIce, alt: "Mika with Cat" },
-  { image: ShavedIceCombo, alt: "Grad Pic" },
-  { image: ShavedIce, alt: "Grad Pic" },
+  { image: ShavedIce, alt: "ShavedIce" },
+  { image: ShavedIceCombos, alt: "Combos" },
+  { image: IceCream, alt: "IceCream" },
+  { image: Shakes, alt: "Shakes" },
+  { image: Specialties, alt: "Specialties" },
 ];
 const delay = 3000;
-const swipeThreshold = 0;
+const swipeThreshold = -20;
 
 const Carousel = () => {
   const [index, setIndex] = useState(0);
@@ -59,186 +61,205 @@ const Carousel = () => {
 
   function handleTouchEnd() {
     if (touchStart - touchEnd > swipeThreshold) {
-      setIndex((prevIndex) => (prevIndex + 1) % images.length);
+      // Swipe right to left
+      if (index < images.length - 1) {
+        setIndex((prevIndex) => prevIndex + 1);
+      }
     } else if (touchEnd - touchStart > swipeThreshold) {
-      setIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+      // Swipe left to right
+      if (index > 0) {
+        setIndex((prevIndex) => prevIndex - 1);
+      }
     }
   }
 
   return (
     <>
-      <div className="relative items-center justify-around hidden w-full h-[850px] min-[1920px]:h-[800px] xl:flex mt-5">
-        <HeroText />
-        <div className="relative flex justify-center w-1/3">
-          {index === 0 && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, transition: { delay: 0.08 } }}
-              exit={{ opacity: 0 }}
-            >
-              <Image src={ShavedIce} alt="shaved ice" draggable={false} />
-            </motion.div>
-          )}
-          {index === 1 && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, transition: { delay: 0.08 } }}
-              exit={{ opacity: 0 }}
-            >
-              <Image src={ShavedIceCombo} alt="shaved ice " />
-            </motion.div>
-          )}
-          {index === 2 && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, transition: { delay: 0.08 } }}
-              exit={{ opacity: 0 }}
-            >
-              <Image src={ShavedIce} alt="shaved ice " />
-            </motion.div>
-          )}
-          {index === 3 && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, transition: { delay: 0.08 } }}
-              exit={{ opacity: 0 }}
-            >
-              <Image
-                src={ShavedIceCombo}
-                alt="shaved ice "
-                // width="0"
-                // height="0"
-                // sizes="100vw"
-                // className="w-full h-auto"
-              />
-            </motion.div>
-          )}
-          {index === 4 && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, transition: { delay: 0.08 } }}
-              exit={{ opacity: 0 }}
-            >
-              <Image src={ShavedIce} alt="shaved ice " />
-            </motion.div>
-          )}
+      <div className="flex justify-center">
+        <div className="relative items-center justify-center hidden w-11/12 h-[850px] min-[1920px]:h-[850px] xl:flex">
+          <HeroText />
+          <div className="flex justify-center w-full h-full ">
+            <div className="relative flex justify-center items-center h-fit min-[1350px]:w-9/12 min-[1450px]:w-8/12 min-[1920px]:w-7/12 min-[2400px]:w-5/12 ">
+              {index === 0 && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1, transition: { delay: 0.08 } }}
+                  exit={{ opacity: 0 }}
+                >
+                  <div className="w-full ">
+                    <Image src={ShavedIce} alt="shaved ice" draggable={false} />
+                  </div>
+                </motion.div>
+              )}
+              {index === 1 && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1, transition: { delay: 0.08 } }}
+                  exit={{ opacity: 0 }}
+                >
+                  <Image
+                    src={ShavedIceCombos}
+                    alt="shaved ice combos"
+                    draggable={false}
+                  />
+                </motion.div>
+              )}
+              {index === 2 && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1, transition: { delay: 0.08 } }}
+                  exit={{ opacity: 0 }}
+                >
+                  <Image src={IceCream} alt="ice cream" draggable={false} />
+                </motion.div>
+              )}
+              {index === 3 && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1, transition: { delay: 0.08 } }}
+                  exit={{ opacity: 0 }}
+                >
+                  <Image src={Shakes} alt="shakes" draggable={false} />
+                </motion.div>
+              )}
+              {index === 4 && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1, transition: { delay: 0.08 } }}
+                  exit={{ opacity: 0 }}
+                >
+                  <Image
+                    src={Specialties}
+                    alt="specialties"
+                    draggable={false}
+                  />
+                </motion.div>
+              )}
+            </div>
+          </div>
+          <Filters selectedMenuItem={index} onMenuItemClick={handleSelection} />
         </div>
-        <motion.div
-          animate={{ y: [0, 20, 0] }}
-          transition={{
-            repeat: Infinity,
-            duration: 2,
-          }}
-          className="absolute bottom-8"
-        >
-          <SlArrowDown className="stroke-[20px] text-primary text-6xl" />
-        </motion.div>
-        <Filters selectedMenuItem={index} onMenuItemClick={handleSelection} />
       </div>
 
       {/* TABLET */}
-      <div className="max-sm:hidden relative flex items-center justify-around w-full h-[800px] lg:h-[900px] xl:hidden">
-        <HeroText />
-
-        <div className="relative self-end w-2/3 h-full p-10">
-          <div className="flex justify-center">
-            {index === 0 && (
-              <motion.div
-                initial={{ opacity: 0, x: -100 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: 100 }}
-                transition={{ delay: 0.08 }}
-              >
-                <Image src={ShavedIce} alt="shaved ice" draggable={false} />
-              </motion.div>
-            )}
-            {index === 1 && (
-              <motion.div
-                initial={{ opacity: 0, x: -100 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: 100 }}
-                transition={{ delay: 0.08 }}
-              >
-                <Image src={ShavedIceCombo} alt="shaved ice " />
-              </motion.div>
-            )}
-            {index === 2 && (
-              <motion.div
-                initial={{ opacity: 0, x: -100 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: 100 }}
-                transition={{ delay: 0.08 }}
-              >
-                <Image src={ShavedIce} alt="shaved ice " />
-              </motion.div>
-            )}
-            {index === 3 && (
-              <motion.div
-                initial={{ opacity: 0, x: -100 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: 100 }}
-                transition={{ delay: 0.08 }}
-              >
-                <Image src={ShavedIceCombo} alt="shaved ice " />
-              </motion.div>
-            )}
-            {index === 4 && (
-              <motion.div
-                initial={{ opacity: 0, x: -100 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: 100 }}
-                transition={{ delay: 0.08 }}
-              >
-                <Image src={ShavedIce} alt="shaved ice " />
-              </motion.div>
-            )}
+      <div className="flex  justify-center pb-[6%] pt-[3%]">
+        <div className="flex items-start w-11/12 max-sm:hidden xl:hidden">
+          <div className="w-6/12 h-full ">
+            <HeroText />
           </div>
-          <Image
-            src={
-              (index === 0 && BlueArrow) ||
-              (index === 1 && RedArrow) ||
-              (index === 2 && BlueArrow) ||
-              (index === 3 && RedArrow) ||
-              (index === 4 && BlueArrow)
-            }
-            alt="arrow"
-            className="absolute right-[65%] lg:right-[70%] -rotate-[10deg] lg:-rotate-[25deg] bottom-52 lg:bottom-16 -z-[100]"
-          />
-          <div
-            className={`${(index === 0 && "bg-below-zero-blue-200 hover:bg-below-zero-blue-200/80") || (index === 1 && "bg-below-zero-red-200 hover:bg-below-zero-red-200/80") || (index === 2 && "bg-below-zero-yellow-200  hover:bg-below-zero-yellow-200/80") || (index === 3 && "bg-below-zero-purple-200 hover:bg-below-zero-purple-200/80") || (index === 4 && "bg-below-zero-green-200 hover:bg-below-zero-green-200/80")} rounded-md px-6 py-2 w-1/2 font-semibold transition-all duration-300 ease-in-out font-montserrat mt-10 text-white text-center absolute bottom-40 lg:bottom-10 right-10 text-sm`}
-          >
-            <Link
-              href={
-                (index === 0 && "/menu?filter=shaved ice") ||
-                (index === 1 && "/menu?filter=shaved ice combos") ||
-                (index === 2 && "/menu?filter=ice cream") ||
-                (index === 3 && "/menu?filter=shakes") ||
-                (index === 4 && "/menu?filter=house specalties")
-              }
-            >
-              SEE All{" "}
-              {(index === 0 && "SHAVED ICE") ||
-                (index === 1 && "COMBOS") ||
-                (index === 2 && "ICE CREAMS") ||
-                (index === 3 && "SHAKES") ||
-                (index === 4 && "SPECIALTIES")}
-            </Link>
+
+          <div className="flex flex-col justify-between w-9/12 h-full">
+            <div className="pb-16 pl-16">
+              <div className="flex justify-center ">
+                {index === 0 && (
+                  <motion.div
+                    initial={{ opacity: 0, x: -100 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: 100 }}
+                    transition={{ delay: 0.08 }}
+                  >
+                    <Image src={ShavedIce} alt="shaved ice" draggable={false} />
+                  </motion.div>
+                )}
+                {index === 1 && (
+                  <motion.div
+                    initial={{ opacity: 0, x: -100 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: 100 }}
+                    transition={{ delay: 0.08 }}
+                  >
+                    <Image
+                      src={ShavedIceCombos}
+                      alt="shaved ice"
+                      draggable={false}
+                    />
+                  </motion.div>
+                )}
+                {index === 2 && (
+                  <motion.div
+                    initial={{ opacity: 0, x: -100 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: 100 }}
+                    transition={{ delay: 0.08 }}
+                  >
+                    <Image src={IceCream} alt="shaved ice " />
+                  </motion.div>
+                )}
+                {index === 3 && (
+                  <motion.div
+                    initial={{ opacity: 0, x: -100 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: 100 }}
+                    transition={{ delay: 0.08 }}
+                  >
+                    <Image src={Shakes} alt="shaved ice" draggable={false} />
+                  </motion.div>
+                )}
+                {index === 4 && (
+                  <motion.div
+                    initial={{ opacity: 0, x: -100 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: 100 }}
+                    transition={{ delay: 0.08 }}
+                  >
+                    <Image
+                      src={Specialties}
+                      alt="shaved ice"
+                      draggable={false}
+                    />
+                  </motion.div>
+                )}
+              </div>
+              <Image
+                src={
+                  (index === 0 && BlueArrow) ||
+                  (index === 1 && PinkArrow) ||
+                  (index === 2 && YellowArrow) ||
+                  (index === 3 && PurpleArrow) ||
+                  (index === 4 && GreenArrow)
+                }
+                alt="arrow"
+                className=" absolute w-40 rotate-[40deg] right-64 lg:w-56 lg:rotate-[24deg] lg:right-72"
+              />
+            </div>
+            <div className="flex justify-end">
+              <div
+                className={`${(index === 0 && "bg-below-zero-blue-200 hover:bg-below-zero-blue-200/80") || (index === 1 && "bg-below-zero-red-200 hover:bg-below-zero-red-200/80") || (index === 2 && "bg-below-zero-yellow-200  hover:bg-below-zero-yellow-200/80") || (index === 3 && "bg-below-zero-purple-200 hover:bg-below-zero-purple-200/80") || (index === 4 && "bg-below-zero-green-200 hover:bg-below-zero-green-200/80")} rounded-md px-6 py-2 w-fit font-semibold transition-all duration-300 ease-in-out font-montserrat text-white text-center text-sm`}
+              >
+                <Link
+                  href={
+                    (index === 0 && "/menu?filter=shaved ice") ||
+                    (index === 1 && "/menu?filter=shaved ice combos") ||
+                    (index === 2 && "/menu?filter=ice cream") ||
+                    (index === 3 && "/menu?filter=shakes") ||
+                    (index === 4 && "/menu?filter=house specalties")
+                  }
+                >
+                  SEE All{" "}
+                  {(index === 0 && "SHAVED ICE") ||
+                    (index === 1 && "COMBOS") ||
+                    (index === 2 && "ICE CREAMS") ||
+                    (index === 3 && "SHAKES") ||
+                    (index === 4 && "SPECIALTIES")}
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       {/* MOBILE */}
-      <div className="relative flex flex-col min-h-screen pt-16 overflow-hidden sm:hidden">
+      <div className="relative flex flex-col overflow-hidden sm:hidden  max-sm:pb-[10%] ">
         <HeroText />
 
-        <div className="flex justify-center w-2/3 m-auto">
+        <div className="flex justify-center w-2/3 m-auto pt-[5%]">
           <motion.div
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
           >
             <div
-              className="relative whitespace-nowrap transition-ease duration-[650ms] w-full"
+              className={`carousel-wrapper slide-in-from-left-${index}`}
               style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
             >
               {images.map((image, idx) => (
@@ -246,26 +267,28 @@ const Carousel = () => {
                   key={idx}
                   src={image.image}
                   alt={image.alt}
-                  className="inline-block w-full relative z-[10]"
+                  className="inline-block w-full relative z-[10] px-4"
+                  draggable={false}
                 />
               ))}
             </div>
           </motion.div>
         </div>
-        <div className="relative">
+        <div className="relative ">
           <Image
             src={
               (index === 0 && BlueArrow) ||
-              (index === 1 && RedArrow) ||
+              (index === 1 && PinkArrow) ||
               (index === 2 && BlueArrow) ||
-              (index === 3 && RedArrow) ||
+              (index === 3 && PinkArrow) ||
               (index === 4 && BlueArrow)
             }
             alt="arrow"
-            className="absolute left-6 min-[400px]:left-10 -rotate-[25deg] bottom-14  min-[400px]:bottom-20 -z-[100] w-8"
+            className="hidden absolute left-6 min-[400px]:left-10 -rotate-[25deg] bottom-14  min-[400px]:bottom-20 -z-[100] w-8"
+            draggable={false}
           />
           <div
-            className={`${(index === 0 && "bg-below-zero-blue-200") || (index === 1 && "bg-below-zero-red-200") || (index === 2 && "bg-below-zero-yellow-200") || (index === 3 && "bg-below-zero-purple-200") || (index === 4 && "bg-below-zero-green-200")} rounded-md px-6 py-2 w-[55%] min-[380px]:w-1/2 font-semibold transition-all duration-300 ease-in-out font-montserrat text-white text-center m-auto text-sm my-14 min-[400px]:my-20`}
+            className={`${(index === 0 && "bg-below-zero-blue-200") || (index === 1 && "bg-below-zero-red-200") || (index === 2 && "bg-below-zero-yellow-200") || (index === 3 && "bg-below-zero-purple-200") || (index === 4 && "bg-below-zero-green-200")} rounded-md px-6 py-2 w-[55%] min-[380px]:w-1/2 font-semibold transition-all duration-300 ease-in-out font-montserrat text-white text-center m-auto text-sm min-[400px]:my-[5%]`}
           >
             <Link
               href={
@@ -273,7 +296,7 @@ const Carousel = () => {
                 (index === 1 && "/menu?filter=shaved ice combos") ||
                 (index === 2 && "/menu?filter=ice cream") ||
                 (index === 3 && "/menu?filter=shakes") ||
-                (index === 4 && "/menu?filter=house specalties")
+                (index === 4 && "/menu?filter=house specialties")
               }
             >
               SEE All{" "}

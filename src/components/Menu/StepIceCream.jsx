@@ -48,6 +48,7 @@ const Steps = ({ step, thrifty }) => {
                 className="rounded-xl"
                 width="1"
                 height="1"
+                draggable={false}
               />
             </div>
           )}
