@@ -162,7 +162,7 @@ const Menu = () => {
                   <div className="pb-3 text-2xl font-semibold max-lg:text-center max-lg:text-3xl max-lg:pb-5">
                     SHAVED ICE
                   </div>
-                  <div className="font-light text-text-subtext">
+                  <div className="font-light text-text-subtext w-7/12">
                     Indulge in the authentic taste of the islands with our
                     Hawaiian shaved ice, featuring finely shaved ice topped with
                     our housemade syrups, meticulously crafted for a burst of
@@ -181,7 +181,7 @@ const Menu = () => {
                   <div className="pb-3 text-2xl font-semibold max-lg:text-center max-lg:text-3xl">
                     SHAVED ICE COMBOS
                   </div>
-                  <div className="font-light text-text-subtext">
+                  <div className="font-light text-text-subtext w-7/12">
                     Experience the ultimate refreshment with our Hawaiian shaved
                     ice combos, where you can customize your creation or opt for
                     classic combinations. Enjoy the perfect harmony of finely
@@ -238,7 +238,7 @@ const Menu = () => {
                   <div className="pb-3 text-2xl font-semibold max-lg:text-center max-lg:text-3xl max-lg:pb-5">
                     ICE CREAM
                   </div>
-                  <div className="font-light text-text-subtext">
+                  <div className="font-light text-text-subtext w-7/12">
                     Immerse yourself in the classic flavors of Thrifty ice
                     cream. Customize your scoops for your next taste adventure!
                   </div>
@@ -268,7 +268,7 @@ const Menu = () => {
                   <div className="pb-3 text-2xl font-semibold max-lg:text-center max-lg:text-3xl max-lg:pb-5">
                     SHAKES
                   </div>
-                  <div className="font-light text-text-subtext">
+                  <div className="font-light text-text-subtext w-7/12">
                     Treat yourself to our luscious shakes, lovingly crafted with
                     the rich goodness of Thrifty ice cream. Whether you
                     {"'"}re a fan of classic flavors or crave something
@@ -290,7 +290,7 @@ const Menu = () => {
                   <div className="pb-3 text-2xl font-semibold max-lg:text-center max-lg:text-3xl max-lg:pb-5">
                     HOUSE SPECIALTIES
                   </div>
-                  <div className="font-light text-text-subtext">
+                  <div className="font-light text-text-subtext w-7/12">
                     Discover our delectable house specialties, featuring
                     customer favorites like Chamango and Cookie Slammer. Each
                     crafted with care and bursting with flavor, they{"'"}re sure
