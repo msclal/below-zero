@@ -120,7 +120,7 @@ const ContactForm = () => {
           >
             BelowZeroShavedIce@gmail.com
           </Link>
-          <div className="flex pt-2 text-2xl font-medium gap-x-3">
+          <div className="flex pt-2 text-4xl font-medium gap-x-3">
             <Link
               href="https://www.instagram.com/belowzeroshavedice/?hl=en"
               target="_blank"
