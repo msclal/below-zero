@@ -13,6 +13,7 @@ import Banner from "/public/menu/banner.webp";
 import IceCreamBanner from "/public/menu/IceCream.webp";
 import { BiSolidDownArrow } from "react-icons/bi";
 import { MotionDiv } from "../MotionDiv";
+import MenuItemsWithDialog from "@/components/Menu/MenuItemsWithDialog";
 
 const Menu = () => {
   const [isClicked, setIsClicked] = useState("SHAVED ICE");
@@ -298,7 +299,7 @@ const Menu = () => {
                   </div>
                 </div>
                 <div className="space-y-[5%] pb-[3%] pt-[5%]">
-                  <MenuItems data={specialties} />
+                  <MenuItemsWithDialog data={specialties} />
                 </div>
               </div>
             )}
