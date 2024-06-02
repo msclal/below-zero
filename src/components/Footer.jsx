@@ -52,10 +52,10 @@ const Footer = () => {
             </Link>
             <Link
               target="_blank"
-              href="mailto:belowzeroshavedice@yahoo.com"
+              href="mailto:BelowZeroShavedIce@gmail.com"
               className="text-black no-underline"
             >
-              belowzeroshavedice@yahoo.com
+              BelowZeroShavedIce@gmail.com
             </Link>
             <div className="flex pt-2 text-2xl font-medium gap-x-3">
               <Link

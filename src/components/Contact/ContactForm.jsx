@@ -60,10 +60,10 @@ const ContactForm = () => {
           </Link>
           <Link
             target="_blank"
-            href="mailto:belowzeroshavedice@yahoo.com"
+            href="mailto:BelowZeroShavedIce@gmail.com"
             className="text-black no-underline"
           >
-            <p>belowzeroshavedice@yahoo.com</p>
+            <p>BelowZeroShavedIce@gmail.com</p>
           </Link>
         </div>
         <div className="flex text-4xl font-medium gap-x-5 max-sm:justify-center">
@@ -115,12 +115,12 @@ const ContactForm = () => {
           </Link>
           <Link
             target="_blank"
-            href="mailto:belowzeroshavedice@yahoo.com"
+            href="mailto:BelowZeroShavedIce@gmail.com"
             className="text-black no-underline"
           >
-            belowzeroshavedice@yahoo.com
+            BelowZeroShavedIce@gmail.com
           </Link>
-          <div className="flex pt-2 text-2xl font-medium gap-x-3">
+          <div className="flex pt-2 text-4xl font-medium gap-x-3">
             <Link
               href="https://www.instagram.com/belowzeroshavedice/?hl=en"
               target="_blank"

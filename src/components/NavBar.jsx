@@ -154,23 +154,36 @@ const NavBar = () => {
               initial={{ opacity: 0, y: 0 }}
               animate={{ opacity: 1, x: 0, transition: { delay: 0.08 } }}
               exit={{ opacity: 0, y: 0 }}
-              className="sm:hidden w-full absolute z-10 top-[100%] "
+              className="sm:hidden w-full absolute z-10 top-[100%] text-lg"
             >
-              <div className="bg-primary text-white flex font-outfit flex-col justify-left items-left space-y-[7%] w-full px-[10%] py-[5%]">
-                <Link href="/" className="hover:text-text-subtext">
+              <div className="flex flex-col w-full text-white bg-primary font-outfit justify-left items-left">
+                <Link
+                  href="/"
+                  // className="w-full hover:bg-red-400 hover:text-text-subtext px-[10%] py-[5%]"
+                  className="w-full hover:text-text-subtext px-[10%] pt-[6%] py-[3%] select-none"
+                >
                   HOME
                 </Link>
-                <Link href="/menu" className="hover:text-text-subtext">
+                <Link
+                  href="/menu"
+                  className="w-full hover:text-text-subtext px-[10%] py-[3%] select-none"
+                >
                   MENU
                 </Link>
-                <Link href="/about" className="hover:text-text-subtext">
+                <Link
+                  href="/about"
+                  className="w-full hover:text-text-subtext px-[10%] py-[3%] select-none"
+                >
                   ABOUT
                 </Link>
-                <a href="/catering" className="hover:text-text-subtext">
+                <a
+                  href="/catering"
+                  className="w-full hover:text-text-subtext px-[10%] py-[3%] select-none"
+                >
                   CATERING
                 </a>
                 <Link href="/contact">
-                  <div className="px-6 py-2 font-medium text-white transition-all duration-300 ease-in-out border-2 border-white rounded-md cursor-pointer w-fit hover:bg-white hover:text-primary font-montserrat">
+                  <div className="px-6 py-2 font-medium text-white transition-all duration-300 ease-in-out border-2 border-white rounded-md cursor-pointer w-fit hover:bg-white hover:text-primary font-montserrat mx-[10%] my-[3%] mb-[6%]">
                     CONTACT
                   </div>
                 </Link>
