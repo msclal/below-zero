@@ -181,7 +181,7 @@ const Menu = () => {
                   <div className="pb-3 text-2xl font-semibold max-lg:text-center max-lg:text-3xl">
                     SHAVED ICE COMBOS
                   </div>
-                  <div className="font-light text-text-subtext lg:w-8/12 max-sm:pb-[7%]">
+                  <div className="font-light text-text-subtext lg:w-8/12 ">
                     Experience the ultimate refreshment with our Hawaiian shaved
                     ice combos, where you can customize your creation or opt for
                     classic combinations. Enjoy the perfect harmony of finely
@@ -208,7 +208,7 @@ const Menu = () => {
                     Classics
                   </p>
                 </div>
-                <div className="space-y-[5%] pb-[28%] pt-[5%]">
+                <div className="space-y-[5%] pb-[32%] pt-[5%]">
                   {(subcategory === "ALL" ||
                     subcategory === "BUILD YOUR OWN") && (
                     <>
