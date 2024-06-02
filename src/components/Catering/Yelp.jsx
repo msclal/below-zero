@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Customers1 from "/public/catering/customers1.webp";
 import Customers2 from "/public/catering/customers2.webp";
+import Customers3 from "/public/catering/customers3.jpg";
 
 const Yelp = () => {
   return (
@@ -123,8 +124,8 @@ const Yelp = () => {
       <div className="grid grid-cols-1 gap-5 px-5 max-sm:hidden sm:grid-cols-2 xl:w-2/3 xl:m-auto">
         <div className="relative w-full sm:h-full">
           <Image
-            src={Customers1}
-            alt="Customer 1"
+            src={Customers3}
+            alt="Customer 3"
             fill
             sizes="auto"
             draggable={false}
@@ -219,8 +220,8 @@ const Yelp = () => {
         </span>
         <div className="relative w-full h-full">
           <Image
-            src={Customers2}
-            alt="Customer 2"
+            src={Customers1}
+            alt="Customer 1"
             fill
             sizes="auto"
             draggable={false}
