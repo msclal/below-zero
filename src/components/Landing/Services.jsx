@@ -30,7 +30,7 @@ const Services = () => {
               “House Specialties”.
             </div>
             <Link
-              href="/services"
+              href="/catering"
               className="transition-all duration-300 ease-in-out hover:text-black/60"
             >
               <Button>OUR SERVICES</Button>

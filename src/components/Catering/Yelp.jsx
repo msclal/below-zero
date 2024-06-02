@@ -114,7 +114,7 @@ const Yelp = () => {
             fill
             sizes="auto"
             draggable={false}
-            className="object-cover bg-secondary-background sm:object-contain rounded-xl "
+            className="object-cover bg-secondary-background sm:object-contain rounded-xl"
           />
         </div>
       </div>

@@ -2,14 +2,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+// import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { RxHamburgerMenu } from "react-icons/rx";
 import BelowZeroLogo from "/public/BelowZeroLogo.svg";
 import Button from "./Button";
 
 const NavBar = () => {
-  const pathname = usePathname();
+  // const pathname = usePathname();
   const componentRef = useRef(null);
   const [scrolledFromTop, setScrolledFromTop] = useState(false);
 
@@ -52,12 +52,13 @@ const NavBar = () => {
     <div
       className={`z-10 flex justify-center bg-primary-background lg:mb-[2%] overflow-hidden  transition-all duration-300 h-16 sm:h-[88px]`}
     >
-      <div
+      <motion.div
         className={`flex items-center justify-between w-11/12 max-sm:hidden transition-all duration-300`}
       >
         <Link
           href="/"
-          className={`transition-all duration-300 cursor-pointer sm:w-[20%] lg:w-[13%] ${pathname === "/" && !scrolledFromTop && "sm:w-[35%] lg:w-[26%]"}`}
+          className={`transition-all duration-300 cursor-pointer sm:w-[20%] lg:w-[13%] ${!scrolledFromTop && "sm:w-[35%] lg:w-[26%]"}`}
+          // className={`transition-all duration-300 cursor-pointer sm:w-[20%] lg:w-[13%] ${pathname === "/" && !scrolledFromTop && "sm:w-[35%] lg:w-[26%]"}`}
         >
           <Image src={BelowZeroLogo} alt="Below Zero logo" draggable={false} />
         </Link>
@@ -90,10 +91,10 @@ const NavBar = () => {
             <Button>CONTACT</Button>
           </Link>
         </div>
-      </div>
+      </motion.div>
       <div
         ref={componentRef}
-        className="flex items-center justify-between w-[95%] px-4 sm:hidden"
+        className={`flex items-center justify-between px-5 sm:hidden`}
       >
         <Link href="/" className="w-[55%]">
           <Image src={BelowZeroLogo} alt="Below Zero logo" draggable={false} />
@@ -109,7 +110,7 @@ const NavBar = () => {
       {toggle && (
         <motion.div
           initial={{ opacity: 0, y: 0 }}
-          animate={{ opacity: 1, x: 0, transition: { delay: 0.07 } }}
+          animate={{ opacity: 1, x: 0, transition: { delay: 0.08 } }}
           exit={{ opacity: 0, y: 0 }}
           className="sm:hidden w-full absolute z-10 top-[100%] "
         >

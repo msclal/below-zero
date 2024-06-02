@@ -2,7 +2,7 @@ import React from "react";
 
 const Quote = () => {
   return (
-    <div className="flex items-center justify-center p-5 text-4xl font-semibold text-center">
+    <div className="flex items-center justify-center p-5 pb-0 text-4xl font-semibold text-center">
       <p>
         Providing not only the{" "}
         <span className="text-primary">best product</span>, <br />

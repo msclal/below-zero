@@ -74,8 +74,12 @@ const Carousel = () => {
   }
 
   return (
-    <>
-      <div className="flex justify-center ">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { delay: 0.3 } }}
+      exit={{ opacity: 0 }}
+    >
+      <div className="flex justify-center">
         <div className="relative items-center justify-center hidden w-11/12 h-[850px] min-[1920px]:h-[850px] xl:flex">
           <HeroText />
           <div className="flex justify-center w-full h-full ">
@@ -138,7 +142,7 @@ const Carousel = () => {
             </div>
           </div>
           <Filters selectedMenuItem={index} onMenuItemClick={handleSelection} />
-        </div>{" "}
+        </div>
       </div>
 
       {/* TABLET */}
@@ -309,7 +313,7 @@ const Carousel = () => {
           </div>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 };
 

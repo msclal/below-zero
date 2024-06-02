@@ -4,8 +4,8 @@ import Storefront from "/public/storefront.webp";
 
 const Story = () => {
   return (
-    <div className="flex flex-col-reverse items-start p-5 justify-evenly xl:justify-center gap-y-10 sm:flex-row gap-x-16 xl:gap-x-28 sm:gap-x-10">
-      <div className="w-full sm:w-1/3">
+    <div className="flex flex-col-reverse items-start p-5 pt-0 justify-evenly xl:justify-center gap-y-10 lg:flex-row gap-x-16 xl:gap-x-28 lg:gap-x-10">
+      <div className="w-full lg:w-1/3">
         <p className="mb-3 text-3xl font-semibold">OUR STORY</p>
         <p className="font-light text-text-subtext">
           Our Shaved Ice story begun upon visiting Hawaii. We fell in love not
@@ -32,7 +32,7 @@ const Story = () => {
           quality, values, and charm that only a family business can provide.
         </p>
       </div>
-      <div className="w-full h-[475px] sm:w-[400px] sm:h-[500px] bg-secondary-background relative">
+      <div className="w-full h-[475px] sm:w-[400px] sm:h-[500px] relative max-lg:m-auto">
         <Image
           src={Storefront}
           alt="Below Zero store front"

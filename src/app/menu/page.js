@@ -6,11 +6,7 @@ export const metadata = {
 };
 
 const MenuPage = () => {
-  return (
-    <>
-      <Menu />
-    </>
-  );
+  return <Menu />;
 };
 
 export default MenuPage;

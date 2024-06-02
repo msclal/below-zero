@@ -1,24 +1,12 @@
-import Mission from "@/components/Landing/Mission";
-import Rewards from "@/components/Landing/Rewards";
-import Services from "@/components/Landing/Services";
-import Video from "@/components/Landing/Video";
-import Carousel from "../components/Landing/Carousel";
+import Landing from "@/components/Landing/Landing";
 
 export const metadata = {
   title: "Below Zero: Shaved Ice",
   description: "The best shaved ice in Upland!",
 };
 
-const Landing = () => {
-  return (
-    <>
-      <Carousel />
-      <Services />
-      <Rewards />
-      <Video />
-      <Mission />
-    </>
-  );
+const LandingPage = () => {
+  return <Landing />;
 };
 
-export default Landing;
+export default LandingPage;

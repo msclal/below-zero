@@ -6,9 +6,9 @@ import CateringImage from "/public/catering/catering.webp";
 
 const Info = () => {
   return (
-    <div className="flex justify-center">
-      <div className="flex flex-col items-start w-11/12 py-8 pr-5 justify-evenly xl:justify-center gap-y-10 sm:flex-row gap-x-16 xl:gap-x-14 sm:gap-x-10">
-        <div className="w-full h-[475px] sm:w-[400px] sm:h-[575px] relative">
+    <div className="flex justify-center w-full">
+      <div className="flex flex-col items-start w-11/12 py-8 pr-5 justify-evenly xl:justify-center gap-y-10 lg:flex-row gap-x-16 xl:gap-x-14 lg:gap-x-10">
+        <div className="w-full h-[475px] sm:w-[400px] sm:h-[575px] relative max-lg:m-auto">
           <Image
             src={CateringImage}
             alt="Below Zero Catering"
@@ -18,13 +18,20 @@ const Info = () => {
             className="object-cover rounded-xl"
           />
         </div>
-        <div className="w-full space-y-10 xl:w-1/3 sm:w-1/2">
-          <div className="space-y-2.5 text-4xl font-semibold">
+        <div className="w-full space-y-10 xl:w-1/3 lg:w-1/2">
+          <div className="space-y-2.5 text-4xl font-semibold block sm:hidden lg:block">
             <p>CATERING</p>
             <p>FUNDRAISING</p>
             <p>CORPORATE EVENTS</p>
             <p>WEDDINGS</p>
             <p>SPECIAL EVENTS</p>
+          </div>
+          <div className="space-y-2.5 text-4xl font-semibold max-sm:hidden lg:hidden">
+            <p>
+              {
+                "CATERING, FUNDRAISING, CORPORATE EVENTS, WEDDINGS, SPECIAL EVENTS"
+              }
+            </p>
           </div>
           <p className="font-light text-text-subtext">
             Our catering services extend beyond mere food provision; they{"'"}re
@@ -45,7 +52,7 @@ const Info = () => {
             </Link>
           </div>
         </div>
-      </div>{" "}
+      </div>
     </div>
   );
 };

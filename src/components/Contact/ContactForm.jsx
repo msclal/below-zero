@@ -3,8 +3,6 @@ import { useRef } from "react";
 import Link from "next/link";
 import React from "react";
 import { FaYelp, FaInstagram, FaFacebook } from "react-icons/fa";
-// import Button from "../Button";
-
 const ContactForm = () => {
   const form = useRef();
   const handleSend = (e) => {
@@ -42,8 +40,8 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex flex-wrap-reverse items-center justify-center w-full p-5 sm:p-10 gap-x-20 gap-y-14">
-      <div className="flex flex-col gap-y-7 max-[830px]:text-center">
+    <div className="flex flex-wrap items-center justify-center w-full p-5 sm:p-10 gap-x-20 gap-y-14">
+      <div className="flex flex-col gap-y-7 max-[830px]:text-center max-lg:hidden">
         <div>
           <p className="text-xl font-semibold font-montserrat">LOCATION</p>
           <p>583 E Foothill Blvd Ste 6</p>
@@ -92,10 +90,65 @@ const ContactForm = () => {
           </Link>
         </div>
       </div>
+      <div className="flex max-sm:flex-col max-sm:items-start max-sm:space-y-[6%] sm:space-x-[5%] text-black text-base lg:hidden justify-between w-full">
+        <div className="flex flex-col w-full">
+          <span className="mb-2 font-semibold">LOCATION</span>
+          <span className="">583 E. Foothill Blvd. Suite #6</span>
+          Upland, CA 91786
+        </div>
+
+        <div className="flex flex-col w-full">
+          <span className="mb-2 font-semibold">STORE HOURS</span>
+          <span>Monday: Closed </span>
+          <span>Mon-Sat: 12PM - 6:30PM</span>
+          <span>Sunday: 12PM - 6PM</span>
+        </div>
+
+        <div className="flex flex-col w-full">
+          <span className="mb-2 font-semibold">CONTACT</span>
+          <Link
+            target="_blank"
+            href={"tel:9099209230"}
+            className="text-black no-underline"
+          >
+            (909) 920-9230
+          </Link>
+          <Link
+            target="_blank"
+            href="mailto:belowzeroshavedice@yahoo.com"
+            className="text-black no-underline"
+          >
+            belowzeroshavedice@yahoo.com
+          </Link>
+          <div className="flex pt-2 text-2xl font-medium gap-x-3">
+            <Link
+              href="https://www.instagram.com/belowzeroshavedice/?hl=en"
+              target="_blank"
+              className="transition-all duration-300 ease-in-out hover:text-black/60"
+            >
+              <FaInstagram />
+            </Link>
+            <Link
+              href="https://www.yelp.com/biz/below-zero-shaved-ice-upland"
+              target="_blank"
+              className="transition-all duration-300 ease-in-out hover:text-black/60"
+            >
+              <FaYelp />
+            </Link>
+            <Link
+              href="https://www.facebook.com/p/Below-Zero-Shaved-Ice-100065604604709/"
+              target="_blank"
+              className="transition-all duration-300 ease-in-out hover:text-black/60"
+            >
+              <FaFacebook />
+            </Link>
+          </div>
+        </div>
+      </div>
       <form
         ref={form}
         onSubmit={handleSend}
-        className="flex flex-col max-sm:w-full"
+        className="flex flex-col max-lg:w-full"
       >
         <p className="mb-3 text-3xl font-semibold lg:mb-2 font-montserrat">
           SEND A MESSAGE
