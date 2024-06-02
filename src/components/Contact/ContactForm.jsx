@@ -64,7 +64,7 @@ const ContactForm = () => {
             <p>BelowZeroShavedIce@gmail.com</p>
           </Link>
         </div>
-        <div className="flex text-4xl font-medium gap-x-5 max-sm:justify-center">
+        <div className="flex text-4xl font-medium gap-x-5 max-sm:justify-center ">
           <Link
             href="https://www.instagram.com/belowzeroshavedice/?hl=en"
             target="_blank"
@@ -118,7 +118,7 @@ const ContactForm = () => {
           >
             BelowZeroShavedIce@gmail.com
           </Link>
-          <div className="flex pt-2 text-4xl font-medium gap-x-3">
+          <div className="flex pt-2 text-3xl font-medium gap-x-3 max-sm:pt-[5%]">
             <Link
               href="https://www.instagram.com/belowzeroshavedice/?hl=en"
               target="_blank"

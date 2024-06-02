@@ -7,7 +7,7 @@ import CateringImage from "/public/catering/catering.webp";
 const Info = () => {
   return (
     <div className="flex justify-center w-full">
-      <div className="flex flex-col items-start w-11/12 py-8 pr-5 justify-evenly xl:justify-center gap-y-10 lg:flex-row gap-x-16 xl:gap-x-14 lg:gap-x-10">
+      <div className="flex flex-col items-start  w-11/12 py-8 pr-5 justify-evenly xl:justify-center gap-y-10 lg:flex-row gap-x-16 xl:gap-x-14 lg:gap-x-10">
         <div className="w-full h-[475px] sm:w-[400px] sm:h-[575px] relative max-lg:m-auto">
           <Image
             src={CateringImage}
@@ -15,7 +15,7 @@ const Info = () => {
             priority={true}
             fill
             draggable={false}
-            className="object-cover rounded-xl"
+            className="object-cover rounded-xl w-full"
           />
         </div>
         <div className="w-full space-y-10 xl:w-1/3 lg:w-1/2">
