@@ -3,7 +3,7 @@ export const specialties = [
     picture: "/Specialties/BananaSplit/BananaSplit.webp",
     name: "Banana Split",
     description: "",
-    gif: "/Specialties/BananaSplit/BananaSplit.webp",
+    gif: "/Specialties/BananaSplit/BananaSplitGif.webp",
   },
   {
     picture: "/Specialties/BrownieSundae/BrownieSundae.webp",
@@ -21,13 +21,13 @@ export const specialties = [
     picture: "/Specialties/ChurroSundae/ChurroSundae.webp",
     name: "Churro Sundae",
     description: "",
-    gif: "/Specialties/ChurroSundae/ChurroSundae.webp",
+    gif: "/Specialties/ChurroSundae/ChurroSundaeGif.webp",
   },
   {
     picture: "/Specialties/CookieSlammer/CookieSlammer.webp",
     name: "Cookie Slammer",
     description: "",
-    gif: "/Specialties/CookieSlammer/CookieSlammer.png",
+    gif: "/Specialties/CookieSlammer/CookieSlammerGif.webp",
   },
   {
     picture: "/Specialties/RootbeerFloat/RootbeerFloat.webp",
@@ -39,13 +39,13 @@ export const specialties = [
     picture: "/Specialties/WaffleBowl/WaffleBowl.webp",
     name: "Waffle Bowl",
     description: "",
-    gif: "/Specialties/WaffleBowl/WaffleBowl.webp",
+    gif: "/Specialties/WaffleBowl/WaffleBowlGif.webp",
   },
   {
     picture: "/Specialties/WaffleCone/WaffleCone.webp",
     name: "Waffle Cone",
     description: "",
-    gif: "/Specialties/WaffleCone/WaffleCone.webp",
+    gif: "/Specialties/WaffleCone/WaffleConeGif.webp",
   },
 ];
 
