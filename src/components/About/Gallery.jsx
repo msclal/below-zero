@@ -11,16 +11,16 @@ const Gallery = () => {
     <div className="flex flex-col px-5 sm:items-center sm:justify-center gap-y-10">
       <div className="flex flex-col items-start sm:items-center">
         <p className="mb-3 text-3xl font-semibold">OUR PRODUCT</p>
-        <p>
+        <p className="text-text-subtext font-light">
           Because of our fine grade ice, we create the traditional Hawaiian
           shaved ice.
         </p>
-        <p>
+        <p className="text-text-subtext font-light">
           See more on{" "}
           <Link
             target="_blank"
             href="https://www.instagram.com/belowzeroshavedice/?hl=en"
-            className="font-semibold underline"
+            className="font-medium text-black underline"
           >
             Instagram
           </Link>
