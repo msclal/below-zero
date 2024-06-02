@@ -154,7 +154,7 @@ const NavBar = () => {
               initial={{ opacity: 0, y: 0 }}
               animate={{ opacity: 1, x: 0, transition: { delay: 0.08 } }}
               exit={{ opacity: 0, y: 0 }}
-              className="sm:hidden w-full absolute z-10 top-[100%] "
+              className="sm:hidden w-full absolute z-10 top-[100%] text-xl"
             >
               <div className="bg-primary text-white flex font-outfit flex-col justify-left items-left space-y-[7%] w-full px-[10%] py-[5%]">
                 <Link href="/" className="hover:text-text-subtext">
