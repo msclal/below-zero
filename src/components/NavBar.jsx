@@ -102,25 +102,25 @@ const NavBar = () => {
             >
               <Link
                 href="/"
-                className="transition-all duration-300 ease-in-out hover:text-text-subtext"
+                className="transition-all duration-300 ease-in-out hover:text-gray-300"
               >
                 HOME
               </Link>
               <Link
                 href="/menu"
-                className="transition-all duration-300 ease-in-out hover:text-text-subtext"
+                className="transition-all duration-300 ease-in-out hover:text-gray-300"
               >
                 MENU
               </Link>
               <Link
                 href="/about"
-                className="transition-all duration-300 ease-in-out hover:text-text-subtext"
+                className="transition-all duration-300 ease-in-out hover:text-gray-300"
               >
                 ABOUT
               </Link>
               <a
                 href="/catering"
-                className="transition-all duration-300 ease-in-out hover:text-text-subtext"
+                className="transition-all duration-300 ease-in-out hover:text-gray-300"
               >
                 CATERING
               </a>

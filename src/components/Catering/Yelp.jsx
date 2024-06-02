@@ -7,8 +7,8 @@ import Customers3 from "/public/catering/customers3.jpg";
 const Yelp = () => {
   return (
     <div className="relative px-5">
-      <p className="mb-3 text-3xl font-semibold sm:mb-10 text-start sm:text-center">
-        See what our customers are saying!
+      <p className="mb-3 text-3xl font-semibold sm:mb-10 max-sm:pb-[10%] max-sm:pt-[15%] text-start sm:text-center">
+        See What Our Customers are Saying!
       </p>
 
       {/* Tablet */}

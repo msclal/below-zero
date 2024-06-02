@@ -77,7 +77,7 @@ const Menu = () => {
                 >
                   <div
                     onClick={() => setToggle(true)}
-                    className="border-2 border-border text-black bg-primary-background flex font-outfit flex-col space-y-[7%] w-full px-7 py-3 my-5"
+                    className="border-[1px] border-border text-black bg-primary-background flex font-outfit flex-col space-y-[7%] w-full px-7 py-3 my-5"
                   >
                     <div className="flex items-center justify-between w-full font-semibold text-black">
                       {isClicked}
@@ -88,7 +88,7 @@ const Menu = () => {
               }
               {toggle && (
                 <div className="absolute z-10 w-full top-5 lg:hidden">
-                  <div className="flex flex-col w-full border-2 border-border text-text-subtext bg-primary-background font-outfit">
+                  <div className="flex flex-col w-full border-[1px] border-border text-text-subtext bg-primary-background font-outfit">
                     <div
                       className={`font-semibold text-black flex items-center justify-between w-full px-7 py-3 select-none`}
                       onClick={() => {
@@ -99,7 +99,7 @@ const Menu = () => {
                       <BiSolidDownArrow className="text-lg rotate-180" />
                     </div>
                     <div
-                      className={`${isClicked === "SHAVED ICE" && `hidden`} px-7 py-3 hover:bg-border select-none`}
+                      className={`${isClicked === "SHAVED ICE" && `hidden`} px-7 py-3  hover:bg-border select-none`}
                       onClick={() => {
                         setToggle(false);
                         setIsClicked("SHAVED ICE");
@@ -162,14 +162,14 @@ const Menu = () => {
                   <div className="pb-3 text-2xl font-semibold max-lg:text-center max-lg:text-3xl max-lg:pb-5">
                     SHAVED ICE
                   </div>
-                  <div className="font-light text-text-subtext">
+                  <div className="font-light text-text-subtext lg:w-8/12 max-sm:pb-[7%]">
                     Indulge in the authentic taste of the islands with our
                     Hawaiian shaved ice, featuring finely shaved ice topped with
                     our housemade syrups, meticulously crafted for a burst of
                     refreshing flavor in every bite.
                   </div>
                 </div>
-                <div className="space-y-[5%] pb-[3%] pt-[5%]">
+                <div className="space-y-[5%] pb-[28%] pt-[5%]">
                   <Sizes step="1" />
                   <Syrups step="2" />
                 </div>
@@ -181,7 +181,7 @@ const Menu = () => {
                   <div className="pb-3 text-2xl font-semibold max-lg:text-center max-lg:text-3xl">
                     SHAVED ICE COMBOS
                   </div>
-                  <div className="font-light text-text-subtext">
+                  <div className="font-light text-text-subtext lg:w-8/12 ">
                     Experience the ultimate refreshment with our Hawaiian shaved
                     ice combos, where you can customize your creation or opt for
                     classic combinations. Enjoy the perfect harmony of finely
@@ -190,25 +190,25 @@ const Menu = () => {
                 </div>
                 <div className="flex w-full my-5 md:mt-8 gap-x-4 md:gap-x-5">
                   <p
-                    className={`${subcategory === "ALL" ? `bg-below-zero-red-200 text-white border-below-zero-red-200` : `border-border text-text-subtext`} border-2 px-3 min-[395px]:px-6 py-1 font-medium w-fit rounded-3xl duration-300 transition-all ease-in-out cursor-pointer`}
+                    className={`${subcategory === "ALL" ? `bg-below-zero-red-200 text-white border-below-zero-red-200` : `border-border text-text-subtext`} border-[1px] px-3 min-[395px]:px-6 py-1 font-medium w-fit rounded-3xl duration-300 transition-all ease-in-out cursor-pointer`}
                     onClick={() => setSubcategory("ALL")}
                   >
                     All
                   </p>
                   <p
-                    className={`${subcategory === "BUILD YOUR OWN" ? `bg-below-zero-red-200 text-white border-below-zero-red-200` : `border-border text-text-subtext`} border-2 px-3 min-[395px]:px-6 py-1 font-medium w-fit rounded-3xl duration-300 transition-all ease-in-out cursor-pointer`}
+                    className={`${subcategory === "BUILD YOUR OWN" ? `bg-below-zero-red-200 text-white border-below-zero-red-200` : `border-border text-text-subtext`} border-[1px] px-3 min-[395px]:px-6 py-1 font-medium w-fit rounded-3xl duration-300 transition-all ease-in-out cursor-pointer`}
                     onClick={() => setSubcategory("BUILD YOUR OWN")}
                   >
                     Build Your Own
                   </p>
                   <p
-                    className={`${subcategory === "CLASSICS" ? `bg-below-zero-red-200 text-white border-below-zero-red-200` : `border-border text-text-subtext`} border-2 px-3 min-[395px]:px-6 py-1 font-medium w-fit rounded-3xl duration-300 transition-all ease-in-out cursor-pointer`}
+                    className={`${subcategory === "CLASSICS" ? `bg-below-zero-red-200 text-white border-below-zero-red-200` : `border-border text-text-subtext`} border-[1px] px-3 min-[395px]:px-6 py-1 font-medium w-fit rounded-3xl duration-300 transition-all ease-in-out cursor-pointer`}
                     onClick={() => setSubcategory("CLASSICS")}
                   >
                     Classics
                   </p>
                 </div>
-                <div className="space-y-[5%] pb-[5%] pt-[5%]">
+                <div className="space-y-[5%] pb-[32%] pt-[5%]">
                   {(subcategory === "ALL" ||
                     subcategory === "BUILD YOUR OWN") && (
                     <>
@@ -238,7 +238,7 @@ const Menu = () => {
                   <div className="pb-3 text-2xl font-semibold max-lg:text-center max-lg:text-3xl max-lg:pb-5">
                     ICE CREAM
                   </div>
-                  <div className="font-light text-text-subtext">
+                  <div className="font-light text-text-subtext lg:w-8/12 max-sm:pb-[7%]">
                     Immerse yourself in the classic flavors of Thrifty ice
                     cream. Customize your scoops for your next taste adventure!
                   </div>
@@ -268,7 +268,7 @@ const Menu = () => {
                   <div className="pb-3 text-2xl font-semibold max-lg:text-center max-lg:text-3xl max-lg:pb-5">
                     SHAKES
                   </div>
-                  <div className="font-light text-text-subtext">
+                  <div className="font-light text-text-subtext lg:w-8/12 max-sm:pb-[7%]">
                     Treat yourself to our luscious shakes, lovingly crafted with
                     the rich goodness of Thrifty ice cream. Whether you
                     {"'"}re a fan of classic flavors or crave something
@@ -276,7 +276,7 @@ const Menu = () => {
                     your sweet cravings
                   </div>
                 </div>
-                <div className="space-y-[5%] pb-[3%] pt-[5%]">
+                <div className="space-y-[5%] pb-[28%] pt-[5%]">
                   <div className="flex">
                     <Toppings step="" />
                   </div>
@@ -290,14 +290,14 @@ const Menu = () => {
                   <div className="pb-3 text-2xl font-semibold max-lg:text-center max-lg:text-3xl max-lg:pb-5">
                     HOUSE SPECIALTIES
                   </div>
-                  <div className="font-light text-text-subtext">
+                  <div className="font-light text-text-subtext lg:w-8/12 max-sm:pb-[7%]">
                     Discover our delectable house specialties, featuring
                     customer favorites like Chamango and Cookie Slammer. Each
                     crafted with care and bursting with flavor, they{"'"}re sure
                     to delight your taste buds
                   </div>
                 </div>
-                <div className="space-y-[5%] pb-[3%] pt-[5%]">
+                <div className="space-y-[5%] pb-[28%] pt-[5%]">
                   <MenuItems data={specialties} />
                 </div>
               </div>
