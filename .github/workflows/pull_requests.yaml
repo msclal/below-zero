@@ -41,3 +41,5 @@ jobs:
           node-version: "20.0.0"
       - run: npm ci
       - run: npm run build
+  env:
+    NEXT_PUBLIC_RESEND_API_KEY: ${{secrets.NEXT_PUBLIC_RESEND_API_KEY}}
