@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Customers1 from "/public/catering/customers1.webp";
 import Customers2 from "/public/catering/customers2.webp";
-import Customers3 from "/public/catering/customers3.jpg";
+import Customers3 from "/public/catering/customers3.webp";
 
 const Yelp = () => {
   return (
