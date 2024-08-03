@@ -21,6 +21,7 @@ const Menu = () => {
   const componentRef = useRef(null);
   const handleClick = (item) => {
     setIsClicked(item);
+    window.scrollTo(0, 0);
   };
 
   useEffect(() => {
