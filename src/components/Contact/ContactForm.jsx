@@ -49,7 +49,7 @@ const ContactForm = () => {
         </div>
         <div>
           <p className="text-xl font-semibold font-montserrat">STORE HOURS</p>
-          <p>Everyday: 12:00PM - 7:00PM</p>
+          <p>Everyday: 12:00PM - 8:00PM</p>
         </div>
         <div>
           <p className="text-xl font-semibold font-montserrat">CONTACT</p>
@@ -97,9 +97,7 @@ const ContactForm = () => {
 
         <div className="flex flex-col w-full">
           <span className="mb-2 font-semibold">STORE HOURS</span>
-          <span>Monday: Closed </span>
-          <span>Mon-Sat: 12PM - 6:30PM</span>
-          <span>Sunday: 12PM - 6PM</span>
+          <span>Everyday: 12:00PM - 8:00PM</span>
         </div>
 
         <div className="flex flex-col w-full">
