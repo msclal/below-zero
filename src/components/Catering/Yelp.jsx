@@ -17,15 +17,11 @@ const Yelp = () => {
           class="yelp-review"
           data-review-id="ZI6Q78zR6y3VKnqYVkuHgg"
           data-hostname="www.yelp.com"
-          role="status"
-          aria-label="Embedded Yelp review by Lance U. for Below Zero Shaved Ice. Read the full review on Yelp."
-          title="Yelp Review by Lance U. for Below Zero Shaved Ice"
         >
           Read{" "}
           <a
             href="https://www.yelp.com/user_details?userid=q0jeGUh60S-D3lw2xoBl_w"
             rel="nofollow noopener"
-            aria-label="Lance U. on Yelp"
           >
             Lance U.
           </a>
@@ -33,7 +29,6 @@ const Yelp = () => {
           <a
             href="https://www.yelp.com/biz/below-zero-shaved-ice-upland?hrid=ZI6Q78zR6y3VKnqYVkuHgg"
             rel="nofollow noopener"
-            aria-label="Review of Below Zero Shaved Ice by Lance U."
           >
             review
           </a>{" "}
@@ -41,16 +36,11 @@ const Yelp = () => {
           <a
             href="https://www.yelp.com/biz/pHYLIh3wLUriqiUg8DrvcA"
             rel="nofollow noopener"
-            aria-label="Below Zero Shaved Ice on Yelp"
           >
             Below Zero Shaved Ice
           </a>{" "}
           on{" "}
-          <a
-            href="https://www.yelp.com"
-            rel="nofollow noopener"
-            aria-label="Yelp website"
-          >
+          <a href="https://www.yelp.com" rel="nofollow noopener">
             Yelp
           </a>
           <script
@@ -76,8 +66,6 @@ const Yelp = () => {
         >
           Read{" "}
           <a
-            aria-label="Visit Yelp for to see Danny P's review"
-            title="Visit Yelp for to see Danny P's review"
             target="_blank"
             href="https://www.yelp.com/user_details?userid=ftF0UAOs9LmmbVfKm7UCgA"
             rel="nofollow noopener"
@@ -86,8 +74,6 @@ const Yelp = () => {
           </a>
           {"'s "}
           <a
-            aria-label="Visit Yelp for to see Danny P's review"
-            title="Visit Yelp for to see Danny P's review"
             target="_blank"
             href="https://www.yelp.com/biz/below-zero-shaved-ice-upland?hrid=fz0OCixkLNFdUOiv-bx2vA"
             rel="nofollow noopener"
@@ -96,8 +82,6 @@ const Yelp = () => {
           </a>{" "}
           of{" "}
           <a
-            aria-label="Visit Yelp for more reviews about Below Zero"
-            title="Visit Yelp for more reviews about Below Zero"
             target="_blank"
             href="https://www.yelp.com/biz/pHYLIh3wLUriqiUg8DrvcA"
             rel="nofollow noopener"
@@ -106,8 +90,6 @@ const Yelp = () => {
           </a>{" "}
           on{" "}
           <a
-            aria-label="Visit Yelp for more reviews and information"
-            title="Visit Yelp for more reviews and information"
             target="_blank"
             href="https://www.yelp.com"
             rel="nofollow noopener"
@@ -187,8 +169,6 @@ const Yelp = () => {
         >
           Read{" "}
           <a
-            aria-label="Visit Yelp for to see Danny P's review"
-            title="Visit Yelp for to see Danny P's review"
             target="_blank"
             href="https://www.yelp.com/user_details?userid=ftF0UAOs9LmmbVfKm7UCgA"
             rel="nofollow noopener"
@@ -197,8 +177,6 @@ const Yelp = () => {
           </a>
           {"'s "}
           <a
-            aria-label="Visit Yelp for to see Danny P's review"
-            title="Visit Yelp for to see Danny P's review"
             target="_blank"
             href="https://www.yelp.com/biz/below-zero-shaved-ice-upland?hrid=fz0OCixkLNFdUOiv-bx2vA"
             rel="nofollow noopener"
@@ -207,8 +185,6 @@ const Yelp = () => {
           </a>{" "}
           of{" "}
           <a
-            aria-label="Visit Yelp for more reviews about Below Zero"
-            title="Visit Yelp for more reviews about Below Zero"
             target="_blank"
             href="https://www.yelp.com/biz/pHYLIh3wLUriqiUg8DrvcA"
             rel="nofollow noopener"
@@ -217,8 +193,6 @@ const Yelp = () => {
           </a>{" "}
           on{" "}
           <a
-            aria-label="Visit Yelp for more reviews and information"
-            title="Visit Yelp for more reviews and information"
             target="_blank"
             href="https://www.yelp.com"
             rel="nofollow noopener"
