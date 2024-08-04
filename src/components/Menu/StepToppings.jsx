@@ -5,7 +5,7 @@ import Thrifty from "/public/menu/thrifty.webp";
 const Steps = ({ step }) => {
   return (
     <>
-      <div className="flex max-sm:flex-col  w-full">
+      <div className="flex w-full max-sm:flex-col">
         <div className="flex flex-col w-full">
           <div className="flex items-center">
             {step !== "" && (
@@ -37,8 +37,8 @@ const Steps = ({ step }) => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center ">
-          <div className="w-1/2 ">
+        <div className="flex items-center justify-center ">
+          {/* <div className="w-1/2 ">
             <Image
               src={Thrifty}
               alt="Thrify Logo"
@@ -46,6 +46,18 @@ const Steps = ({ step }) => {
               className="rounded"
               width="1"
               height="1"
+              draggable={false}
+            />
+          </div> */}
+
+          <div className="relative w-1/2">
+            <Image
+              src={Thrifty}
+              alt="Thrify Logo"
+              className="object-contain rounded"
+              width={0}
+              height={0}
+              sizes="50vw"
               draggable={false}
             />
           </div>

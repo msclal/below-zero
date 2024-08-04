@@ -38,6 +38,7 @@ const MenuItemsWithDialog = ({ data }) => {
                       width={1}
                       height={1}
                       draggable={false}
+                      unoptimized
                     />
                   </DialogDescription>
                 </DialogHeader>

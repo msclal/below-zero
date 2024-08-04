@@ -150,10 +150,7 @@ const Menu = () => {
               <Image
                 src={Banner}
                 alt="Menu Banner"
-                layout="responsive"
                 className="rounded"
-                width="1"
-                height="1"
                 draggable={false}
               />
             </div>
@@ -254,10 +251,7 @@ const Menu = () => {
                   <Image
                     src={IceCreamBanner}
                     alt="Thrifty Logo"
-                    layout="responsive"
                     className="rounded-xl"
-                    width="1"
-                    height="1"
                     draggable={false}
                   />
                 </div>
