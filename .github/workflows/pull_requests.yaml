@@ -1,4 +1,5 @@
 name: below-zero
+
 on:
   pull_request:
     branches: [prod, dev]
@@ -8,7 +9,6 @@ jobs:
   format:
     name: formatting
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: Use Node.js
@@ -17,10 +17,10 @@ jobs:
           node-version: "20.0.0"
       - run: npm ci
       - run: npm run check
+
   lint:
     name: linting
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: Use Node.js
@@ -29,10 +29,12 @@ jobs:
           node-version: "20.0.0"
       - run: npm ci
       - run: npm run eslint
+
   build:
     name: build
     runs-on: ubuntu-latest
-
+    env:
+      NEXT_PUBLIC_RESEND_API_KEY: ${{ secrets.NEXT_PUBLIC_RESEND_API_KEY }}
     steps:
       - uses: actions/checkout@v4
       - name: Use Node.js
@@ -41,5 +43,3 @@ jobs:
           node-version: "20.0.0"
       - run: npm ci
       - run: npm run build
-  env:
-    NEXT_PUBLIC_RESEND_API_KEY: ${{secrets.NEXT_PUBLIC_RESEND_API_KEY}}
