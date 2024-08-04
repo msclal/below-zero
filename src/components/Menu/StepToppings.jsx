@@ -38,26 +38,12 @@ const Steps = ({ step }) => {
           </div>
         </div>
         <div className="flex items-center justify-center ">
-          {/* <div className="w-1/2 ">
-            <Image
-              src={Thrifty}
-              alt="Thrify Logo"
-              layout="responsive"
-              className="rounded"
-              width="1"
-              height="1"
-              draggable={false}
-            />
-          </div> */}
-
-          <div className="relative w-1/2">
+          <div className="relative w-1/2 pt-5">
             <Image
               src={Thrifty}
               alt="Thrify Logo"
               className="object-contain rounded"
-              width={0}
-              height={0}
-              sizes="50vw"
+              // sizes="50vw"
               draggable={false}
             />
           </div>
