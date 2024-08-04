@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Snowcones from "/public/catering/snowcones.png";
+import Snowcones from "/public/catering/snowcones.webp";
 
 const Exclusive = () => {
   return (
