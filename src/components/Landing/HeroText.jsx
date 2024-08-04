@@ -30,6 +30,7 @@ const HeroText = () => {
           <div className="pb-4 font-light text-center">SEE MORE FROM US</div>
           <div className="flex w-1/2 text-4xl font-medium gap-x-5 max-sm:justify-center">
             <Link
+              aria-label="Instagram"
               href="https://www.instagram.com/belowzeroshavedice/?hl=en"
               target="_blank"
               className="transition-all duration-300 ease-in-out hover:text-black/60"
@@ -37,6 +38,7 @@ const HeroText = () => {
               <FaInstagram />
             </Link>
             <Link
+              aria-label="Yelp"
               href="https://www.yelp.com/biz/below-zero-shaved-ice-upland"
               target="_blank"
               className="transition-all duration-300 ease-in-out hover:text-black/60"
@@ -44,6 +46,7 @@ const HeroText = () => {
               <FaYelp />
             </Link>
             <Link
+              aria-label="Facebook"
               href="https://www.facebook.com/p/Below-Zero-Shaved-Ice-100065604604709/"
               target="_blank"
               className="transition-all duration-300 ease-in-out hover:text-black/60"
@@ -78,6 +81,7 @@ const HeroText = () => {
           <div className="pb-4 font-light">SEE MORE FROM US</div>
           <div className="flex text-4xl font-medium gap-x-5 max-sm:justify-center">
             <Link
+              aria-label="Instagram"
               href="https://www.instagram.com/belowzeroshavedice/?hl=en"
               target="_blank"
               className="transition-all duration-300 ease-in-out hover:text-black/60"
@@ -85,6 +89,7 @@ const HeroText = () => {
               <FaInstagram />
             </Link>
             <Link
+              aria-label="Yelp"
               href="https://www.yelp.com/biz/below-zero-shaved-ice-upland"
               target="_blank"
               className="transition-all duration-300 ease-in-out hover:text-black/60"
@@ -92,6 +97,7 @@ const HeroText = () => {
               <FaYelp />
             </Link>
             <Link
+              aria-label="Facebook"
               href="https://www.facebook.com/p/Below-Zero-Shaved-Ice-100065604604709/"
               target="_blank"
               className="transition-all duration-300 ease-in-out hover:text-black/60"

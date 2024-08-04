@@ -57,6 +57,7 @@ const Footer = () => {
             </Link>
             <div className="flex pt-2 text-2xl font-medium gap-x-3">
               <Link
+                aria-label="Instagram"
                 href="https://www.instagram.com/belowzeroshavedice/?hl=en"
                 target="_blank"
                 className="transition-all duration-300 ease-in-out hover:text-black/60"
@@ -64,6 +65,7 @@ const Footer = () => {
                 <FaInstagram />
               </Link>
               <Link
+                aria-label="Yelp"
                 href="https://www.yelp.com/biz/below-zero-shaved-ice-upland"
                 target="_blank"
                 className="transition-all duration-300 ease-in-out hover:text-black/60"
@@ -71,6 +73,7 @@ const Footer = () => {
                 <FaYelp />
               </Link>
               <Link
+                aria-label="Facebook"
                 href="https://www.facebook.com/p/Below-Zero-Shaved-Ice-100065604604709/"
                 target="_blank"
                 className="transition-all duration-300 ease-in-out hover:text-black/60"

@@ -66,6 +66,7 @@ const ContactForm = () => {
         </div>
         <div className="flex text-4xl font-medium gap-x-5 max-sm:justify-center ">
           <Link
+            aria-label="Instagram"
             href="https://www.instagram.com/belowzeroshavedice/?hl=en"
             target="_blank"
             className="transition-all duration-300 ease-in-out hover:text-black/60"
@@ -73,6 +74,7 @@ const ContactForm = () => {
             <FaInstagram />
           </Link>
           <Link
+            aria-label="Yelp"
             href="https://www.yelp.com/biz/below-zero-shaved-ice-upland"
             target="_blank"
             className="transition-all duration-300 ease-in-out hover:text-black/60"
@@ -80,6 +82,7 @@ const ContactForm = () => {
             <FaYelp />
           </Link>
           <Link
+            aria-label="Facebook"
             href="https://www.facebook.com/p/Below-Zero-Shaved-Ice-100065604604709/"
             target="_blank"
             className="transition-all duration-300 ease-in-out hover:text-black/60"
@@ -118,6 +121,7 @@ const ContactForm = () => {
           </Link>
           <div className="flex pt-2 text-3xl font-medium gap-x-3 max-sm:pt-[5%]">
             <Link
+              aria-label="Instagram"
               href="https://www.instagram.com/belowzeroshavedice/?hl=en"
               target="_blank"
               className="transition-all duration-300 ease-in-out hover:text-black/60"
@@ -125,6 +129,7 @@ const ContactForm = () => {
               <FaInstagram />
             </Link>
             <Link
+              aria-label="Yelp"
               href="https://www.yelp.com/biz/below-zero-shaved-ice-upland"
               target="_blank"
               className="transition-all duration-300 ease-in-out hover:text-black/60"
@@ -132,6 +137,7 @@ const ContactForm = () => {
               <FaYelp />
             </Link>
             <Link
+              aria-label="Facebook"
               href="https://www.facebook.com/p/Below-Zero-Shaved-Ice-100065604604709/"
               target="_blank"
               className="transition-all duration-300 ease-in-out hover:text-black/60"
