@@ -16,8 +16,8 @@ const Steps = ({ step, thrifty }) => {
             CHOOSE ONE ICE CREAM FLAVOR
           </div>
         </div>{" "}
-        <div className="ml-5 border rounded-b  max-sm:flex-col max-sm:p-8 sm:py-8">
-          <div className="grid sm:grid-cols-2 xl:grid-cols-3 px-[10%] xl:pl-[5%]">
+        <div className="ml-5 border rounded-b max-sm:flex-col max-sm:p-8 sm:py-8">
+          <ul className="grid sm:grid-cols-2 xl:grid-cols-3 px-[10%] xl:pl-[5%] list-disc">
             <li>Birthday Cake</li>
             <li>Black Cherry</li>
             <li>Butter Pecan</li>
@@ -37,7 +37,7 @@ const Steps = ({ step, thrifty }) => {
             <li>Rocky Road</li>
             <li>Strawberry</li>
             <li>Vanilla</li>
-          </div>
+          </ul>
 
           {step === "yes" && (
             <div className="max-sm:mt-[15%] lg:w-3/12 mr-[9%]">

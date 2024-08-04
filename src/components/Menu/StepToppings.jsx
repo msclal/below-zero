@@ -23,7 +23,7 @@ const Steps = ({ step }) => {
           <div
             className={`flex border rounded-b max-sm:flex-col max-sm:p-8 sm:py-8 ${step !== "" ? "ml-5" : ""}`}
           >
-            <div className="xl:px-[10%] sm:px-[18%] grid sm:grid-cols-1 xl:grid-cols-2 w-full">
+            <ul className="xl:px-[10%] sm:px-[18%] grid sm:grid-cols-1 xl:grid-cols-2 w-full list-disc">
               <li>Chocolate Sprinkles</li>
               <li>Chocolate Syrup</li>
               <li>Condensed Milk</li>
@@ -34,7 +34,7 @@ const Steps = ({ step }) => {
               <li>Strawberry Syrup</li>
               <li>Tamarind Sticks</li>
               <li>Whipped Cream</li>
-            </div>
+            </ul>
           </div>
         </div>
         <div className="flex items-center justify-center ">

@@ -23,7 +23,7 @@ const Steps = ({ step }) => {
           <div className="lg:ml-[5%] max-lg:w-full w-6/12 ">
             <p className="pb-3 text-lg font-medium">Non-Dairy</p>
             <div className="flex max-sm:flex-wrap sm:space-x-[8%]">
-              <div className="grid text-nowrap gap-x-[20%] lg:pr-[5%] sm:grid-cols-2 2xl:grid-cols-3  max-sm:mr-[7%]">
+              <ul className="grid text-nowrap gap-x-[20%] lg:pr-[5%] sm:grid-cols-2 2xl:grid-cols-3  max-sm:mr-[7%] list-disc">
                 <li className="">Bahama Mama</li>
                 <li>Banana</li>
                 <li>Blueberry</li>
@@ -47,26 +47,26 @@ const Steps = ({ step }) => {
                 <li>S{"'"}mores</li>
                 <li>Sour Apple</li>
                 <li>Tamarindo</li>
-              </div>
+              </ul>
             </div>
           </div>
           <div className="flex w-6/12 max-lg:w-full lg:pl-[5%]">
             <div className="w-full max-lg:w-full ">
               <p className="pb-3 text-lg font-medium">With Dairy</p>
               <div className="flex">
-                <div className="w-full text-nowrap ">
+                <ul className="w-full list-disc text-nowrap">
                   <li>Cake Batter</li>
                   <li>Cookie Dough</li>
                   <li>Cotton Candy</li>
                   <li>Dulce de Leche</li>
                   <li>Pink Gum</li>
-                </div>
+                </ul>
               </div>
             </div>
             <div className="w-full max-lg:w-full">
               <p className="pb-3 text-lg font-medium ">Sugar Free</p>
               <div className="flex">
-                <div className="w-full text-nowrap ">
+                <ul className="w-full list-disc text-nowrap">
                   <li>Blue Raspberry</li>
                   <li>Mango</li>
                   <li>Pina Colada</li>
@@ -74,7 +74,7 @@ const Steps = ({ step }) => {
                   <li>Tiger{"'"}s Blood</li>
                   <li>Vanilla</li>
                   <li>Watermelon</li>
-                </div>
+                </ul>
               </div>
             </div>
           </div>
