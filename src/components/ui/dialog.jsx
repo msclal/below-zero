@@ -7,7 +7,15 @@ import { cn } from "@/lib/utils";
 
 const Dialog = DialogPrimitive.Root;
 
-const DialogTrigger = DialogPrimitive.Trigger;
+const DialogTrigger = ({ open, setOpen, className, ...props }) => (
+  <DialogPrimitive.Trigger
+    className={cn(
+      "data-[state=open]:bg-primary-background lg:data-[state=closed]:hover:bg-secondary-background focus:bg-primary-background focus:outline-none lg:hover:bg-secondary-background active:bg-secondary-background ",
+      className,
+    )}
+    {...props}
+  />
+);
 
 const DialogPortal = DialogPrimitive.Portal;
 
@@ -38,7 +46,7 @@ const DialogContent = React.forwardRef(
         {...props}
       >
         {children}
-        <DialogPrimitive.Close className="absolute right-4 top-4 rounded-sm opacity-70 focus:outline-none disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground hover:text-text-subtext transition-all ease-in-out duration-300 outline-none">
+        <DialogPrimitive.Close className="absolute right-4 top-4 rounded-sm opacity-70 focus:outline-none disabled:pointer-events-none data-[state=open]:text-muted-foreground hover:text-text-subtext transition-all ease-in-out duration-300 outline-none">
           <X className="w-7 h-7" />
           <span className="sr-only">Close</span>
         </DialogPrimitive.Close>

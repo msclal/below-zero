@@ -13,6 +13,7 @@ import Banner from "/public/menu/banner.webp";
 import IceCreamBanner from "/public/menu/IceCream.webp";
 import { BiSolidDownArrow } from "react-icons/bi";
 import { MotionDiv } from "../MotionDiv";
+import MenuItemsWithDialog from "@/components/Menu/MenuItemsWithDialog";
 
 const Menu = () => {
   const [isClicked, setIsClicked] = useState("SHAVED ICE");
@@ -150,10 +151,7 @@ const Menu = () => {
               <Image
                 src={Banner}
                 alt="Menu Banner"
-                layout="responsive"
                 className="rounded"
-                width="1"
-                height="1"
                 draggable={false}
               />
             </div>
@@ -167,7 +165,7 @@ const Menu = () => {
                     Indulge in the authentic taste of the islands with our
                     Hawaiian shaved ice, featuring finely shaved ice topped with
                     our housemade syrups, meticulously crafted for a burst of
-                    refreshing flavor in every bite.
+                    refreshing flavor in every bite
                   </div>
                 </div>
                 <div className="space-y-[5%] pb-[28%] pt-[5%]">
@@ -186,7 +184,7 @@ const Menu = () => {
                     Experience the ultimate refreshment with our Hawaiian shaved
                     ice combos, where you can customize your creation or opt for
                     classic combinations. Enjoy the perfect harmony of finely
-                    shaved ice, our housemade syrups, and ice cream.
+                    shaved ice, our housemade syrups, and ice cream
                   </div>
                 </div>
                 <div className="flex w-full my-5 md:mt-8 gap-x-4 md:gap-x-5">
@@ -254,10 +252,7 @@ const Menu = () => {
                   <Image
                     src={IceCreamBanner}
                     alt="Thrifty Logo"
-                    layout="responsive"
                     className="rounded-xl"
-                    width="1"
-                    height="1"
                     draggable={false}
                   />
                 </div>
@@ -274,7 +269,7 @@ const Menu = () => {
                     the rich goodness of Thrifty ice cream. Whether you
                     {"'"}re a fan of classic flavors or crave something
                     adventurous, our customizable shakes are sure to satisfy
-                    your sweet cravings.
+                    your sweet cravings
                   </div>
                 </div>
                 <div className="space-y-[5%] pb-[28%] pt-[5%]">
@@ -295,11 +290,11 @@ const Menu = () => {
                     Discover our delectable house specialties, featuring
                     customer favorites like Chamango and Cookie Slammer. Each
                     crafted with care and bursting with flavor, they{"'"}re sure
-                    to delight your taste buds.
+                    to delight your taste buds
                   </div>
                 </div>
-                <div className="space-y-[5%] pb-[28%] pt-[5%]">
-                  <MenuItems data={specialties} />
+                <div className="space-y-[5%] pb-[3%] pt-[5%]">
+                  <MenuItemsWithDialog data={specialties} />
                 </div>
               </div>
             )}

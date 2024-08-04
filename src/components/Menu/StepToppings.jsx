@@ -5,7 +5,7 @@ import Thrifty from "/public/menu/thrifty.webp";
 const Steps = ({ step }) => {
   return (
     <>
-      <div className="flex max-sm:flex-col  w-full">
+      <div className="flex w-full max-sm:flex-col">
         <div className="flex flex-col w-full">
           <div className="flex items-center">
             {step !== "" && (
@@ -23,7 +23,7 @@ const Steps = ({ step }) => {
           <div
             className={`flex border rounded-b max-sm:flex-col max-sm:p-8 sm:py-8 ${step !== "" ? "ml-5" : ""}`}
           >
-            <div className="xl:px-[10%] sm:px-[18%] grid sm:grid-cols-1 xl:grid-cols-2 w-full">
+            <ul className="xl:px-[10%] sm:px-[18%] grid sm:grid-cols-1 xl:grid-cols-2 w-full list-disc">
               <li>Chocolate Sprinkles</li>
               <li>Chocolate Syrup</li>
               <li>Condensed Milk</li>
@@ -34,18 +34,16 @@ const Steps = ({ step }) => {
               <li>Strawberry Syrup</li>
               <li>Tamarind Sticks</li>
               <li>Whipped Cream</li>
-            </div>
+            </ul>
           </div>
         </div>
-        <div className="flex justify-center items-center ">
-          <div className="w-1/2 ">
+        <div className="flex items-center justify-center ">
+          <div className="relative w-1/2 pt-5">
             <Image
               src={Thrifty}
               alt="Thrify Logo"
-              layout="responsive"
-              className="rounded"
-              width="1"
-              height="1"
+              className="object-contain rounded"
+              // sizes="50vw"
               draggable={false}
             />
           </div>
