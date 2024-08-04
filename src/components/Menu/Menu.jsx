@@ -22,6 +22,7 @@ const Menu = () => {
   const componentRef = useRef(null);
   const handleClick = (item) => {
     setIsClicked(item);
+    window.scrollTo(0, 0);
   };
 
   useEffect(() => {
@@ -268,7 +269,7 @@ const Menu = () => {
                     the rich goodness of Thrifty ice cream. Whether you
                     {"'"}re a fan of classic flavors or crave something
                     adventurous, our customizable shakes are sure to satisfy
-                    your sweet cravings
+                    your sweet cravings.
                   </div>
                 </div>
                 <div className="space-y-[5%] pb-[28%] pt-[5%]">
@@ -289,7 +290,7 @@ const Menu = () => {
                     Discover our delectable house specialties, featuring
                     customer favorites like Chamango and Cookie Slammer. Each
                     crafted with care and bursting with flavor, they{"'"}re sure
-                    to delight your taste buds
+                    to delight your taste buds.
                   </div>
                 </div>
                 <div className="space-y-[5%] pb-[3%] pt-[5%]">
