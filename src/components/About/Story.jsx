@@ -16,10 +16,10 @@ const Story = () => {
           <br />
           It was love at the first sight! We said to ourselves how come we{" "}
           {"don't"} see much of it in the states. Of course, you {"can't"} find
-          what you are not loo for. So we started on a quest to find the right
-          product with the same quality but there {"wasn't"} anywhere to be
-          found in our surroundings at the time. So we decided to put ourselves
-          in {"God's"} hand an open this Humble Mom & Pops Store.
+          what you are not looking for. So we started on a quest to find the
+          right product with the same quality but there {"wasn't"} anywhere to
+          be found in our surroundings at the time. So we decided to put
+          ourselves in {"God's"} hands and open this Humble Mom & Pops Store.
           <br />
           <br />
           So here we are after 12 years serving our community with a hand made

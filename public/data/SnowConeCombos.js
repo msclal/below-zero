@@ -1,7 +1,7 @@
 export const combos = [
   {
     picture: "/SnowConeCombos/BerryBerryGood.webp",
-    name: "Berry Berry Good Good",
+    name: "Berry Berry Good",
     description:
       "Strawberry, Raspberry, and Blueberry Shaved Ice with Vanilla Ice Cream",
   },
@@ -22,14 +22,15 @@ export const combos = [
     description: "Blue Gum and Pink Gum Shaved Ice with Cotton Candy Ice Cream",
   },
   {
+    picture: "/SnowConeCombos/CaramelApple.webp",
+    name: "Caramel Apple",
+    description:
+      "Sour Apple Shaved Ice with Vanilla Ice Cream and Caramel Drizzle",
+  },
+  {
     picture: "/SnowConeCombos/CherryCola.webp",
     name: "Cherry Cola",
     description: "Cherry and Cola Shaved Ice with Vanilla Ice Cream",
-  },
-  {
-    picture: "/SnowConeCombos/BrandonGoingBananas.webp",
-    name: "Brandon Going Bananas",
-    description: "Banana and Vanilla Shaved Ice with Vanilla Ice Cream",
   },
   {
     picture: "/SnowConeCombos/CookieMonster.webp",
@@ -75,7 +76,7 @@ export const combos = [
   },
   {
     picture: "/SnowConeCombos/HappyRainbow.webp",
-    name: "Happy Rainbow",
+    name: "Happy Day Rainbow",
     description:
       "Cherry, Blue Gum, and Banana Shaved Ice with Cotton Candy Ice Cream",
   },

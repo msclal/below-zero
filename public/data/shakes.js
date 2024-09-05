@@ -1,5 +1,10 @@
 export const shakes = [
   {
+    picture: "/Shakes/Chamango.webp",
+    name: "Chamango Smoothie",
+    description: "",
+  },
+  {
     picture: "/Shakes/Chocolate.webp",
     name: "Chocolate",
     description: "",
@@ -10,18 +15,23 @@ export const shakes = [
     description: "",
   },
   {
-    picture: "/Shakes/CookiesNCream.webp",
-    name: "Cookies & Cream",
+    picture: "/Shakes/CoconutPineapple.webp",
+    name: "Coconut Pineapple",
     description: "",
   },
   {
-    picture: "/Shakes/CookiesNCream2.webp",
+    picture: "/Shakes/CookiesNCream.webp",
     name: "Cookies & Cream",
     description: "",
   },
   {
     picture: "/Shakes/CookiesNCream3.webp",
     name: "Cookies & Cream",
+    description: "",
+  },
+  {
+    picture: "/Shakes/CottonCandy.webp",
+    name: "Cotton Candy",
     description: "",
   },
   {
@@ -50,7 +60,7 @@ export const shakes = [
     description: "",
   },
   {
-    picture: "/Shakes/Vanilla2.webp",
+    picture: "/Shakes/Vanilla3.webp",
     name: "Vanilla",
     description: "",
   },

@@ -28,8 +28,8 @@ const Steps = ({ step }) => {
               <li>Chocolate Syrup</li>
               <li>Condensed Milk</li>
               <li>Fruity Pebbles</li>
-              <li>Ling Hing Powder</li>
-              <li>Nutes</li>
+              <li>Li Hing Powder</li>
+              <li>Nuts</li>
               <li>Rainbow Sprinkles</li>
               <li>Strawberry Syrup</li>
               <li>Tamarind Sticks</li>
@@ -38,7 +38,7 @@ const Steps = ({ step }) => {
           </div>
         </div>
         <div className="flex items-center justify-center ">
-          <div className="relative w-1/2 pt-5">
+          <div className="relative w-[60%] pt-[8%]">
             <Image
               src={Thrifty}
               alt="Thrify Logo"
