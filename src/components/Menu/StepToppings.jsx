@@ -23,7 +23,7 @@ const Steps = ({ step }) => {
           <div
             className={`flex border rounded-b max-sm:flex-col max-sm:p-8 sm:py-8 ${step !== "" ? "ml-5" : ""}`}
           >
-            <ul className="xl:px-[10%] sm:px-[18%] grid sm:grid-cols-1 xl:grid-cols-2 w-full list-disc">
+            <ul className="xl:px-[10%] sm:px-[18%] grid max-xs:grid-cols-1 max-sm:grid-cols-2 sm:grid-cols-1 xl:grid-cols-2 lg:gap-x-[10%] w-full list-disc ">
               <li>Chocolate Sprinkles</li>
               <li>Chocolate Syrup</li>
               <li>Condensed Milk</li>
