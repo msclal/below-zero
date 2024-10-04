@@ -1,127 +1,7 @@
-export const specialties = [
-  {
-    picture: "/Specialties/BananaSplit/BananaSplit.webp",
-    name: "Banana Split",
-    description: "",
-    gif: "/Specialties/BananaSplit/BananaSplitGif.webp",
-  },
-  {
-    picture: "/Specialties/BrownieSundae/BrownieSundae.webp",
-    name: "Brownie Sundae",
-    description: "",
-    gif: "/Specialties/BrownieSundae/BrownieSundae.webp",
-  },
-  {
-    picture: "/Specialties/Chamango/Chamango.webp",
-    name: "Chamango",
-    description: "",
-    gif: "/Specialties/Chamango/Chamango.webp",
-  },
-  {
-    picture: "/Specialties/ChurroSundae/ChurroSundae.webp",
-    name: "Churro Sundae",
-    description: "",
-    gif: "/Specialties/ChurroSundae/ChurroSundaeGif.webp",
-  },
-  {
-    picture: "/Specialties/CookieSlammer/CookieSlammer.webp",
-    name: "Cookie Slammer",
-    description: "",
-    gif: "/Specialties/CookieSlammer/CookieSlammerGif.webp",
-  },
-  {
-    picture: "/Specialties/RootbeerFloat/RootbeerFloat.webp",
-    name: "Rootbeer Float",
-    description: "",
-    gif: "/Specialties/RootbeerFloat/RootbeerFloat.webp",
-  },
-  {
-    picture: "/Specialties/WaffleBowl/WaffleBowl.webp",
-    name: "Waffle Bowl",
-    description: "",
-    gif: "/Specialties/WaffleBowl/WaffleBowlGif.webp",
-  },
-  {
-    picture: "/Specialties/WaffleCone/WaffleCone.webp",
-    name: "Waffle Cone",
-    description: "",
-    gif: "/Specialties/WaffleCone/WaffleConeGif.webp",
-  },
-];
-
-export const shakes = [
-  {
-    picture: "/Shakes/Chocolate/Chocolate.webp",
-    name: "Chocolate",
-    description: "",
-    gif: "/Shakes/Chocolate/Chocolate.webp",
-  },
-  {
-    picture: "/Shakes/Chocolate2/Chocolate2.webp",
-    name: "Chocolate",
-    description: "",
-    gif: "/Shakes/Chocolate2/Chocolate2.webp",
-  },
-  {
-    picture: "/Shakes/CookiesNCream/CookiesNCream.webp",
-    name: "Cookies & Cream",
-    description: "",
-    gif: "/Shakes/CookiesNCream/CookiesNCream.webp",
-  },
-  {
-    picture: "/Shakes/CookiesNCream2/CookiesNCream2.webp",
-    name: "Cookies & Cream",
-    description: "",
-    gif: "/Shakes/CookiesNCream2/CookiesNCream2.webp",
-  },
-  {
-    picture: "/Shakes/CookiesNCream3/CookiesNCream3.webp",
-    name: "Cookies & Cream",
-    description: "",
-    gif: "/Shakes/CookiesNCream3/CookiesNCream3.webp",
-  },
-  {
-    picture: "/Shakes/SaltedCaramel/SaltedCaramel.webp",
-    name: "Salted Caramel",
-    description: "",
-    gif: "/Shakes/SaltedCaramel/SaltedCaramel.webp",
-  },
-  {
-    picture: "/Shakes/Strawberry/Strawberry.webp",
-    name: "Strawberry",
-    description: "",
-    gif: "/Shakes/Strawberry/Strawberry.webp",
-  },
-  {
-    picture: "/Shakes/Strawberry2/Strawberry2.webp",
-    name: "Strawberry",
-    description: "",
-    gif: "/Shakes/Strawberry2/Strawberry2.webp",
-  },
-  {
-    picture: "/Shakes/Strawberry3/Strawberry3.webp",
-    name: "Strawberry",
-    description: "",
-    gif: "/Shakes/Strawberry3/Strawberry3.webp",
-  },
-  {
-    picture: "/Shakes/Vanilla/Vanilla.webp",
-    name: "Vanilla",
-    description: "",
-    gif: "/Shakes/Vanilla/Vanilla.webp",
-  },
-  {
-    picture: "/Shakes/Vanilla2/Vanilla2.webp",
-    name: "Vanilla",
-    description: "",
-    gif: "/Shakes/Vanilla2/Vanilla2.webp",
-  },
-];
-
 export const combos = [
   {
     picture: "/SnowConeCombos/BerryBerryGood/BerryBerryGood.webp",
-    name: "Berry Berry Good Good",
+    name: "Berry Berry Good",
     description:
       "Strawberry, Raspberry, and Blueberry Shaved Ice with Vanilla Ice Cream",
     gif: "/SnowConeCombos/BerryBerryGood/BerryBerryGood.webp",
@@ -134,9 +14,10 @@ export const combos = [
     gif: "/SnowConeCombos/BigStick/BigStick.webp",
   },
   {
-    picture: "/SnowConeCombos/BrandonGoingBananas/BrandonGoingBananas.webp",
-    name: "Brandon Going Bananas",
-    description: "Banana and Vanilla Shaved Ice with Vanilla Ice Cream",
+    picture: "/SnowConeCombos/CaramelApple/CaramelApple.webp",
+    name: "Caramel Apple",
+    description:
+      "Sour Apple Shaved Ice with Vanilla Ice Cream and Caramel Drizzle",
     gif: "/SnowConeCombos/BrandonGoingBananas/BrandonGoingBananas.webp",
   },
   {
@@ -209,9 +90,141 @@ export const combos = [
   },
   {
     picture: "/SnowConeCombos/HappyRainbow/HappyRainbow.webp",
-    name: "Happy Rainbow",
+    name: "Happy Day Rainbow",
     description:
       "Cherry, Blue Gum, and Banana Shaved Ice with Cotton Candy Ice Cream",
     gif: "/SnowConeCombos/HappyRainbow/HappyRainbow.webp",
+  },
+];
+
+export const shakes = [
+  {
+    picture: "/Shakes/Chamango/Chamango.webp",
+    name: "Chamango Smoothie",
+    description: "",
+    gif: "/Shakes/Chamango/Chamango.webp",
+  },
+  {
+    picture: "/Shakes/Chocolate1/Chocolate1.webp",
+    name: "Chocolate",
+    description: "",
+    gif: "/Shakes/Chocolate1/Chocolate1.webp",
+  },
+  {
+    picture: "/Shakes/Chocolate2/Chocolate2.webp",
+    name: "Chocolate",
+    description: "",
+    gif: "/Shakes/Chocolate2/Chocolate2.webp",
+  },
+  {
+    picture: "/Shakes/CoconutPineapple/CoconutPineapple.webp",
+    name: "Coconut Pineapple",
+    description: "",
+    gif: "/Shakes/CoconutPineapple/CoconutPineapple.webp",
+  },
+  {
+    picture: "/Shakes/CookiesNCream1/CookiesNCream1.webp",
+    name: "Cookies & Cream",
+    description: "",
+    gif: "/Shakes/CookiesNCream1/CookiesNCream1.webp",
+  },
+  {
+    picture: "/Shakes/CookiesNCream3/CookiesNCream3.webp",
+    name: "Cookies & Cream",
+    description: "",
+    gif: "/Shakes/CookiesNCream3/CookiesNCream3.webp",
+  },
+  {
+    picture: "/Shakes/CottonCandy/CottonCandy.webp",
+    name: "Cotton Candy",
+    description: "",
+    gif: "/Shakes/CottonCandy/CottonCandy.webp",
+  },
+  {
+    picture: "/Shakes/SaltedCaramel/SaltedCaramel.webp",
+    name: "Salted Caramel",
+    description: "",
+    gif: "/Shakes/SaltedCaramel/SaltedCaramel.webp",
+  },
+  {
+    picture: "/Shakes/Strawberry1/Strawberry1.webp",
+    name: "Strawberry",
+    description: "",
+    gif: "/Shakes/Strawberry1/Strawberry1.webp",
+  },
+  {
+    picture: "/Shakes/Strawberry2/Strawberry2.webp",
+    name: "Strawberry",
+    description: "",
+    gif: "/Shakes/Strawberry2/Strawberry2.webp",
+  },
+  {
+    picture: "/Shakes/Strawberry3/Strawberry3.webp",
+    name: "Strawberry",
+    description: "",
+    gif: "/Shakes/Strawberry3/Strawberry3.webp",
+  },
+  {
+    picture: "/Shakes/Vanilla/Vanilla.webp",
+    name: "Vanilla",
+    description: "",
+    gif: "/Shakes/Vanilla/Vanilla.webp",
+  },
+  {
+    picture: "/Shakes/Vanilla3/Vanilla3.webp",
+    name: "Vanilla",
+    description: "",
+    gif: "/Shakes/Vanilla3/Vanilla3.webp",
+  },
+];
+
+export const specialties = [
+  {
+    picture: "/Specialties/BananaSplit/BananaSplit.webp",
+    name: "Banana Split",
+    description: "",
+    gif: "/Specialties/BananaSplit/BananaSplitGif.webp",
+  },
+  {
+    picture: "/Specialties/BrownieSundae/BrownieSundae.webp",
+    name: "Brownie Sundae",
+    description: "",
+    gif: "/Specialties/BrownieSundae/BrownieSundae.webp",
+  },
+  {
+    picture: "/Specialties/Chamango/Chamango.webp",
+    name: "Chamango",
+    description: "",
+    gif: "/Specialties/Chamango/Chamango.webp",
+  },
+  {
+    picture: "/Specialties/ChurroSundae/ChurroSundae.webp",
+    name: "Churro Sundae",
+    description: "",
+    gif: "/Specialties/ChurroSundae/ChurroSundaeGif.webp",
+  },
+  {
+    picture: "/Specialties/CookieSlammer/CookieSlammer.webp",
+    name: "Cookie Slammer",
+    description: "",
+    gif: "/Specialties/CookieSlammer/CookieSlammerGif.webp",
+  },
+  {
+    picture: "/Specialties/RootbeerFloat/RootbeerFloat.webp",
+    name: "Rootbeer Float",
+    description: "",
+    gif: "/Specialties/RootbeerFloat/RootbeerFloat.webp",
+  },
+  {
+    picture: "/Specialties/WaffleBowl/WaffleBowl.webp",
+    name: "Waffle Bowl",
+    description: "",
+    gif: "/Specialties/WaffleBowl/WaffleBowlGif.webp",
+  },
+  {
+    picture: "/Specialties/WaffleCone/WaffleCone.webp",
+    name: "Waffle Cone",
+    description: "",
+    gif: "/Specialties/WaffleCone/WaffleConeGif.webp",
   },
 ];
