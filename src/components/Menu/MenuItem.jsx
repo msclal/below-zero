@@ -7,7 +7,7 @@ const MenuItem = ({ name, picture, description }) => {
       <div className="w-full pb-[10%]">
         <Image
           src={picture}
-          alt="Produce Picture"
+          alt="Product Picture"
           layout="responsive"
           className="rounded-xl"
           width="1"
