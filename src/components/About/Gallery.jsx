@@ -14,7 +14,7 @@ const Gallery = () => {
         <p className="font-light text-text-subtext sm:text-center">
           Because of our fine grade ice, we create the traditional Hawaiian
           shaved ice.
-          <br className="max-sm:hidden" /> See more on{" "}
+          <br className="max-sm:hidden" /> See more on our{" "}
           <Link
             aria-label="Instagram"
             target="_blank"
