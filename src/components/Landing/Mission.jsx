@@ -21,7 +21,7 @@ const Mission = () => {
         <div className="w-full max-sm:hidden">
           <div
             className="bg-no-repeat bg-center sm:bg-[length:36rem] lg:bg-[length:36rem] xl:bg-[length:48rem] 2xl:bg-[length:48rem] "
-            style={{ backgroundImage: "url('/CandyLandXL.webp')" }}
+            style={{ backgroundImage: "url('/landing/CandyLandXL.webp')" }}
           >
             <div className="w-4/12 py-[12%] flex-col justify-start">
               <div className="pb-2 text-2xl font-bold border-b border-black font-montserrat">

@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Button from "../Button";
 import { FaFacebook, FaInstagram, FaYelp } from "react-icons/fa";
+import { storeInfo } from "../../../public/data/store_info";
 
 const HeroText = () => {
   return (
@@ -31,7 +32,7 @@ const HeroText = () => {
           <div className="flex w-1/2 text-4xl font-medium gap-x-5 max-sm:justify-center">
             <Link
               aria-label="Instagram"
-              href="https://www.instagram.com/belowzeroshavedice/?hl=en"
+              href={storeInfo.instagram}
               target="_blank"
               className="transition-all duration-300 ease-in-out hover:text-black/60"
             >
@@ -39,7 +40,7 @@ const HeroText = () => {
             </Link>
             <Link
               aria-label="Yelp"
-              href="https://www.yelp.com/biz/below-zero-shaved-ice-upland"
+              href={storeInfo.yelp}
               target="_blank"
               className="transition-all duration-300 ease-in-out hover:text-black/60"
             >
@@ -47,7 +48,7 @@ const HeroText = () => {
             </Link>
             <Link
               aria-label="Facebook"
-              href="https://www.facebook.com/p/Below-Zero-Shaved-Ice-100065604604709/"
+              href={storeInfo.facebook}
               target="_blank"
               className="transition-all duration-300 ease-in-out hover:text-black/60"
             >
@@ -82,7 +83,7 @@ const HeroText = () => {
           <div className="flex text-4xl font-medium gap-x-5 max-sm:justify-center">
             <Link
               aria-label="Instagram"
-              href="https://www.instagram.com/belowzeroshavedice/?hl=en"
+              href={storeInfo.instagram}
               target="_blank"
               className="transition-all duration-300 ease-in-out hover:text-black/60"
             >
@@ -90,7 +91,7 @@ const HeroText = () => {
             </Link>
             <Link
               aria-label="Yelp"
-              href="https://www.yelp.com/biz/below-zero-shaved-ice-upland"
+              href={storeInfo.yelp}
               target="_blank"
               className="transition-all duration-300 ease-in-out hover:text-black/60"
             >
@@ -98,7 +99,7 @@ const HeroText = () => {
             </Link>
             <Link
               aria-label="Facebook"
-              href="https://www.facebook.com/p/Below-Zero-Shaved-Ice-100065604604709/"
+              href={storeInfo.facebook}
               target="_blank"
               className="transition-all duration-300 ease-in-out hover:text-black/60"
             >

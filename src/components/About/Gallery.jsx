@@ -5,6 +5,7 @@ import Image2 from "/public/about/Gallery2.webp";
 import Image3 from "/public/about/Gallery3.webp";
 import Image4 from "/public/about/Gallery4.webp";
 import Link from "next/link";
+import { storeInfo } from "../../../public/data/store_info";
 
 const Gallery = () => {
   return (
@@ -18,7 +19,7 @@ const Gallery = () => {
           <Link
             aria-label="Instagram"
             target="_blank"
-            href="https://www.instagram.com/belowzeroshavedice/?hl=en"
+            href={storeInfo.instagram}
             className="font-medium text-black underline"
           >
             Instagram
