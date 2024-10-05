@@ -2,45 +2,61 @@
 import { useRef } from "react";
 import Link from "next/link";
 import React from "react";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast, Slide } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import { FaYelp, FaInstagram, FaFacebook } from "react-icons/fa";
 const ContactForm = () => {
   const form = useRef();
   const handleSend = (e) => {
     e.preventDefault();
-    console.log(e.target[0].value, e.target[1].value, e.target[2].value);
-    // if (e.target[0].value && e.target[1].value && e.target[2].value) {
-    //   emailjs
-    //     .sendForm(
-    //       "service_hy4bsvp",
-    //       "template_9e567ar",
-    //       form.current,
-    //       "B0GWTfpimt3X7kH-y"
-    //     )
-    //     .then(
-    //       (result) => {},
-    //       (error) => {
-    //         console.log(error.text);
-    //       }
-    //     )
-    //     .finally(() => {
-    //       e.target.reset();
-    //       toast({
-    //         variant: "success",
-    //         title: "Message Sent!",
-    //         description: "We'll get back to you as soon as possible.",
-    //       });
-    //     });
-    // } else {
-    //   toast({
-    //     variant: "destructive",
-    //     title: "Oops! Something's Missing...",
-    //     description: "Double-check the form for any missing details.",
-    //   });
-    // }
+    if (e.target[0].value && e.target[1].value && e.target[2].value) {
+      emailjs
+        .sendForm(
+          "service_hy4bsvp",
+          "template_9e567ar",
+          form.current,
+          "B0GWTfpimt3X7kH-y",
+        )
+        .then(
+          (result) => {},
+          (error) => {
+            console.log(error.text);
+          },
+        )
+        .finally(() => {
+          e.target.reset();
+          toast.success("We've sent your message!", {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            transition: Slide,
+            theme: "colored",
+          });
+        });
+    } else {
+      toast.error("Message error! Check the form for any missing details.", {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        transition: Slide,
+        theme: "colored",
+      });
+    }
   };
 
   return (
     <div className="flex flex-wrap items-center justify-center w-full p-5 sm:p-10 gap-x-20 gap-y-14">
+      <ToastContainer />
       <div className="flex flex-col gap-y-7 max-[830px]:text-center max-lg:hidden">
         <div>
           <p className="text-xl font-semibold font-montserrat">LOCATION</p>
@@ -172,6 +188,7 @@ const ContactForm = () => {
             className="h-[250px] w-full lg:w-[600px] px-3 sm:px-5 py-3 border rounded-md resize-none border-border"
             id=""
           />
+
           <div className="self-end">
             <input
               type="submit"
