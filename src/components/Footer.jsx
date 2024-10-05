@@ -6,7 +6,7 @@ import KABOLogo from "/public/KABOLogo.svg";
 import BelowZeroLogo from "/public/BelowZeroLogo.svg";
 import BelowZeroIcon from "/public/BelowZeroIcon.svg";
 import { FaFacebook, FaInstagram, FaYelp } from "react-icons/fa";
-
+import { storeInfo } from "../../public/data/store_info";
 const Footer = () => {
   return (
     <>
@@ -30,35 +30,35 @@ const Footer = () => {
         <div className="flex max-sm:flex-col max-sm:items-start max-sm:space-y-[6%] sm:space-x-[5%] sm:w-10/12 lg:w-8/12 text-black mt-[3%] mb-[7%] text-base">
           <div className="flex flex-col w-full">
             <span className="mb-2 font-semibold">LOCATION</span>
-            <span className="">583 E. Foothill Blvd. Suite #6</span>
-            Upland, CA 91786
+            <span className="">{storeInfo.address}</span>
+            {storeInfo.city_state}
           </div>
 
           <div className="flex flex-col w-full">
             <span className="mb-2 font-semibold">STORE HOURS</span>
-            <span>Everyday: 12:00PM - 8:00PM</span>
+            <span>{storeInfo.hours}</span>
           </div>
 
           <div className="flex flex-col w-full">
             <span className="mb-2 font-semibold">CONTACT</span>
             <Link
               target="_blank"
-              href={"tel:9099209230"}
+              href={`tel:${storeInfo.phoneNumber}`}
               className="text-black no-underline"
             >
-              (909) 920-9230
+              {storeInfo.phoneNumber}
             </Link>
             <Link
               target="_blank"
-              href="mailto:BelowZeroShavedIce@gmail.com"
+              href={`mailto:${storeInfo.email}`}
               className="text-black no-underline"
             >
-              BelowZeroShavedIce@gmail.com
+              {storeInfo.email}
             </Link>
             <div className="flex pt-2 text-2xl font-medium gap-x-3">
               <Link
                 aria-label="Instagram"
-                href="https://www.instagram.com/belowzeroshavedice/?hl=en"
+                href={storeInfo.instagram}
                 target="_blank"
                 className="transition-all duration-300 ease-in-out hover:text-black/60"
               >
@@ -66,15 +66,14 @@ const Footer = () => {
               </Link>
               <Link
                 aria-label="Yelp"
-                href="https://www.yelp.com/biz/below-zero-shaved-ice-upland"
-                target="_blank"
+                href={storeInfo.yelp}
                 className="transition-all duration-300 ease-in-out hover:text-black/60"
               >
                 <FaYelp />
               </Link>
               <Link
                 aria-label="Facebook"
-                href="https://www.facebook.com/p/Below-Zero-Shaved-Ice-100065604604709/"
+                href={storeInfo.facebook}
                 target="_blank"
                 className="transition-all duration-300 ease-in-out hover:text-black/60"
               >

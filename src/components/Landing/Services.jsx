@@ -41,7 +41,7 @@ const Services = () => {
                 <div className="font-light text-text-subtext">
                   Treat your guests to an unforgettable experience with our
                   customizable menu options and dedicated catering services
-                  tailored to your event`{"'"}`s needs.
+                  tailored to your event{"'"}s needs.
                 </div>
               </div>
               <div>

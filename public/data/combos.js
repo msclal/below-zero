@@ -1,82 +1,90 @@
 export const combos = [
   {
-    picture: "/SnowConeCombos/BerryBerryGood.webp",
-    name: "Berry Berry Good Good",
+    picture: "/product_pictures/combos/BerryBerryGood/BerryBerryGood.webp",
+    name: "Berry Berry Good",
     description:
       "Strawberry, Raspberry, and Blueberry Shaved Ice with Vanilla Ice Cream",
   },
   {
-    picture: "/SnowConeCombos/BigStick.webp",
+    picture: "/product_pictures/combos/BigStick/BigStick.webp",
     name: "Big Stick",
     description:
       "Cherry, Orange, and Pineapple Shaved Ice with Vanilla Ice Cream",
   },
   {
-    picture: "/SnowConeCombos/BrandonGoingBananas.webp",
-    name: "Brandon Going Bananas",
-    description: "Banana and Vanilla Shaved Ice with Vanilla Ice Cream",
+    picture: "/product_pictures/combos/CaramelApple/CaramelApple.webp",
+    name: "Caramel Apple",
+    description:
+      "Sour Apple Shaved Ice with Vanilla Ice Cream and Caramel Drizzle",
   },
   {
-    picture: "/SnowConeCombos/CandyLand.webp",
+    picture: "/product_pictures/combos/CandyLand/CandyLand.webp",
     name: "Candy Land",
     description: "Blue Gum and Pink Gum Shaved Ice with Cotton Candy Ice Cream",
   },
   {
-    picture: "/SnowConeCombos/CherryCola.webp",
+    picture: "/product_pictures/combos/CherryCola/CherryCola.webp",
     name: "Cherry Cola",
     description: "Cherry and Cola Shaved Ice with Vanilla Ice Cream",
   },
   {
-    picture: "/SnowConeCombos/BrandonGoingBananas.webp",
+    picture:
+      "/product_pictures/combos/BrandonGoingBananas/BrandonGoingBananas.webp",
     name: "Brandon Going Bananas",
     description: "Banana and Vanilla Shaved Ice with Vanilla Ice Cream",
   },
   {
-    picture: "/SnowConeCombos/CookieMonster.webp",
+    picture: "/product_pictures/combos/CookieMonster/CookieMonster.webp",
     name: "Cookie Monster",
     description: "Cookie Dough Shaved Ice with Cookies n Cream Ice Cream",
   },
   {
-    picture: "/SnowConeCombos/PinaColada.webp",
+    picture: "/product_pictures/combos/PinaColada/PinaColada.webp",
     name: "Pina Colada",
     description: "Pina Colada Shaved Ice with Coconut Pineapple Ice Cream",
   },
   {
-    picture: "/SnowConeCombos/RootBeerFloat.webp",
+    picture: "/product_pictures/combos/RootBeerFloat/RootBeerFloat.webp",
     name: "Root Beer Float",
     description: "Root beer and Vanilla Shaved Ice with Vanilla Ice Cream ",
   },
   {
-    picture: "/SnowConeCombos/Snickers.webp",
+    picture: "/product_pictures/combos/Snickers/Snickers.webp",
     name: "Snickers",
     description:
       "Caramel and Praline Shaved Ice with Chocolate Ice Cream and Caramel Toppings",
   },
   {
-    picture: "/SnowConeCombos/StrawnanaShortcake.webp",
+    picture:
+      "/product_pictures/combos/StrawnanaShortcake/StrawnanaShortcake.webp",
     name: "Strawnana Shortcake",
     description:
       "Strawberry, Banana, and Cake Batter Shaved Ice with Vanilla Ice Cream",
   },
   {
-    picture: "/SnowConeCombos/TropicalStorm.webp",
+    picture: "/product_pictures/combos/TropicalStorm/TropicalStorm.webp",
     name: "Tropical Storm",
     description: "Mango and Coconut Shaved Ice with Vanilla Ice Cream",
   },
   {
-    picture: "/SnowConeCombos/YummyLane.webp",
+    picture: "/product_pictures/combos/YummyLane/YummyLane.webp",
     name: "Yummy Lane",
     description: "Cotton Candy Shaved Ice with Birthday Cake Ice Cream",
   },
   {
-    picture: "/SnowConeCombos/SweetNSour.webp",
+    picture: "/product_pictures/combos/SweetNSour/SweetNSour.webp",
     name: "Sweet N Sour",
     description: "Watermelon and Sour Apple Shaved Ice with Sherbet Ice Cream",
   },
   {
-    picture: "/SnowConeCombos/HappyRainbow.webp",
-    name: "Happy Rainbow",
+    picture: "/product_pictures/combos/HappyRainbow/HappyRainbow.webp",
+    name: "Happy Day Rainbow",
     description:
       "Cherry, Blue Gum, and Banana Shaved Ice with Cotton Candy Ice Cream",
+  },
+  {
+    picture: "/product_pictures/combos/Unicorn/univorn.png",
+    name: "Unicorn",
+    description: "",
   },
 ];

@@ -5,6 +5,7 @@ import Image2 from "/public/about/Gallery2.webp";
 import Image3 from "/public/about/Gallery3.webp";
 import Image4 from "/public/about/Gallery4.webp";
 import Link from "next/link";
+import { storeInfo } from "../../../public/data/store_info";
 
 const Gallery = () => {
   return (
@@ -14,11 +15,11 @@ const Gallery = () => {
         <p className="font-light text-text-subtext sm:text-center">
           Because of our fine grade ice, we create the traditional Hawaiian
           shaved ice.
-          <br className="max-sm:hidden" /> See more on{" "}
+          <br className="max-sm:hidden" /> See more on our{" "}
           <Link
             aria-label="Instagram"
             target="_blank"
-            href="https://www.instagram.com/belowzeroshavedice/?hl=en"
+            href={storeInfo.instagram}
             className="font-medium text-black underline"
           >
             Instagram

@@ -17,7 +17,7 @@ const Steps = ({ step, thrifty }) => {
           </div>
         </div>{" "}
         <div className="ml-5 border rounded-b max-sm:flex-col max-sm:p-8 sm:py-8">
-          <ul className="grid sm:grid-cols-2 xl:grid-cols-3 px-[10%] xl:pl-[5%] list-disc">
+          <ul className="grid sm:grid-cols-2 xl:grid-cols-3 px-[10%] xl:pl-[5%] list-disc ">
             <li>Birthday Cake</li>
             <li>Black Cherry</li>
             <li>Butter Pecan</li>

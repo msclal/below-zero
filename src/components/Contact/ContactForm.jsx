@@ -2,72 +2,89 @@
 import { useRef } from "react";
 import Link from "next/link";
 import React from "react";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast, Slide } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { storeInfo } from "../../../public/data/store_info";
 import { FaYelp, FaInstagram, FaFacebook } from "react-icons/fa";
+
 const ContactForm = () => {
   const form = useRef();
   const handleSend = (e) => {
     e.preventDefault();
-    console.log(e.target[0].value, e.target[1].value, e.target[2].value);
-    // if (e.target[0].value && e.target[1].value && e.target[2].value) {
-    //   emailjs
-    //     .sendForm(
-    //       "service_hy4bsvp",
-    //       "template_9e567ar",
-    //       form.current,
-    //       "B0GWTfpimt3X7kH-y"
-    //     )
-    //     .then(
-    //       (result) => {},
-    //       (error) => {
-    //         console.log(error.text);
-    //       }
-    //     )
-    //     .finally(() => {
-    //       e.target.reset();
-    //       toast({
-    //         variant: "success",
-    //         title: "Message Sent!",
-    //         description: "We'll get back to you as soon as possible.",
-    //       });
-    //     });
-    // } else {
-    //   toast({
-    //     variant: "destructive",
-    //     title: "Oops! Something's Missing...",
-    //     description: "Double-check the form for any missing details.",
-    //   });
-    // }
+    if (e.target[0].value && e.target[1].value && e.target[2].value) {
+      emailjs
+        .sendForm(
+          "service_hy4bsvp",
+          "template_9e567ar",
+          form.current,
+          "B0GWTfpimt3X7kH-y",
+        )
+        .then(
+          (result) => {},
+          (error) => {
+            console.log(error.text);
+          },
+        )
+        .finally(() => {
+          e.target.reset();
+          toast.success("We've sent your message!", {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            transition: Slide,
+            theme: "colored",
+          });
+        });
+    } else {
+      toast.error("Message error! Check the form for any missing details.", {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        transition: Slide,
+        theme: "colored",
+      });
+    }
   };
 
   return (
     <div className="flex flex-wrap items-center justify-center w-full p-5 sm:p-10 gap-x-20 gap-y-14">
+      <ToastContainer />
       <div className="flex flex-col gap-y-7 max-[830px]:text-center max-lg:hidden">
         <div>
           <p className="text-xl font-semibold font-montserrat">LOCATION</p>
-          <p>583 E Foothill Blvd Ste 6</p>
-          <p>Upland, CA 91786</p>
+          <p>{storeInfo.address}</p>
+          <p>{storeInfo.city_state}</p>
         </div>
         <div>
           <p className="text-xl font-semibold font-montserrat">STORE HOURS</p>
-          <p>Everyday: 12:00PM - 8:00PM</p>
+          <p>{storeInfo.hours}</p>
         </div>
         <div>
           <p className="text-xl font-semibold font-montserrat">CONTACT</p>
-          <Link target="_blank" href={"tel:9099209230"}>
-            (909) 920-9230
+          <Link target="_blank" href={`tel:${storeInfo.phoneNumber}`}>
+            {storeInfo.phoneNumber}
           </Link>
           <Link
             target="_blank"
-            href="mailto:BelowZeroShavedIce@gmail.com"
+            href={`mailto:${storeInfo.email}`}
             className="text-black no-underline"
           >
-            <p>BelowZeroShavedIce@gmail.com</p>
+            <p>{storeInfo.email}</p>
           </Link>
         </div>
         <div className="flex text-4xl font-medium gap-x-5 max-sm:justify-center ">
           <Link
             aria-label="Instagram"
-            href="https://www.instagram.com/belowzeroshavedice/?hl=en"
+            href={storeInfo.instagram}
             target="_blank"
             className="transition-all duration-300 ease-in-out hover:text-black/60"
           >
@@ -75,7 +92,7 @@ const ContactForm = () => {
           </Link>
           <Link
             aria-label="Yelp"
-            href="https://www.yelp.com/biz/below-zero-shaved-ice-upland"
+            href={storeInfo.yelp}
             target="_blank"
             className="transition-all duration-300 ease-in-out hover:text-black/60"
           >
@@ -83,7 +100,7 @@ const ContactForm = () => {
           </Link>
           <Link
             aria-label="Facebook"
-            href="https://www.facebook.com/p/Below-Zero-Shaved-Ice-100065604604709/"
+            href={storeInfo.facebook}
             target="_blank"
             className="transition-all duration-300 ease-in-out hover:text-black/60"
           >
@@ -107,22 +124,22 @@ const ContactForm = () => {
           <span className="mb-2 font-semibold">CONTACT</span>
           <Link
             target="_blank"
-            href={"tel:9099209230"}
+            href={`tel:${storeInfo.phoneNumber}`}
             className="text-black no-underline"
           >
-            (909) 920-9230
+            {storeInfo.phoneNumber}
           </Link>
           <Link
             target="_blank"
-            href="mailto:BelowZeroShavedIce@gmail.com"
+            href={`mailto:${storeInfo.email}`}
             className="text-black no-underline"
           >
-            BelowZeroShavedIce@gmail.com
+            {storeInfo.email}
           </Link>
           <div className="flex pt-2 text-3xl font-medium gap-x-3 max-sm:pt-[5%]">
             <Link
               aria-label="Instagram"
-              href="https://www.instagram.com/belowzeroshavedice/?hl=en"
+              href={storeInfo.instagram}
               target="_blank"
               className="transition-all duration-300 ease-in-out hover:text-black/60"
             >
@@ -130,7 +147,7 @@ const ContactForm = () => {
             </Link>
             <Link
               aria-label="Yelp"
-              href="https://www.yelp.com/biz/below-zero-shaved-ice-upland"
+              href={storeInfo.yelp}
               target="_blank"
               className="transition-all duration-300 ease-in-out hover:text-black/60"
             >
@@ -138,7 +155,7 @@ const ContactForm = () => {
             </Link>
             <Link
               aria-label="Facebook"
-              href="https://www.facebook.com/p/Below-Zero-Shaved-Ice-100065604604709/"
+              href={storeInfo.facebook}
               target="_blank"
               className="transition-all duration-300 ease-in-out hover:text-black/60"
             >
@@ -172,6 +189,7 @@ const ContactForm = () => {
             className="h-[250px] w-full lg:w-[600px] px-3 sm:px-5 py-3 border rounded-md resize-none border-border"
             id=""
           />
+
           <div className="self-end">
             <input
               type="submit"
