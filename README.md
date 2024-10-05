@@ -50,7 +50,7 @@ Let's say you want to update the name or description of the 'Happy Day Rainbow' 
     },
 
 ### How do I update a menu item's picture?
-*It's important to minimize the size/quality of the picture you will be uploading as it can affect the website's loading latencies. Therefore, its important to maintain a relatively small image size (ideally less than ~50kb) with a .webp or .png format.*
+*It's important to minimize the size/quality of the picture you will be uploading as it can affect the website's loading latencies. Therefore, its important to maintain a relatively small image size (ideally less than ~50kb) with a .webp or .png format. Depending on menu item, make sure the image has the following dimensions: Shaved Ice Combos (579x579), Shakes (669x736), House Specialties (525x525).*
 
 Let's say you want to update the picture of the 'Happy Day Rainbow' Shaved Ice Combo.
 1. Firstly, all Shaved Ice Combo product pictures are located in the folder `public/product_pictures/combos`.
@@ -58,7 +58,7 @@ Let's say you want to update the picture of the 'Happy Day Rainbow' Shaved Ice C
 3. Delete this image and replace it with a new image that's ideally less than 50kb size with a `.webp` or `.png` format. We'll call this image `SadDayRainbow.png`. Depending on menu item, make sure the image has the following dimensions:
 
       Image Dimensions:
-      - Shaved Iced Combos: 579x579
+      - Shaved Ice Combos: 579x579
       - Shakes: 669x736
       - House Specialties: 525x485
 
