@@ -55,7 +55,7 @@ Let's say you want to update the name or description of the 'Happy Day Rainbow' 
 Let's say you want to update the picture of the 'Happy Day Rainbow' Shaved Ice Combo.
 1. Firstly, all Shaved Ice Combo product pictures are located in the folder `public/product_pictures/combos`.
 2. Within that folder, locate the file containing the 'Happy Day Rainbow' `public/product_pictures/combos/HappyRainbow/HappyRainbow.webp`.
-3. Delete this image and replace it with a new image that's ideally less than 50kb size with a `.webp` or `.png` format. We'll call this image `SadDayRainbow.png`. Depending on menu item, make sure it the image has the following dimensions:
+3. Delete this image and replace it with a new image that's ideally less than 50kb size with a `.webp` or `.png` format. We'll call this image `SadDayRainbow.png`. Depending on menu item, make sure the image has the following dimensions:
 
       Image Dimensions:
       - Shaved Iced Combos: 579x579
