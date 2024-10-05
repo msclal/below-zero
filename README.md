@@ -50,15 +50,21 @@ Let's say you want to update the name or description of the 'Happy Day Rainbow' 
     },
 
 ### How do I update a menu item's picture?
-*It's important to minimize the size/quality of the picture you will be uploading as it can affect the website's loading latencies. Therefore, its important to maintain a relatively small image size (ideally less than ~50kb) with a .webp or .png format.*
+*It's important to minimize the size/quality of the picture you will be uploading as it can affect the website's loading latencies. Therefore, its important to maintain a relatively small image size (ideally less than ~50kb) with a .webp or .png format. Depending on menu item, make sure the image has the following dimensions: Shaved Ice Combos (579x579), Shakes (669x736), House Specialties (525x525).*
 
 Let's say you want to update the picture of the 'Happy Day Rainbow' Shaved Ice Combo.
 1. Firstly, all Shaved Ice Combo product pictures are located in the folder `public/product_pictures/combos`.
 2. Within that folder, locate the file containing the 'Happy Day Rainbow' `public/product_pictures/combos/HappyRainbow/HappyRainbow.webp`.
-3. Delete this image and replace it with a new image that's ideally less than 50kb size with a `.webp` or `.png` format. We'll call this image `SadDayRainbow.png`.
-4. Now that we've uploaded a new picture, we need to update the image listed for 'Happy Day Rainbow' with our new image.
-5. Go to the Shaved Ice Combo menu listings located in the file `public/data/combos.js`.
-6. Locate the 'Happy Day Rainbow' information within the file. We should see this:
+3. Delete this image and replace it with a new image that's ideally less than 50kb size with a `.webp` or `.png` format. We'll call this image `SadDayRainbow.png`. Depending on menu item, make sure the image has the following dimensions:
+
+      Image Dimensions:
+      - Shaved Ice Combos: 579x579
+      - Shakes: 669x736
+      - House Specialties: 525x485
+
+5. Now that we've uploaded a new picture, we need to update the image listed for 'Happy Day Rainbow' with our new image.
+6. Go to the Shaved Ice Combo menu listings located in the file `public/data/combos.js`.
+7. Locate the 'Happy Day Rainbow' information within the file. We should see this:
     ```
     {
         picture: "/product_pictures/combos/HappyRainbow/HappyRainbow.webp",
@@ -66,8 +72,8 @@ Let's say you want to update the picture of the 'Happy Day Rainbow' Shaved Ice C
         description: "Cherry, Blue Gum, and Banana Shaved Ice with Cotton Candy Ice Cream",
     },
     ```
-7. To update the image listed for this menu item, modify the `picture` field with the file path of the new 'Happy Day Rainbow' image you just created within the `public/product_pictures/combos` in steps 1-3.
-8. Something like this updates the name and description of this menu item. Here we uploaded a new image called `SadDayRainbow.png`:
+8. To update the image listed for this menu item, modify the `picture` field with the file path of the new 'Happy Day Rainbow' image you just created within the `public/product_pictures/combos` in steps 1-3.
+9. Something like this updates the name and description of this menu item. Here we uploaded a new image called `SadDayRainbow.png`:
     ```
     {
         picture: "public/product_pictures/combos/HappyRainbow/SadDayRainbow.png",
