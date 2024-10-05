@@ -1,0 +1,80 @@
+export const shakes = [
+  {
+    picture: "/product_pictures/shakes/Chamango/Chamango.webp",
+    name: "Chamango Smoothie",
+    description: "",
+    gif: "/product_pictures/shakes/Chamango/Chamango.webp",
+  },
+  {
+    picture: "/product_pictures/shakes/Chocolate1/Chocolate1.webp",
+    name: "Chocolate",
+    description: "",
+    gif: "/product_pictures/shakes/Chocolate1/Chocolate1.webp",
+  },
+  {
+    picture: "/product_pictures/shakes/Chocolate2/Chocolate2.webp",
+    name: "Chocolate",
+    description: "",
+    gif: "/product_pictures/shakes/Chocolate2/Chocolate2.webp",
+  },
+  {
+    picture: "/product_pictures/shakes/CoconutPineapple/CoconutPineapple.webp",
+    name: "Coconut Pineapple",
+    description: "",
+    gif: "/product_pictures/shakes/CoconutPineapple/CoconutPineapple.webp",
+  },
+  {
+    picture: "/product_pictures/shakes/CookiesNCream1/CookiesNCream1.webp",
+    name: "Cookies & Cream",
+    description: "",
+    gif: "/product_pictures/shakes/CookiesNCream1/CookiesNCream1.webp",
+  },
+  {
+    picture: "/product_pictures/shakes/CookiesNCream3/CookiesNCream3.webp",
+    name: "Cookies & Cream",
+    description: "",
+    gif: "/product_pictures/shakes/CookiesNCream3/CookiesNCream3.webp",
+  },
+  {
+    picture: "/product_pictures/shakes/CottonCandy/CottonCandy.webp",
+    name: "Cotton Candy",
+    description: "",
+    gif: "/product_pictures/shakes/CottonCandy/CottonCandy.webp",
+  },
+  {
+    picture: "/product_pictures/shakes/SaltedCaramel/SaltedCaramel.webp",
+    name: "Salted Caramel",
+    description: "",
+    gif: "/product_pictures/shakes/SaltedCaramel/SaltedCaramel.webp",
+  },
+  {
+    picture: "/product_pictures/shakes/Strawberry1/Strawberry1.webp",
+    name: "Strawberry",
+    description: "",
+    gif: "/product_pictures/shakes/Strawberry1/Strawberry1.webp",
+  },
+  {
+    picture: "/product_pictures/shakes/Strawberry2/Strawberry2.webp",
+    name: "Strawberry",
+    description: "",
+    gif: "/product_pictures/shakes/Strawberry2/Strawberry2.webp",
+  },
+  {
+    picture: "/product_pictures/shakes/Strawberry3/Strawberry3.webp",
+    name: "Strawberry",
+    description: "",
+    gif: "/product_pictures/shakes/Strawberry3/Strawberry3.webp",
+  },
+  {
+    picture: "/product_pictures/shakes/Vanilla/Vanilla.webp",
+    name: "Vanilla",
+    description: "",
+    gif: "/product_pictures/shakes/Vanilla/Vanilla.webp",
+  },
+  {
+    picture: "/product_pictures/shakes/Vanilla3/Vanilla3.webp",
+    name: "Vanilla",
+    description: "",
+    gif: "/product_pictures/shakes/Vanilla3/Vanilla3.webp",
+  },
+];

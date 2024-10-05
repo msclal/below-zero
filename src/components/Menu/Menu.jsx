@@ -2,7 +2,9 @@
 import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { specialties, shakes, combos } from "@/lib/data";
+import { combos } from "../../../public/menu_data/combos";
+import { shakes } from "../../../public/menu_data/shakes";
+import { specialties } from "../../../public/menu_data/specialties";
 import IceCream from "@/components/Menu/StepIceCream";
 import Syrups from "@/components/Menu/StepSyrup";
 import Sizes from "@/components/Menu/StepSizes";
