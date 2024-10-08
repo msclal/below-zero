@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { combos } from "../../../public/data/combos";
 import { shakes } from "../../../public/data/shakes";
 import { specialties } from "../../../public/data/specialties";
+import { shavedice } from "../../../public/data/shavedice";
 import IceCream from "@/components/Menu/StepIceCream";
 import Syrups from "@/components/Menu/StepSyrup";
 import Sizes from "@/components/Menu/StepSizes";
@@ -170,9 +171,12 @@ const Menu = () => {
                     refreshing flavor in every bite
                   </div>
                 </div>
-                <div className="space-y-[5%] pb-[28%] pt-[5%]">
+                <div className="space-y-[5%] pt-[5%]">
                   <Sizes step="1" />
                   <Syrups step="2" />
+                </div>
+                <div className="space-y-[5%] pb-[28%] pt-[5%]">
+                  <MenuItems data={shavedice} />
                 </div>
               </div>
             )}
@@ -295,7 +299,7 @@ const Menu = () => {
                     to delight your taste buds
                   </div>
                 </div>
-                <div className="space-y-[5%] pb-[3%] pt-[5%]">
+                <div className="space-y-[5%] pb-[28%] pt-[5%]">
                   <MenuItemsWithDialog data={specialties} />
                 </div>
               </div>

@@ -1,11 +1,5 @@
 export const shakes = [
   {
-    picture: "/product_pictures/shakes/Chamango/Chamango.webp",
-    name: "Chamango Smoothie",
-    description: "",
-    gif: "/product_pictures/shakes/Chamango/Chamango.webp",
-  },
-  {
     picture: "/product_pictures/shakes/Chocolate1/Chocolate1.webp",
     name: "Chocolate",
     description: "",

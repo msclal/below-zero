@@ -57,7 +57,7 @@ module.exports = {
           filter: "#E8EFFA",
         },
         text: {
-          subtext: "#575757",
+          subtext: "#1E1E1E",
         },
         border: "#CFCFCF",
       },

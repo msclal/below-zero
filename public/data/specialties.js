@@ -18,6 +18,12 @@ export const specialties = [
     gif: "/product_pictures/specialties/Chamango/Chamango.webp",
   },
   {
+    picture: "/product_pictures/shakes/Chamango/Chamango.webp",
+    name: "Chamango Smoothie",
+    description: "",
+    gif: "/product_pictures/shakes/Chamango/Chamango.webp",
+  },
+  {
     picture: "/product_pictures/specialties/ChurroSundae/ChurroSundae.webp",
     name: "Churro Sundae",
     description: "",

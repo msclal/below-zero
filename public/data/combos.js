@@ -82,9 +82,4 @@ export const combos = [
     description:
       "Cherry, Blue Gum, and Banana Shaved Ice with Cotton Candy Ice Cream",
   },
-  {
-    picture: "/product_pictures/combos/Unicorn/univorn.png",
-    name: "Unicorn",
-    description: "",
-  },
 ];
