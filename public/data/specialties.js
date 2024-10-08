@@ -13,7 +13,7 @@ export const specialties = [
   },
   {
     picture: "/product_pictures/specialties/Chamango/Chamango.webp",
-    name: "Chamango",
+    name: "Chamango Combo",
     description: "",
     gif: "/product_pictures/specialties/Chamango/Chamango.webp",
   },
