@@ -1,4 +1,4 @@
-## Update Website Information
+## Updating Website Information
 We have made it accessible to update your store information and menu item listings by modifying specific configuration files.
 
 These following files update the data displayed on the website:
