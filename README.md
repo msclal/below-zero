@@ -30,7 +30,32 @@ Let's say you want to update the hours of your business.
 2. Simply modify `hours: "Everyday: 12:00PM - 8:00PM"` within the file. This should update the hours information shown on the Contact page and the footer of the website.
 
 ### How do I remove a menu item?
-Let's say you want to discontinue or remove the 'Happy Day Rainbow' Shaved Ice Combo from your menu. 
+Let's say you want to discontinue or remove the 'Happy Day Rainbow' Shaved Ice Combo from your menu. There are two options: delete from file or hide the item temporarily. 
+
+**To Hide Temporarily:**
+
+1. Locate the file that has all Shaved Ice Combo information: `public/data/combos.js`
+2. In the file, locate 'Happy Day Rainbow'. It should look something like this:
+   ```
+    {
+        picture: "/product_pictures/combos/HappyRainbow/HappyRainbow.webp",
+        name: "Happy Day Rainbow",
+        description: "Cherry, Blue Gum, and Banana Shaved Ice with Cotton Candy Ice Cream",
+        visible: true,
+    },
+    ```
+3. Set the value of `visible` to `false`. It should look like this:
+    ```
+    {
+        picture: "/product_pictures/combos/HappyRainbow/HappyRainbow.webp",
+        name: "Happy Day Rainbow",
+        description: "Cherry, Blue Gum, and Banana Shaved Ice with Cotton Candy Ice Cream",
+        visible: false,
+    },
+    ```
+4. To make the menu item visible, set the value back to `true`.
+
+**To Delete From File:**
 
 1. Locate the file that has all Shaved Ice Combo information: `public/data/combos.js`
 2. In the file, locate 'Happy Day Rainbow'. It should look something like this:
@@ -39,6 +64,7 @@ Let's say you want to discontinue or remove the 'Happy Day Rainbow' Shaved Ice C
         picture: "/product_pictures/combos/HappyRainbow/HappyRainbow.webp",
         name: "Happy Day Rainbow",
         description: "Cherry, Blue Gum, and Banana Shaved Ice with Cotton Candy Ice Cream",
+        visible: true,
     },
     ```
 3. To remove this item, highlight the entire item from `{` to `},` (including the following comma `,`) and hit the delete key on your keyboard.
@@ -53,6 +79,7 @@ Let's say you want to update the name or description of the 'Happy Day Rainbow' 
         picture: "/product_pictures/combos/HappyRainbow/HappyRainbow.webp",
         name: "Happy Day Rainbow",
         description: "Cherry, Blue Gum, and Banana Shaved Ice with Cotton Candy Ice Cream",
+        visible: true,
     },
     ```
 3. To update the name and/or description listed for this menu item, just modify the information within `name` and `description` fields of the 'Happy Day Rainbow' in the file.
@@ -62,6 +89,7 @@ Let's say you want to update the name or description of the 'Happy Day Rainbow' 
         picture: "/product_pictures/combos/HappyRainbow/HappyRainbow.webp",
         name: "Sad Day Rainbow",
         description: "Blue Ice Cream",
+        visible: true,
     },
     ```
 5. If the item does not have a description leave the field empty like this:
@@ -70,11 +98,12 @@ Let's say you want to update the name or description of the 'Happy Day Rainbow' 
         picture: "/product_pictures/combos/HappyRainbow/HappyRainbow.webp",
         name: "Sad Day Rainbow",
         description: "",
+        visible: true,
     },
     ```
 
 ### How do I update a menu item's picture?
-*It's important to minimize the size/quality of the picture you will be uploading as it can affect the website's loading latencies. Therefore, its important to maintain a relatively small image size (ideally less than ~50kb) with a .webp or .png format. Depending on menu item, make sure the image has the following dimensions: Shaved Ice Combos (579x579), Shakes (669x736), House Specialties (525x525).*
+*It's important to minimize the size/quality of the picture you will be uploading as it can affect the website's loading latencies. Therefore, its important to maintain a relatively small image size (ideally less than ~50kb) with a .webp or .png format. Depending on menu item, make sure the image has the following dimensions: Shaved Ice (579x579), Shaved Ice Combos (579x579), Shakes (669x736), House Specialties (525x525).*
 
 Let's say you want to update the picture of the 'Happy Day Rainbow' Shaved Ice Combo.
 1. Firstly, all Shaved Ice Combo product pictures are located in the folder `public/product_pictures/combos`.
@@ -82,9 +111,10 @@ Let's say you want to update the picture of the 'Happy Day Rainbow' Shaved Ice C
 3. Delete this image and replace it with a new image that's ideally less than 50kb size with a `.webp` or `.png` format. We'll call this image `SadDayRainbow.png`. Depending on menu item, make sure the image has the following dimensions:
 
       Image Dimensions:
-      - Shaved Ice Combos: 579x579
-      - Shakes: 669x736
-      - House Specialties: 525x485
+      - Shaved Ice: `579x579`
+      - Shaved Ice Combos: `579x579`
+      - Shakes: `669x736`
+      - House Specialties: `525x485`
 
 5. Now that we've uploaded a new picture, we need to update the image listed for 'Happy Day Rainbow' with our new image.
 6. Go to the Shaved Ice Combo menu listings located in the file `public/data/combos.js`.
@@ -94,6 +124,7 @@ Let's say you want to update the picture of the 'Happy Day Rainbow' Shaved Ice C
         picture: "/product_pictures/combos/HappyRainbow/HappyRainbow.webp",
         name: "Happy Day Rainbow",
         description: "Cherry, Blue Gum, and Banana Shaved Ice with Cotton Candy Ice Cream",
+        visible: true,
     },
     ```
 8. To update the image listed for this menu item, modify the `picture` field with the file path of the new 'Happy Day Rainbow' image you just created within the `public/product_pictures/combos` in steps 1-3.
@@ -103,6 +134,7 @@ Let's say you want to update the picture of the 'Happy Day Rainbow' Shaved Ice C
         picture: "public/product_pictures/combos/HappyRainbow/SadDayRainbow.png",
         name: "Happy Day Rainbow",
         description: "Cherry, Blue Gum, and Banana Shaved Ice with Cotton Candy Ice Cream",
+        visible: true,
     },
     ```
 ## Developing on our Codebase
