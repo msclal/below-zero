@@ -1,4 +1,4 @@
-## Updating Website Information
+## Update Website Information
 We have made it accessible to update your store information and menu item listings by modifying specific configuration files.
 
 These following files update the data displayed on the website:
@@ -12,7 +12,7 @@ These following files update the data displayed on the website:
    - Shakes pictures folder: `public/product_pictures/shakes`
    - House Specialties pictures folder: `public/product_pictures/specialties`
 
-### How do I update my business information?
+### Update Business Information
 Let's say you want to update the hours of your business.
 1. Locate the file `public/data/store_info.js`. The file should look like this:
     ```
@@ -29,7 +29,7 @@ Let's say you want to update the hours of your business.
     ```
 2. Simply modify `hours: "Everyday: 12:00PM - 8:00PM"` within the file. This should update the hours information shown on the Contact page and the footer of the website.
 
-### How do I remove a menu item?
+### Remove Menu Item
 Let's say you want to discontinue or remove the 'Happy Day Rainbow' Shaved Ice Combo from your menu. There are two options: delete from file or hide the item temporarily. 
 
 **To Hide Temporarily:**
@@ -70,7 +70,7 @@ Let's say you want to discontinue or remove the 'Happy Day Rainbow' Shaved Ice C
 3. To remove this item, highlight the entire item from `{` to `},` (including the following comma `,`) and hit the delete key on your keyboard.
 
 
-### How do I edit a menu item's name or description?
+### Edit Menu Item Name/Description
 Let's say you want to update the name or description of the 'Happy Day Rainbow' Shaved Ice Combo.
 1. Firstly, all Shaved Ice Combo menu listings are located in the file `public/data/combos.js`.
 2. Locate the 'Happy Day Rainbow' information within the file. We should see this:
@@ -102,7 +102,7 @@ Let's say you want to update the name or description of the 'Happy Day Rainbow' 
     },
     ```
 
-### How do I update a menu item's picture?
+### Update Menu Item Picture
 *It's important to minimize the size/quality of the picture you will be uploading as it can affect the website's loading latencies. Therefore, its important to maintain a relatively small image size (ideally less than ~50kb) with a .webp or .png format. Depending on menu item, make sure the image has the following dimensions: Shaved Ice (579x579), Shaved Ice Combos (579x579), Shakes (669x736), House Specialties (525x525).*
 
 Let's say you want to update the picture of the 'Happy Day Rainbow' Shaved Ice Combo.
