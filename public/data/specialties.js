@@ -43,10 +43,10 @@ export const specialties = [
     visible: true,
   },
   {
-    picture: "/product_pictures/specialties/RootbeerFloat/RootbeerFloat.webp",
+    picture: "/product_pictures/specialties/RootBeerFloat/RootBeerFloat.webp",
     name: "Rootbeer Float",
     description: "",
-    gif: "/product_pictures/specialties/RootbeerFloat/RootbeerFloat.webp",
+    gif: "/product_pictures/specialties/RootBeerFloat/RootBeerFloat.webp",
     visible: true,
   },
   {

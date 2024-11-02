@@ -12,13 +12,17 @@ const ContactForm = () => {
   const form = useRef();
   const handleSend = (e) => {
     e.preventDefault();
-    if (e.target[0].value && e.target[1].value && e.target[2].value) {
+    if (
+      form.current.user_name.value &&
+      form.current.user_email.value &&
+      form.current.message.value
+    ) {
       emailjs
         .sendForm(
-          "service_hy4bsvp",
-          "template_9e567ar",
+          "service_8e40q24",
+          "template_gkyyl4h",
           form.current,
-          "B0GWTfpimt3X7kH-y",
+          "M3UlGHz-cKsBF5HI_",
         )
         .then(
           (result) => {},
@@ -237,10 +241,12 @@ const ContactForm = () => {
           <div className="flex gap-x-3 max-sm:flex-col max-sm:gap-y-5">
             <input
               placeholder="Name"
+              name="user_name"
               className="px-3 py-1 border rounded-md sm:px-5 border-border"
             />
             <input
               placeholder="Email"
+              name="user_email"
               className="px-3 py-1 border rounded-md sm:px-5 border-border"
             />
           </div>
