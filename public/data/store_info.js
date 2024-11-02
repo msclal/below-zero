@@ -6,7 +6,7 @@ export const storeInfo = {
     thursday: "12PM - 7PM",
     friday: "12PM - 7PM",
     saturday: "12PM - 7PM",
-    sunday: "12PM - 7PM",
+    sunday: "Closed",
     closedOnRainyDays: true,
   },
   address: "583 E. Foothill Blvd. Suite #6",
