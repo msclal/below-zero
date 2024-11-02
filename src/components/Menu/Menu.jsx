@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { combos } from "../../../public/data/combos";
 import { shakes } from "../../../public/data/shakes";
 import { specialties } from "../../../public/data/specialties";
+import { shavedice } from "../../../public/data/shavedice";
 import IceCream from "@/components/Menu/StepIceCream";
 import Syrups from "@/components/Menu/StepSyrup";
 import Sizes from "@/components/Menu/StepSizes";
@@ -169,10 +170,49 @@ const Menu = () => {
                     our housemade syrups, meticulously crafted for a burst of
                     refreshing flavor in every bite
                   </div>
-                </div>
-                <div className="space-y-[5%] pb-[28%] pt-[5%]">
-                  <Sizes step="1" />
-                  <Syrups step="2" />
+                  <div className="flex w-full my-5 md:mt-8 gap-x-4 md:gap-x-5">
+                    <p
+                      className={`${subcategory === "ALL" ? `bg-below-zero-red-200 text-white border-below-zero-red-200` : `border-border text-text-subtext`} border-[1px] px-3 min-[395px]:px-6 py-1 font-medium w-fit rounded-3xl duration-300 transition-all ease-in-out cursor-pointer`}
+                      onClick={() => setSubcategory("ALL")}
+                    >
+                      All
+                    </p>
+                    <p
+                      className={`${subcategory === "BUILD YOUR OWN" ? `bg-below-zero-red-200 text-white border-below-zero-red-200` : `border-border text-text-subtext`} border-[1px] px-3 min-[395px]:px-6 py-1 font-medium w-fit rounded-3xl duration-300 transition-all ease-in-out cursor-pointer`}
+                      onClick={() => setSubcategory("BUILD YOUR OWN")}
+                    >
+                      Build Your Own
+                    </p>
+                    <p
+                      className={`${subcategory === "CLASSICS" ? `bg-below-zero-red-200 text-white border-below-zero-red-200` : `border-border text-text-subtext`} border-[1px] px-3 min-[395px]:px-6 py-1 font-medium w-fit rounded-3xl duration-300 transition-all ease-in-out cursor-pointer`}
+                      onClick={() => setSubcategory("CLASSICS")}
+                    >
+                      Classics
+                    </p>
+                  </div>
+                  <div className="space-y-[5%] pb-[32%] pt-[5%]">
+                    {(subcategory === "ALL" ||
+                      subcategory === "BUILD YOUR OWN") && (
+                      <>
+                        <p>
+                          <span className="font-semibold">SHAVED ICE:</span>{" "}
+                          BUILD YOUR OWN
+                        </p>
+                        <Sizes step="1" />
+                        <IceCream step="2" thrifty="yes" />
+                        <Syrups step="3" />
+                      </>
+                    )}
+                    {(subcategory === "ALL" || subcategory === "CLASSICS") && (
+                      <>
+                        <p>
+                          <span className="font-semibold">SHAVED ICE:</span>{" "}
+                          CLASSICS
+                        </p>
+                        <MenuItems data={shavedice} />
+                      </>
+                    )}
+                  </div>
                 </div>
               </div>
             )}
@@ -295,7 +335,7 @@ const Menu = () => {
                     to delight your taste buds
                   </div>
                 </div>
-                <div className="space-y-[5%] pb-[3%] pt-[5%]">
+                <div className="space-y-[5%] pb-[28%] pt-[5%]">
                   <MenuItemsWithDialog data={specialties} />
                 </div>
               </div>
