@@ -203,7 +203,6 @@ Let's say you want to add 'Sad Day Rainbow' to the Shaved Ice Combo menu.
 
          If your image is more than 50kb, use [tinypng.com](https://tinypng.com/) and convert image to .webp if it is not a .webp already. 
 
-   
    - Now that you have a folder with the product picture inside, let's upload it to Github.
       - Navigate to the appropriate menu category (i.e. if the new menu item is a Shaved Ice Combo, select the Combos folder: `public/product_pictures/combos/`).
       - Click 'Add file'
