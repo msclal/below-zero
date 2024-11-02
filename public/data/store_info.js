@@ -1,5 +1,13 @@
 export const storeInfo = {
-  hours: "Everyday: 12:00PM - 8:00PM",
+  hours: {
+    monday: "Closed",
+    tuesday: "12PM - 7PM",
+    wednesday: "12PM - 7PM",
+    thursday: "12PM - 7PM",
+    friday: "12PM - 7PM",
+    saturday: "12PM - 7PM",
+    sunday: "12PM - 7PM",
+  },
   address: "583 E. Foothill Blvd. Suite #6",
   city_state: "Upland, CA 91786",
   phoneNumber: "(909) 920-9230",

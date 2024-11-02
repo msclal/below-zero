@@ -13,6 +13,7 @@ const MenuItemsWithDialog = ({ data }) => {
   return (
     <div className="grid w-full grid-cols-2 lg:grid-cols-3">
       {data.map((item, index) => {
+        if (!item.visible) return null;
         return (
           <div
             key={index}
