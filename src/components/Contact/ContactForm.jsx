@@ -19,17 +19,14 @@ const ContactForm = () => {
     ) {
       emailjs
         .sendForm(
-          "service_8e40q24",
-          "template_gkyyl4h",
+          "service_ipkyihg",
+          "template_on70qjb",
           form.current,
-          "M3UlGHz-cKsBF5HI_",
+          "pWvzpMbNPyzlEr3kp",
         )
-        .then(
-          (result) => {},
-          (error) => {
-            console.log(error.text);
-          },
-        )
+        .then((error) => {
+          console.log(error.text);
+        })
         .finally(() => {
           e.target.reset();
           toast.success("We've sent your message!", {
