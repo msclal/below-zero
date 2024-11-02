@@ -91,7 +91,7 @@ export const combos = [
     visible: true,
   },
   {
-    picture: "/product_pictures/combos/HappyRainbow/HappyRainbow.webp",
+    picture: "/product_pictures/combos/HappyDayRainbow/HappyDayRainbow.webp",
     name: "Happy Day Rainbow",
     description:
       "Cherry, Blue Gum, and Banana Shaved Ice with Cotton Candy Ice Cream",

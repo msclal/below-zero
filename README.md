@@ -1,23 +1,50 @@
+
 ## Updating Website Information
 We have made it accessible to update your store information and menu item listings by modifying specific configuration files.
 
 These following files update the data displayed on the website:
 - Business information: `public/data/store_info.js`
 - Menu Item listings folder: `public/data`
+   - Shaved Ice: `public/data/shavedice.js`
    - Shaved Ice Combos: `public/data/combos.js`
    - Shakes: `public/data/shakes.js`
    - House Specialties: `public/data/specialties.js`
 - Menu Items pictures folder: `public/product_pictures`
+   - Shaved Ice pictures folder: `public/product_pictures/shavedice`
    - Shaved Ice Combos pictures folder: `public/product_pictures/combos`
    - Shakes pictures folder: `public/product_pictures/shakes`
    - House Specialties pictures folder: `public/product_pictures/specialties`
 
-### How do I update my business information?
+## How to...
+
+- [Update Business Information](#update-business-information)
+- [Remove Menu Item](#remove-a-menu-item)
+- [Edit Menu Item Name/Description](#edit-a-menu-items-namedescription)
+- [Update Menu Item Picture](#update-a-menu-items-picture)
+
+---
+
+### Update Business Information
+You can update your business's store information such as:
+   - Hours for each day of the week
+   - Address
+   - Phone Number
+   - Email
+   - Instagram, Yelp, Facebook links
+
 Let's say you want to update the hours of your business.
 1. Locate the file `public/data/store_info.js`. The file should look like this:
     ```
     export const storeInfo = {
-        hours: "Everyday: 12:00PM - 8:00PM",
+        hours: {
+            monday: "Closed",
+            tuesday: "12PM - 7PM",
+            wednesday: "12PM - 7PM",
+            thursday: "12PM - 7PM",
+            friday: "12PM - 7PM",
+            saturday: "12PM - 7PM",
+            sunday: "12PM - 7PM",
+        },
         address: "583 E. Foothill Blvd. Suite #6",
         city_state: "Upland, CA 91786",
         phoneNumber: "(909) 920-9230",
@@ -27,62 +54,149 @@ Let's say you want to update the hours of your business.
         facebook: "https://www.facebook.com/p/Below-Zero-Shaved-Ice-100065604604709/",
     };
     ```
-2. Simply modify `hours: "Everyday: 12:00PM - 8:00PM"` within the file. This should update the hours information shown on the Contact page and the footer of the website.
+2. Simply modify the text inside the `hours: {...}`. For example, I will modify the "sunday" value to indicate that Sunday is closed:
+   ```
+    export const storeInfo = {
+        hours: {
+            monday: "Closed",
+            tuesday: "12PM - 7PM",
+            wednesday: "12PM - 7PM",
+            thursday: "12PM - 7PM",
+            friday: "12PM - 7PM",
+            saturday: "12PM - 7PM",
+            sunday: "Closed",
+        },
+        address: "583 E. Foothill Blvd. Suite #6",
+        city_state: "Upland, CA 91786",
+        phoneNumber: "(909) 920-9230",
+        email: "BelowZeroShavedIce@gmail.com",
+        instagram: "https://www.instagram.com/belowzeroshavedice/?hl=en",
+        yelp: "https://www.yelp.com/biz/below-zero-shaved-ice-upland",
+        facebook: "https://www.facebook.com/p/Below-Zero-Shaved-Ice-100065604604709/",
+    };
+    ``` 
+3. This should update the store hours shown on the Contact page and the footer of the website.
 
-### How do I modify a menu item's name or description?
+### Remove a Menu Item
+Let's say you want to discontinue or remove the 'Happy Day Rainbow' Shaved Ice Combo from your menu. There are two options: hide the item temporarily or delete the item from the file. 
+
+**To Hide Temporarily:**
+
+1. Locate the file that has all Shaved Ice Combo information: `public/data/combos.js`
+2. In the file, locate 'Happy Day Rainbow'. It should look something like this:
+   ```
+    {
+        picture: "/product_pictures/combos/HappyDayRainbow/HappyDayRainbow.webp",
+        name: "Happy Day Rainbow",
+        description: "Cherry, Blue Gum, and Banana Shaved Ice with Cotton Candy Ice Cream",
+        visible: true,
+    },
+    ```
+3. Set the value of `visible` to `false`. It should look like this:
+    ```
+    {
+        picture: "/product_pictures/combos/HappyDayRainbow/HappyDayRainbow.webp",
+        name: "Happy Day Rainbow",
+        description: "Cherry, Blue Gum, and Banana Shaved Ice with Cotton Candy Ice Cream",
+        visible: false,
+    },
+    ```
+4. Now, the menu item is hidden from the Menu page of the website.
+5. If in the future you mant to make the menu item visible again, set the value back to `true`.
+
+**To Delete From File**
+
+1. Locate the file that has all Shaved Ice Combo information: `public/data/combos.js`
+2. In the file, locate 'Happy Day Rainbow'. It should look something like this:
+    ```
+    {
+        picture: "/product_pictures/combos/HappyDayRainbow/HappyDayRainbow.webp",
+        name: "Happy Day Rainbow",
+        description: "Cherry, Blue Gum, and Banana Shaved Ice with Cotton Candy Ice Cream",
+        visible: true,
+    },
+    ```
+3. To remove this item, highlight the entire item from `{` to `},` (including the following comma `,`) and hit the delete key on your keyboard.
+
+
+### Edit a Menu Item's Name/Description
 Let's say you want to update the name or description of the 'Happy Day Rainbow' Shaved Ice Combo.
 1. Firstly, all Shaved Ice Combo menu listings are located in the file `public/data/combos.js`.
 2. Locate the 'Happy Day Rainbow' information within the file. We should see this:
     ```
     {
-        picture: "/product_pictures/combos/HappyRainbow/HappyRainbow.webp",
+        picture: "/product_pictures/combos/HappyDayRainbow/HappyDayRainbow.webp",
         name: "Happy Day Rainbow",
         description: "Cherry, Blue Gum, and Banana Shaved Ice with Cotton Candy Ice Cream",
+        visible: true,
     },
     ```
 3. To update the name and/or description listed for this menu item, just modify the information within `name` and `description` fields of the 'Happy Day Rainbow' in the file.
 4. Something like this updates the name and description of this menu item:
     ```
     {
-        picture: "/product_pictures/combos/HappyRainbow/HappyRainbow.webp",
+        picture: "/product_pictures/combos/HappyDayRainbow/HappyDayRainbow.webp",
         name: "Sad Day Rainbow",
         description: "Blue Ice Cream",
+        visible: true,
     },
+    ```
+5. If the item does not have a description leave the field empty like this:
+   ```
+    {
+        picture: "/product_pictures/combos/HappyDayRainbow/HappyDayRainbow.webp",
+        name: "Sad Day Rainbow",
+        description: "",
+        visible: true,
+    },
+    ```
 
-### How do I update a menu item's picture?
-*It's important to minimize the size/quality of the picture you will be uploading as it can affect the website's loading latencies. Therefore, its important to maintain a relatively small image size (ideally less than ~50kb) with a .webp or .png format. Depending on menu item, make sure the image has the following dimensions: Shaved Ice Combos (579x579), Shakes (669x736), House Specialties (525x525).*
+### Update a Menu Item's Picture
+*It's important to minimize the size/quality of the picture you will be uploading as it can affect the website's loading latencies. Therefore, its important to maintain a relatively small image size (ideally less than ~50kb) with a .webp or .png format. Depending on menu item, make sure the image has the following dimensions: Shaved Ice (579x579), Shaved Ice Combos (579x579), Shakes (669x736), House Specialties (525x525).*
 
 Let's say you want to update the picture of the 'Happy Day Rainbow' Shaved Ice Combo.
 1. Firstly, all Shaved Ice Combo product pictures are located in the folder `public/product_pictures/combos`.
-2. Within that folder, locate the file containing the 'Happy Day Rainbow' `public/product_pictures/combos/HappyRainbow/HappyRainbow.webp`.
+2. Within that folder, locate the file containing the 'Happy Day Rainbow' `public/product_pictures/combos/HappyDayRainbow/HappyDayRainbow.webp`.
 3. Delete this image and replace it with a new image that's ideally less than 50kb size with a `.webp` or `.png` format. We'll call this image `SadDayRainbow.png`. Depending on menu item, make sure the image has the following dimensions:
 
       Image Dimensions:
-      - Shaved Ice Combos: 579x579
-      - Shakes: 669x736
-      - House Specialties: 525x485
+      - Shaved Ice: `579x579`
+      - Shaved Ice Combos: `579x579`
+      - Shakes: `669x736`
+      - House Specialties: `525x485`
 
 5. Now that we've uploaded a new picture, we need to update the image listed for 'Happy Day Rainbow' with our new image.
 6. Go to the Shaved Ice Combo menu listings located in the file `public/data/combos.js`.
 7. Locate the 'Happy Day Rainbow' information within the file. We should see this:
     ```
     {
-        picture: "/product_pictures/combos/HappyRainbow/HappyRainbow.webp",
+        picture: "/product_pictures/combos/HappyDayRainbow/HappyDayRainbow.webp",
         name: "Happy Day Rainbow",
         description: "Cherry, Blue Gum, and Banana Shaved Ice with Cotton Candy Ice Cream",
+        visible: true,
     },
     ```
 8. To update the image listed for this menu item, modify the `picture` field with the file path of the new 'Happy Day Rainbow' image you just created within the `public/product_pictures/combos` in steps 1-3.
 9. Something like this updates the name and description of this menu item. Here we uploaded a new image called `SadDayRainbow.png`:
     ```
     {
-        picture: "public/product_pictures/combos/HappyRainbow/SadDayRainbow.png",
+        picture: "public/product_pictures/combos/HappyDayRainbow/SadDayRainbow.png",
         name: "Happy Day Rainbow",
         description: "Cherry, Blue Gum, and Banana Shaved Ice with Cotton Candy Ice Cream",
+        visible: true,
     },
     ```
-## Developing on our Codebase
-### Getting Started with Next.js Development
+## Services Used
+   - **EmailJS**: Connects the website’s contact form to an email account. It lets visitors send messages from the website directly to your email inbox.
+
+   - **Namecheap**: Where we bought your website’s domain name (`www.belowzeroshavedice.com`) and keep it registered so people can find your site online.
+
+   - **GitHub**: Online storage space for your website’s code. It helps us keep the code safe, make easy file updates, and download the code if needed.
+
+   - **Vercel**: Hosts your website (keeps it live on the internet). It is is connected to GitHub; whenever you make file changes to the code on Github, Vercel updates the website automatically, so it always shows the latest version on `www.belowzeroshavedice.com`.
+
+## Developing with Next.js
+### Getting Started
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
