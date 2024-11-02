@@ -4,7 +4,7 @@ export const specialties = [
     name: "Banana Split",
     description: "",
     gif: "/product_pictures/specialties/BananaSplit/BananaSplitGif.webp",
-    visible: true,
+    visible: false,
   },
   {
     picture: "/product_pictures/specialties/BrownieSundae/BrownieSundae.webp",
