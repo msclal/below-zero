@@ -86,7 +86,7 @@ Let's say you want to discontinue or remove the 'Happy Day Rainbow' Shaved Ice C
 2. In the file, locate 'Happy Day Rainbow'. It should look something like this:
    ```
     {
-        picture: "/product_pictures/combos/HappyRainbow/HappyRainbow.webp",
+        picture: "/product_pictures/combos/HappyDayRainbow/HappyDayRainbow.webp",
         name: "Happy Day Rainbow",
         description: "Cherry, Blue Gum, and Banana Shaved Ice with Cotton Candy Ice Cream",
         visible: true,
@@ -95,7 +95,7 @@ Let's say you want to discontinue or remove the 'Happy Day Rainbow' Shaved Ice C
 3. Set the value of `visible` to `false`. It should look like this:
     ```
     {
-        picture: "/product_pictures/combos/HappyRainbow/HappyRainbow.webp",
+        picture: "/product_pictures/combos/HappyDayRainbow/HappyDayRainbow.webp",
         name: "Happy Day Rainbow",
         description: "Cherry, Blue Gum, and Banana Shaved Ice with Cotton Candy Ice Cream",
         visible: false,
@@ -110,7 +110,7 @@ Let's say you want to discontinue or remove the 'Happy Day Rainbow' Shaved Ice C
 2. In the file, locate 'Happy Day Rainbow'. It should look something like this:
     ```
     {
-        picture: "/product_pictures/combos/HappyRainbow/HappyRainbow.webp",
+        picture: "/product_pictures/combos/HappyDayRainbow/HappyDayRainbow.webp",
         name: "Happy Day Rainbow",
         description: "Cherry, Blue Gum, and Banana Shaved Ice with Cotton Candy Ice Cream",
         visible: true,
@@ -125,7 +125,7 @@ Let's say you want to update the name or description of the 'Happy Day Rainbow' 
 2. Locate the 'Happy Day Rainbow' information within the file. We should see this:
     ```
     {
-        picture: "/product_pictures/combos/HappyRainbow/HappyRainbow.webp",
+        picture: "/product_pictures/combos/HappyDayRainbow/HappyDayRainbow.webp",
         name: "Happy Day Rainbow",
         description: "Cherry, Blue Gum, and Banana Shaved Ice with Cotton Candy Ice Cream",
         visible: true,
@@ -135,7 +135,7 @@ Let's say you want to update the name or description of the 'Happy Day Rainbow' 
 4. Something like this updates the name and description of this menu item:
     ```
     {
-        picture: "/product_pictures/combos/HappyRainbow/HappyRainbow.webp",
+        picture: "/product_pictures/combos/HappyDayRainbow/HappyDayRainbow.webp",
         name: "Sad Day Rainbow",
         description: "Blue Ice Cream",
         visible: true,
@@ -144,7 +144,7 @@ Let's say you want to update the name or description of the 'Happy Day Rainbow' 
 5. If the item does not have a description leave the field empty like this:
    ```
     {
-        picture: "/product_pictures/combos/HappyRainbow/HappyRainbow.webp",
+        picture: "/product_pictures/combos/HappyDayRainbow/HappyDayRainbow.webp",
         name: "Sad Day Rainbow",
         description: "",
         visible: true,
@@ -156,7 +156,7 @@ Let's say you want to update the name or description of the 'Happy Day Rainbow' 
 
 Let's say you want to update the picture of the 'Happy Day Rainbow' Shaved Ice Combo.
 1. Firstly, all Shaved Ice Combo product pictures are located in the folder `public/product_pictures/combos`.
-2. Within that folder, locate the file containing the 'Happy Day Rainbow' `public/product_pictures/combos/HappyRainbow/HappyRainbow.webp`.
+2. Within that folder, locate the file containing the 'Happy Day Rainbow' `public/product_pictures/combos/HappyDayRainbow/HappyDayRainbow.webp`.
 3. Delete this image and replace it with a new image that's ideally less than 50kb size with a `.webp` or `.png` format. We'll call this image `SadDayRainbow.png`. Depending on menu item, make sure the image has the following dimensions:
 
       Image Dimensions:
@@ -170,7 +170,7 @@ Let's say you want to update the picture of the 'Happy Day Rainbow' Shaved Ice C
 7. Locate the 'Happy Day Rainbow' information within the file. We should see this:
     ```
     {
-        picture: "/product_pictures/combos/HappyRainbow/HappyRainbow.webp",
+        picture: "/product_pictures/combos/HappyDayRainbow/HappyDayRainbow.webp",
         name: "Happy Day Rainbow",
         description: "Cherry, Blue Gum, and Banana Shaved Ice with Cotton Candy Ice Cream",
         visible: true,
@@ -180,7 +180,7 @@ Let's say you want to update the picture of the 'Happy Day Rainbow' Shaved Ice C
 9. Something like this updates the name and description of this menu item. Here we uploaded a new image called `SadDayRainbow.png`:
     ```
     {
-        picture: "public/product_pictures/combos/HappyRainbow/SadDayRainbow.png",
+        picture: "public/product_pictures/combos/HappyDayRainbow/SadDayRainbow.png",
         name: "Happy Day Rainbow",
         description: "Cherry, Blue Gum, and Banana Shaved Ice with Cotton Candy Ice Cream",
         visible: true,
