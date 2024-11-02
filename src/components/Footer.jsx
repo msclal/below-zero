@@ -64,7 +64,9 @@ const Footer = () => {
               <span className="font-semibold">Sunday</span>
               <span>: {storeInfo.hours.sunday} </span>
             </p>
-            <span className="italic">Closed on rainy days</span>
+            {storeInfo.hours.closedOnRainyDays && (
+              <span className="italic">Closed on rainy days</span>
+            )}
           </div>
           <div className="flex flex-col w-full">
             <span className="mb-2 font-semibold">CONTACT</span>
