@@ -44,7 +44,7 @@ export const specialties = [
   },
   {
     picture: "/product_pictures/specialties/RootBeerFloat/RootBeerFloat.webp",
-    name: "Rootbeer Float",
+    name: "Root Beer Float",
     description: "",
     gif: "/product_pictures/specialties/RootBeerFloat/RootBeerFloat.webp",
     visible: true,
