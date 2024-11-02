@@ -7,6 +7,7 @@ export const storeInfo = {
     friday: "12PM - 7PM",
     saturday: "12PM - 7PM",
     sunday: "12PM - 7PM",
+    closedOnRainyDays: true,
   },
   address: "583 E. Foothill Blvd. Suite #6",
   city_state: "Upland, CA 91786",

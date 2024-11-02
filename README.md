@@ -47,6 +47,7 @@ Let's say you want to update the hours of your business.
             friday: "12PM - 7PM",
             saturday: "12PM - 7PM",
             sunday: "12PM - 7PM",
+            closedOnRainyDays: true,
         },
         address: "583 E. Foothill Blvd. Suite #6",
         city_state: "Upland, CA 91786",
@@ -68,6 +69,7 @@ Let's say you want to update the hours of your business.
             friday: "12PM - 7PM",
             saturday: "12PM - 7PM",
             sunday: "Closed",
+            closedOnRainyDays: true,
         },
         address: "583 E. Foothill Blvd. Suite #6",
         city_state: "Upland, CA 91786",
@@ -118,7 +120,8 @@ Let's say you want to add 'Sad Day Rainbow' to the Shaved Ice Combo menu.
         visible: true,
     },
     ```
-5. After completing these steps, save these file changes on GitHub. After a few minutes, the site should automatically deploy these changes to `www.belowzeroshavedice.com`.
+5. Add this item to the file (from `{` to `},` with the comma `,`)
+6. After completing these steps, save these file changes on GitHub. After a few minutes, the site should automatically deploy these changes to `www.belowzeroshavedice.com`.
 
 ### Remove a Menu Item
 [Click to see the full list of folder locations for menu items (Shaved Ice, Shaved Ice Combos, Shakes, House Specialties)](#filefolder-locations)

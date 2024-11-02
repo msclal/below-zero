@@ -94,7 +94,9 @@ const ContactForm = () => {
             <span className="font-semibold">Sunday</span>
             <span>: {storeInfo.hours.sunday} </span>
           </p>
-          <span className="italic">Closed on rainy days</span>
+          {storeInfo.hours.closedOnRainyDays && (
+            <span className="italic">Closed on rainy days</span>
+          )}
         </div>
         <div>
           <p className="text-xl font-semibold font-montserrat">CONTACT</p>
@@ -173,7 +175,9 @@ const ContactForm = () => {
               <span className="font-semibold">Sunday</span>
               <span>: {storeInfo.hours.sunday} </span>
             </p>
-            <span className="italic">Closed on rainy days</span>
+            {storeInfo.hours.closedOnRainyDays && (
+              <span className="italic">Closed on rainy days</span>
+            )}
           </div>
         </div>
 
