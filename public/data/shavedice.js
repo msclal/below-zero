@@ -28,12 +28,6 @@ export const shavedice = [
     visible: true,
   },
   {
-    picture: "/product_pictures/shavedice/CherryAndCola/CherryAndCola.webp",
-    name: "Cherry & Cola",
-    description: "",
-    visible: true,
-  },
-  {
     picture:
       "/product_pictures/shavedice/CherryLimeAndPineapple/CherryLimeAndPineapple.webp",
     name: "Cherry Lime & Pineapple",
