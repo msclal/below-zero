@@ -4,7 +4,7 @@ export const shavedice = [
       "/product_pictures/shavedice/BananaStrawberryandCakeBatter/BananaStrawberryandCakeBatter.webp",
     name: "Banana Strawberry & Cake Batter",
     description: "",
-    visible: true,
+    visible: false,
   },
   {
     picture:
