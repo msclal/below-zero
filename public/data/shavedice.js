@@ -2,8 +2,8 @@ export const shavedice = [
   {
     picture:
       "/product_pictures/shavedice/BananaStrawberryandCakeBatter/BananaStrawberryandCakeBatter.webp",
-    name: "Yellow & Red",
-    description: "Strawberry and Lemon Syrup",
+    name: "Banana, Strawberry, & Cake Batter",
+    description: "",
     visible: true,
   },
   {
