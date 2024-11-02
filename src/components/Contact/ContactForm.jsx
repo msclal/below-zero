@@ -24,12 +24,9 @@ const ContactForm = () => {
           form.current,
           "pWvzpMbNPyzlEr3kp",
         )
-        .then(
-          (result) => {},
-          (error) => {
-            console.log(error.text);
-          },
-        )
+        .then((error) => {
+          console.log(error.text);
+        })
         .finally(() => {
           e.target.reset();
           toast.success("We've sent your message!", {
