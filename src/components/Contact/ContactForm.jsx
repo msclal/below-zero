@@ -66,7 +66,35 @@ const ContactForm = () => {
         </div>
         <div>
           <p className="text-xl font-semibold font-montserrat">STORE HOURS</p>
-          <p>{storeInfo.hours}</p>
+          <p>
+            <span className="font-semibold">Monday</span>
+            <span>: {storeInfo.hours.monday} </span>
+          </p>
+          <p>
+            <span className="font-semibold">Tuesday</span>
+            <span>: {storeInfo.hours.tuesday} </span>
+          </p>
+          <p>
+            <span className="font-semibold">Wednesday</span>
+            <span>: {storeInfo.hours.wednesday} </span>
+          </p>
+          <p>
+            <span className="font-semibold">Thursday</span>
+            <span>: {storeInfo.hours.thursday} </span>
+          </p>
+          <p>
+            <span className="font-semibold">Friday</span>
+            <span>: {storeInfo.hours.friday} </span>
+          </p>
+          <p>
+            <span className="font-semibold">Saturday</span>
+            <span>: {storeInfo.hours.saturday} </span>
+          </p>
+          <p>
+            <span className="font-semibold">Sunday</span>
+            <span>: {storeInfo.hours.sunday} </span>
+          </p>
+          <span className="italic">Closed on rainy days</span>
         </div>
         <div>
           <p className="text-xl font-semibold font-montserrat">CONTACT</p>
@@ -114,10 +142,39 @@ const ContactForm = () => {
           <span className="">583 E. Foothill Blvd. Suite #6</span>
           Upland, CA 91786
         </div>
-
         <div className="flex flex-col w-full">
           <span className="mb-2 font-semibold">STORE HOURS</span>
-          <span>Everyday: 12:00PM - 8:00PM</span>
+          <div className="flex flex-col w-full">
+            <p>
+              <span className="font-semibold">Monday</span>
+              <span>: {storeInfo.hours.monday} </span>
+            </p>
+            <p>
+              <span className="font-semibold">Tuesday</span>
+              <span>: {storeInfo.hours.tuesday} </span>
+            </p>
+            <p>
+              <span className="font-semibold">Wednesday</span>
+              <span>: {storeInfo.hours.wednesday} </span>
+            </p>
+            <p>
+              <span className="font-semibold">Thursday</span>
+              <span>: {storeInfo.hours.thursday} </span>
+            </p>
+            <p>
+              <span className="font-semibold">Friday</span>
+              <span>: {storeInfo.hours.friday} </span>
+            </p>
+            <p>
+              <span className="font-semibold">Saturday</span>
+              <span>: {storeInfo.hours.saturday} </span>
+            </p>
+            <p>
+              <span className="font-semibold">Sunday</span>
+              <span>: {storeInfo.hours.sunday} </span>
+            </p>
+            <span className="italic">Closed on rainy days</span>
+          </div>
         </div>
 
         <div className="flex flex-col w-full">
