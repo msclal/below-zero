@@ -1,6 +1,6 @@
 export const combos = [
   {
-    picture: "/product_pictures/combos/BerryBerryGood/BerryBerryGood.webp",
+    picture: "/product_pictures/combos/BerryBerryGood/demo.webp",
     name: "Berry Berry Good",
     description:
       "Strawberry, Raspberry, and Blueberry Shaved Ice with Vanilla Ice Cream",
