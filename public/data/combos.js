@@ -58,6 +58,12 @@ export const combos = [
     visible: true,
   },
   {
+     picture: "/product_pictures/combos/SadDayRainbow/SadDayRainbow.webp",
+     name: "Sad Day Rainbow",
+     description: "Blue Raspberry and Orange Syrup",
+     visible: true,
+  },
+  {
     picture: "/product_pictures/combos/Snickers/Snickers.webp",
     name: "Snickers",
     description:
